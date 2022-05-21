@@ -1,0 +1,415 @@
+server not ready, wait 3 sec to retry...
+not ready endpoints:['127.0.0.1:45014']
+I0521 01:14:36.427649  2838 nccl_context.cc:74] init nccl context nranks: 2 local rank: 0 gpu id: 0 ring id: 0
+W0521 01:14:36.970398  2838 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 11.0, Runtime API Version: 10.2
+W0521 01:14:37.500828  2838 device_context.cc:465] device: 0, cuDNN Version: 8.2.
+2
+/public/home/lihongwei/anaconda3/lib/python3.9/site-packages/paddle/distributed/fleet/base/fleet_base.py:266: UserWarning: The dygraph parallel environment has been initialized.
+  warnings.warn(
+I0521 01:15:07.602232  2838 nccl_context.cc:107] init nccl context nranks: 2 local rank: 0 gpu id: 0 ring id: 10
+/public/home/lihongwei/anaconda3/lib/python3.9/site-packages/paddle/tensor/creation.py:130: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  if data.dtype == np.object:
+2022-05-21 01:15:07,971-INFO: [topology.py:169:__init__] HybridParallelInfo: rank_id: 0, mp_degree: 1, sharding_degree: 1, pp_degree: 1, dp_degree: 2, mp_group: [0],  sharding_group: [0], pp_group: [0], dp_group: [0, 1], check/clip group: [0]
+------------------------------------------------------------------------------
+==> Start Training with learning rate: 6.666666666666667e-05
+------------------------------------------------------------------------------
+===> Start Epoch 1 End Epoch 101
+===> Loading datasets
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 1	Batch: 200/2000	Time: 142.0401	Loss: 0.0289
+Epoch: 1	Batch: 400/2000	Time: 268.9126	Loss: 0.0168
+/public/home/lihongwei/anaconda3/lib/python3.9/site-packages/paddle/framework/io.py:415: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.10 it will stop working
+  if isinstance(obj, collections.Iterable) and not isinstance(obj, (
+[Ep 1 it 499	 PSNR: 33.1037	 SIDD: 0.8984	] ----  [best_Ep 1 best_it 499 Best_PSNR 33.1037 Best_SSIM 0.8984] 
+Epoch: 1	Batch: 600/2000	Time: 468.6153	Loss: 0.0143
+Epoch: 1	Batch: 800/2000	Time: 594.0248	Loss: 0.0128
+[Ep 1 it 998	 PSNR: 34.9278	 SIDD: 0.9230	] ----  [best_Ep 1 best_it 998 Best_PSNR 34.9278 Best_SSIM 0.9230] 
+Epoch: 1	Batch: 1000/2000	Time: 786.6747	Loss: 0.0119
+Epoch: 1	Batch: 1200/2000	Time: 912.5360	Loss: 0.0114
+Epoch: 1	Batch: 1400/2000	Time: 1035.6059	Loss: 0.0110
+[Ep 1 it 1497	 PSNR: 35.8527	 SIDD: 0.9350	] ----  [best_Ep 1 best_it 1497 Best_PSNR 35.8527 Best_SSIM 0.9350] 
+Epoch: 1	Batch: 1600/2000	Time: 1225.6709	Loss: 0.0109
+Epoch: 1	Batch: 1800/2000	Time: 1349.7803	Loss: 0.0104
+[Ep 1 it 1996	 PSNR: 36.3534	 SIDD: 0.9387	] ----  [best_Ep 1 best_it 1996 Best_PSNR 36.3534 Best_SSIM 0.9387] 
+------------------------------------------------------------------
+Epoch: 1	Time: 1538.0825	Loss: 27.7105	LearningRate 0.000133
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 2	Batch: 200/2000	Time: 127.6237	Loss: 0.0103
+Epoch: 2	Batch: 400/2000	Time: 251.6280	Loss: 0.0098
+[Ep 2 it 499	 PSNR: 36.6914	 SIDD: 0.9438	] ----  [best_Ep 2 best_it 499 Best_PSNR 36.6914 Best_SSIM 0.9438] 
+Epoch: 2	Batch: 600/2000	Time: 443.5284	Loss: 0.0098
+Epoch: 2	Batch: 800/2000	Time: 567.1607	Loss: 0.0098
+[Ep 2 it 998	 PSNR: 37.0334	 SIDD: 0.9463	] ----  [best_Ep 2 best_it 998 Best_PSNR 37.0334 Best_SSIM 0.9463] 
+Epoch: 2	Batch: 1000/2000	Time: 758.0420	Loss: 0.0094
+Epoch: 2	Batch: 1200/2000	Time: 881.6310	Loss: 0.0092
+Epoch: 2	Batch: 1400/2000	Time: 1004.9238	Loss: 0.0091
+[Ep 2 it 1497	 PSNR: 37.3305	 SIDD: 0.9483	] ----  [best_Ep 2 best_it 1497 Best_PSNR 37.3305 Best_SSIM 0.9483] 
+Epoch: 2	Batch: 1600/2000	Time: 1194.1266	Loss: 0.0091
+Epoch: 2	Batch: 1800/2000	Time: 1324.5097	Loss: 0.0090
+[Ep 2 it 1996	 PSNR: 37.5324	 SIDD: 0.9493	] ----  [best_Ep 2 best_it 1996 Best_PSNR 37.5324 Best_SSIM 0.9493] 
+------------------------------------------------------------------
+Epoch: 2	Time: 1521.0354	Loss: 18.9175	LearningRate 0.000200
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 3	Batch: 200/2000	Time: 130.3156	Loss: 0.0089
+Epoch: 3	Batch: 400/2000	Time: 263.2115	Loss: 0.0089
+[Ep 3 it 499	 PSNR: 37.6930	 SIDD: 0.9491	] ----  [best_Ep 3 best_it 499 Best_PSNR 37.6930 Best_SSIM 0.9491] 
+Epoch: 3	Batch: 600/2000	Time: 462.3263	Loss: 0.0089
+Epoch: 3	Batch: 800/2000	Time: 589.8456	Loss: 0.0087
+[Ep 3 it 998	 PSNR: 37.8686	 SIDD: 0.9499	] ----  [best_Ep 3 best_it 998 Best_PSNR 37.8686 Best_SSIM 0.9499] 
+Epoch: 3	Batch: 1000/2000	Time: 789.1002	Loss: 0.0086
+Epoch: 3	Batch: 1200/2000	Time: 913.5213	Loss: 0.0087
+Epoch: 3	Batch: 1400/2000	Time: 1040.6230	Loss: 0.0085
+[Ep 3 it 1497	 PSNR: 38.0549	 SIDD: 0.9505	] ----  [best_Ep 3 best_it 1497 Best_PSNR 38.0549 Best_SSIM 0.9505] 
+Epoch: 3	Batch: 1600/2000	Time: 1240.4173	Loss: 0.0083
+Epoch: 3	Batch: 1800/2000	Time: 1369.2965	Loss: 0.0085
+[Ep 3 it 1996	 PSNR: 38.1051	 SIDD: 0.9514	] ----  [best_Ep 3 best_it 1996 Best_PSNR 38.1051 Best_SSIM 0.9514] 
+------------------------------------------------------------------
+Epoch: 3	Time: 1572.9327	Loss: 17.2576	LearningRate 0.000200
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 4	Batch: 200/2000	Time: 134.7720	Loss: 0.0084
+Epoch: 4	Batch: 400/2000	Time: 262.3905	Loss: 0.0084
+[Ep 4 it 499	 PSNR: 38.2646	 SIDD: 0.9519	] ----  [best_Ep 4 best_it 499 Best_PSNR 38.2646 Best_SSIM 0.9519] 
+Epoch: 4	Batch: 600/2000	Time: 460.9283	Loss: 0.0084
+Epoch: 4	Batch: 800/2000	Time: 588.8200	Loss: 0.0082
+[Ep 4 it 998	 PSNR: 38.3813	 SIDD: 0.9522	] ----  [best_Ep 4 best_it 998 Best_PSNR 38.3813 Best_SSIM 0.9522] 
+Epoch: 4	Batch: 1000/2000	Time: 785.1143	Loss: 0.0082
+Epoch: 4	Batch: 1200/2000	Time: 910.2596	Loss: 0.0081
+Epoch: 4	Batch: 1400/2000	Time: 1033.7807	Loss: 0.0082
+[Ep 4 it 1497	 PSNR: 38.3736	 SIDD: 0.9524	] ----  [best_Ep 4 best_it 998 Best_PSNR 38.3813 Best_SSIM 0.9522] 
+Epoch: 4	Batch: 1600/2000	Time: 1235.8474	Loss: 0.0081
+Epoch: 4	Batch: 1800/2000	Time: 1360.9106	Loss: 0.0082
+[Ep 4 it 1996	 PSNR: 38.4379	 SIDD: 0.9526	] ----  [best_Ep 4 best_it 1996 Best_PSNR 38.4379 Best_SSIM 0.9526] 
+------------------------------------------------------------------
+Epoch: 4	Time: 1562.5265	Loss: 16.4386	LearningRate 0.000200
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 5	Batch: 200/2000	Time: 129.6210	Loss: 0.0081
+Epoch: 5	Batch: 400/2000	Time: 260.2405	Loss: 0.0081
+[Ep 5 it 499	 PSNR: 38.3897	 SIDD: 0.9525	] ----  [best_Ep 4 best_it 1996 Best_PSNR 38.4379 Best_SSIM 0.9526] 
+Epoch: 5	Batch: 600/2000	Time: 457.6015	Loss: 0.0081
+Epoch: 5	Batch: 800/2000	Time: 588.9221	Loss: 0.0080
+[Ep 5 it 998	 PSNR: 38.4770	 SIDD: 0.9530	] ----  [best_Ep 5 best_it 998 Best_PSNR 38.4770 Best_SSIM 0.9530] 
+Epoch: 5	Batch: 1000/2000	Time: 789.6146	Loss: 0.0080
+Epoch: 5	Batch: 1200/2000	Time: 917.5851	Loss: 0.0080
+Epoch: 5	Batch: 1400/2000	Time: 1043.7383	Loss: 0.0080
+[Ep 5 it 1497	 PSNR: 38.5164	 SIDD: 0.9528	] ----  [best_Ep 5 best_it 1497 Best_PSNR 38.5164 Best_SSIM 0.9528] 
+Epoch: 5	Batch: 1600/2000	Time: 1237.9707	Loss: 0.0081
+Epoch: 5	Batch: 1800/2000	Time: 1363.9332	Loss: 0.0079
+[Ep 5 it 1996	 PSNR: 38.5172	 SIDD: 0.9530	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+------------------------------------------------------------------
+Epoch: 5	Time: 1554.3105	Loss: 16.0415	LearningRate 0.000200
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 6	Batch: 200/2000	Time: 134.7246	Loss: 0.0074
+Epoch: 6	Batch: 400/2000	Time: 264.2535	Loss: 0.0073
+[Ep 6 it 499	 PSNR: 38.3140	 SIDD: 0.9523	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 6	Batch: 600/2000	Time: 467.1658	Loss: 0.0073
+Epoch: 6	Batch: 800/2000	Time: 592.9399	Loss: 0.0072
+[Ep 6 it 998	 PSNR: 38.3632	 SIDD: 0.9530	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 6	Batch: 1000/2000	Time: 795.6304	Loss: 0.0073
+Epoch: 6	Batch: 1200/2000	Time: 918.3854	Loss: 0.0072
+Epoch: 6	Batch: 1400/2000	Time: 1047.4735	Loss: 0.0072
+[Ep 6 it 1497	 PSNR: 38.2580	 SIDD: 0.9523	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 6	Batch: 1600/2000	Time: 1245.1571	Loss: 0.0071
+Epoch: 6	Batch: 1800/2000	Time: 1374.7540	Loss: 0.0071
+[Ep 6 it 1996	 PSNR: 38.1225	 SIDD: 0.9531	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+------------------------------------------------------------------
+Epoch: 6	Time: 1575.6376	Loss: 14.4546	LearningRate 0.000199
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 7	Batch: 200/2000	Time: 129.1750	Loss: 0.0071
+Epoch: 7	Batch: 400/2000	Time: 261.2568	Loss: 0.0072
+[Ep 7 it 499	 PSNR: 38.2296	 SIDD: 0.9527	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 7	Batch: 600/2000	Time: 460.0338	Loss: 0.0072
+Epoch: 7	Batch: 800/2000	Time: 585.2332	Loss: 0.0071
+[Ep 7 it 998	 PSNR: 38.4857	 SIDD: 0.9532	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 7	Batch: 1000/2000	Time: 786.1634	Loss: 0.0071
+Epoch: 7	Batch: 1200/2000	Time: 910.8115	Loss: 0.0071
+Epoch: 7	Batch: 1400/2000	Time: 1036.5456	Loss: 0.0072
+[Ep 7 it 1497	 PSNR: 38.4203	 SIDD: 0.9529	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 7	Batch: 1600/2000	Time: 1232.8447	Loss: 0.0071
+Epoch: 7	Batch: 1800/2000	Time: 1356.7810	Loss: 0.0072
+[Ep 7 it 1996	 PSNR: 38.4124	 SIDD: 0.9538	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+------------------------------------------------------------------
+Epoch: 7	Time: 1557.4290	Loss: 14.2656	LearningRate 0.000199
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 8	Batch: 200/2000	Time: 128.1194	Loss: 0.0071
+Epoch: 8	Batch: 400/2000	Time: 257.5555	Loss: 0.0072
+[Ep 8 it 499	 PSNR: 38.3124	 SIDD: 0.9533	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 8	Batch: 600/2000	Time: 456.8659	Loss: 0.0070
+Epoch: 8	Batch: 800/2000	Time: 585.5007	Loss: 0.0071
+[Ep 8 it 998	 PSNR: 38.3542	 SIDD: 0.9539	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 8	Batch: 1000/2000	Time: 782.0128	Loss: 0.0070
+Epoch: 8	Batch: 1200/2000	Time: 907.9766	Loss: 0.0069
+Epoch: 8	Batch: 1400/2000	Time: 1032.5363	Loss: 0.0070
+[Ep 8 it 1497	 PSNR: 38.3589	 SIDD: 0.9528	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+Epoch: 8	Batch: 1600/2000	Time: 1227.1405	Loss: 0.0071
+Epoch: 8	Batch: 1800/2000	Time: 1350.7232	Loss: 0.0070
+[Ep 8 it 1996	 PSNR: 38.4712	 SIDD: 0.9535	] ----  [best_Ep 5 best_it 1996 Best_PSNR 38.5172 Best_SSIM 0.9530] 
+------------------------------------------------------------------
+Epoch: 8	Time: 1552.9510	Loss: 14.0949	LearningRate 0.000198
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 9	Batch: 200/2000	Time: 129.7541	Loss: 0.0070
+Epoch: 9	Batch: 400/2000	Time: 259.0348	Loss: 0.0070
+[Ep 9 it 499	 PSNR: 38.5515	 SIDD: 0.9537	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 9	Batch: 600/2000	Time: 456.7155	Loss: 0.0070
+Epoch: 9	Batch: 800/2000	Time: 583.8101	Loss: 0.0071
+[Ep 9 it 998	 PSNR: 38.5053	 SIDD: 0.9532	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 9	Batch: 1000/2000	Time: 779.6105	Loss: 0.0069
+Epoch: 9	Batch: 1200/2000	Time: 906.0440	Loss: 0.0070
+Epoch: 9	Batch: 1400/2000	Time: 1032.0407	Loss: 0.0069
+[Ep 9 it 1497	 PSNR: 38.5041	 SIDD: 0.9537	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 9	Batch: 1600/2000	Time: 1226.7790	Loss: 0.0070
+Epoch: 9	Batch: 1800/2000	Time: 1351.6834	Loss: 0.0068
+[Ep 9 it 1996	 PSNR: 38.4880	 SIDD: 0.9534	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+------------------------------------------------------------------
+Epoch: 9	Time: 1552.9038	Loss: 13.9312	LearningRate 0.000197
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 10	Batch: 200/2000	Time: 132.7615	Loss: 0.0070
+Epoch: 10	Batch: 400/2000	Time: 261.2109	Loss: 0.0070
+[Ep 10 it 499	 PSNR: 38.4867	 SIDD: 0.9536	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 10	Batch: 600/2000	Time: 460.5107	Loss: 0.0070
+Epoch: 10	Batch: 800/2000	Time: 583.1151	Loss: 0.0070
+[Ep 10 it 998	 PSNR: 38.4373	 SIDD: 0.9536	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 10	Batch: 1000/2000	Time: 784.9170	Loss: 0.0070
+Epoch: 10	Batch: 1200/2000	Time: 909.1031	Loss: 0.0070
+Epoch: 10	Batch: 1400/2000	Time: 1034.6356	Loss: 0.0069
+[Ep 10 it 1497	 PSNR: 38.5371	 SIDD: 0.9539	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+Epoch: 10	Batch: 1600/2000	Time: 1232.0693	Loss: 0.0071
+Epoch: 10	Batch: 1800/2000	Time: 1356.4754	Loss: 0.0069
+[Ep 10 it 1996	 PSNR: 38.3802	 SIDD: 0.9540	] ----  [best_Ep 9 best_it 499 Best_PSNR 38.5515 Best_SSIM 0.9537] 
+------------------------------------------------------------------
+Epoch: 10	Time: 1558.2075	Loss: 13.9699	LearningRate 0.000197
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 11	Batch: 200/2000	Time: 129.1665	Loss: 0.0070
+Epoch: 11	Batch: 400/2000	Time: 254.2906	Loss: 0.0069
+[Ep 11 it 499	 PSNR: 38.6687	 SIDD: 0.9541	] ----  [best_Ep 11 best_it 499 Best_PSNR 38.6687 Best_SSIM 0.9541] 
+Epoch: 11	Batch: 600/2000	Time: 452.1374	Loss: 0.0070
+Epoch: 11	Batch: 800/2000	Time: 574.9992	Loss: 0.0069
+[Ep 11 it 998	 PSNR: 38.6298	 SIDD: 0.9545	] ----  [best_Ep 11 best_it 499 Best_PSNR 38.6687 Best_SSIM 0.9541] 
+Epoch: 11	Batch: 1000/2000	Time: 774.5370	Loss: 0.0069
+Epoch: 11	Batch: 1200/2000	Time: 899.1159	Loss: 0.0069
+Epoch: 11	Batch: 1400/2000	Time: 1025.3024	Loss: 0.0069
+[Ep 11 it 1497	 PSNR: 38.7104	 SIDD: 0.9543	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+Epoch: 11	Batch: 1600/2000	Time: 1226.5352	Loss: 0.0069
+Epoch: 11	Batch: 1800/2000	Time: 1354.4388	Loss: 0.0069
+[Ep 11 it 1996	 PSNR: 38.6731	 SIDD: 0.9541	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+------------------------------------------------------------------
+Epoch: 11	Time: 1551.1175	Loss: 13.8529	LearningRate 0.000196
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 12	Batch: 200/2000	Time: 132.1554	Loss: 0.0070
+Epoch: 12	Batch: 400/2000	Time: 258.3698	Loss: 0.0069
+[Ep 12 it 499	 PSNR: 38.5121	 SIDD: 0.9544	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+Epoch: 12	Batch: 600/2000	Time: 455.5612	Loss: 0.0069
+Epoch: 12	Batch: 800/2000	Time: 579.9687	Loss: 0.0069
+[Ep 12 it 998	 PSNR: 38.5544	 SIDD: 0.9541	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+Epoch: 12	Batch: 1000/2000	Time: 780.8146	Loss: 0.0071
+Epoch: 12	Batch: 1200/2000	Time: 905.0225	Loss: 0.0070
+Epoch: 12	Batch: 1400/2000	Time: 1028.2107	Loss: 0.0069
+[Ep 12 it 1497	 PSNR: 38.5480	 SIDD: 0.9546	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+Epoch: 12	Batch: 1600/2000	Time: 1224.8609	Loss: 0.0069
+Epoch: 12	Batch: 1800/2000	Time: 1350.0287	Loss: 0.0070
+[Ep 12 it 1996	 PSNR: 38.6737	 SIDD: 0.9542	] ----  [best_Ep 11 best_it 1497 Best_PSNR 38.7104 Best_SSIM 0.9543] 
+------------------------------------------------------------------
+Epoch: 12	Time: 1547.5190	Loss: 13.8710	LearningRate 0.000195
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 13	Batch: 200/2000	Time: 130.8357	Loss: 0.0069
+Epoch: 13	Batch: 400/2000	Time: 257.4479	Loss: 0.0069
+[Ep 13 it 499	 PSNR: 38.7730	 SIDD: 0.9548	] ----  [best_Ep 13 best_it 499 Best_PSNR 38.7730 Best_SSIM 0.9548] 
+Epoch: 13	Batch: 600/2000	Time: 455.6113	Loss: 0.0069
+Epoch: 13	Batch: 800/2000	Time: 579.4584	Loss: 0.0069
+[Ep 13 it 998	 PSNR: 38.6795	 SIDD: 0.9548	] ----  [best_Ep 13 best_it 499 Best_PSNR 38.7730 Best_SSIM 0.9548] 
+Epoch: 13	Batch: 1000/2000	Time: 780.0500	Loss: 0.0069
+Epoch: 13	Batch: 1200/2000	Time: 904.6977	Loss: 0.0070
+Epoch: 13	Batch: 1400/2000	Time: 1030.8712	Loss: 0.0068
+[Ep 13 it 1497	 PSNR: 38.8046	 SIDD: 0.9548	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 13	Batch: 1600/2000	Time: 1227.1643	Loss: 0.0069
+Epoch: 13	Batch: 1800/2000	Time: 1352.2865	Loss: 0.0069
+[Ep 13 it 1996	 PSNR: 38.7198	 SIDD: 0.9547	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+------------------------------------------------------------------
+Epoch: 13	Time: 1556.3914	Loss: 13.8032	LearningRate 0.000194
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 14	Batch: 200/2000	Time: 131.4331	Loss: 0.0069
+Epoch: 14	Batch: 400/2000	Time: 256.8917	Loss: 0.0068
+[Ep 14 it 499	 PSNR: 38.7805	 SIDD: 0.9547	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 14	Batch: 600/2000	Time: 450.1521	Loss: 0.0069
+Epoch: 14	Batch: 800/2000	Time: 574.5391	Loss: 0.0069
+[Ep 14 it 998	 PSNR: 38.6966	 SIDD: 0.9547	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 14	Batch: 1000/2000	Time: 768.8371	Loss: 0.0068
+Epoch: 14	Batch: 1200/2000	Time: 899.2888	Loss: 0.0069
+Epoch: 14	Batch: 1400/2000	Time: 1030.1412	Loss: 0.0068
+[Ep 14 it 1497	 PSNR: 38.6844	 SIDD: 0.9541	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 14	Batch: 1600/2000	Time: 1228.1633	Loss: 0.0068
+Epoch: 14	Batch: 1800/2000	Time: 1357.8026	Loss: 0.0068
+[Ep 14 it 1996	 PSNR: 38.6588	 SIDD: 0.9550	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+------------------------------------------------------------------
+Epoch: 14	Time: 1557.9666	Loss: 13.6821	LearningRate 0.000193
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 15	Batch: 200/2000	Time: 133.8631	Loss: 0.0068
+Epoch: 15	Batch: 400/2000	Time: 261.0265	Loss: 0.0069
+[Ep 15 it 499	 PSNR: 38.6867	 SIDD: 0.9552	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 15	Batch: 600/2000	Time: 452.7649	Loss: 0.0069
+Epoch: 15	Batch: 800/2000	Time: 578.2277	Loss: 0.0068
+[Ep 15 it 998	 PSNR: 38.6175	 SIDD: 0.9548	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 15	Batch: 1000/2000	Time: 768.5947	Loss: 0.0068
+Epoch: 15	Batch: 1200/2000	Time: 892.7175	Loss: 0.0067
+Epoch: 15	Batch: 1400/2000	Time: 1016.0055	Loss: 0.0068
+[Ep 15 it 1497	 PSNR: 38.7786	 SIDD: 0.9549	] ----  [best_Ep 13 best_it 1497 Best_PSNR 38.8046 Best_SSIM 0.9548] 
+Epoch: 15	Batch: 1600/2000	Time: 1203.9766	Loss: 0.0068
+Epoch: 15	Batch: 1800/2000	Time: 1327.1769	Loss: 0.0069
+[Ep 15 it 1996	 PSNR: 38.8056	 SIDD: 0.9549	] ----  [best_Ep 15 best_it 1996 Best_PSNR 38.8056 Best_SSIM 0.9549] 
+------------------------------------------------------------------
+Epoch: 15	Time: 1515.8436	Loss: 13.6326	LearningRate 0.000191
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 16	Batch: 200/2000	Time: 129.6126	Loss: 0.0070
+Epoch: 16	Batch: 400/2000	Time: 254.1348	Loss: 0.0068
+[Ep 16 it 499	 PSNR: 38.8928	 SIDD: 0.9549	] ----  [best_Ep 16 best_it 499 Best_PSNR 38.8928 Best_SSIM 0.9549] 
+Epoch: 16	Batch: 600/2000	Time: 451.2643	Loss: 0.0067
+Epoch: 16	Batch: 800/2000	Time: 576.0124	Loss: 0.0068
+[Ep 16 it 998	 PSNR: 38.8142	 SIDD: 0.9555	] ----  [best_Ep 16 best_it 499 Best_PSNR 38.8928 Best_SSIM 0.9549] 
+Epoch: 16	Batch: 1000/2000	Time: 765.8177	Loss: 0.0067
+Epoch: 16	Batch: 1200/2000	Time: 894.1323	Loss: 0.0069
+Epoch: 16	Batch: 1400/2000	Time: 1025.3206	Loss: 0.0069
+[Ep 16 it 1497	 PSNR: 38.5386	 SIDD: 0.9545	] ----  [best_Ep 16 best_it 499 Best_PSNR 38.8928 Best_SSIM 0.9549] 
+Epoch: 16	Batch: 1600/2000	Time: 1226.1297	Loss: 0.0067
+Epoch: 16	Batch: 1800/2000	Time: 1349.1401	Loss: 0.0067
+[Ep 16 it 1996	 PSNR: 38.9313	 SIDD: 0.9554	] ----  [best_Ep 16 best_it 1996 Best_PSNR 38.9313 Best_SSIM 0.9554] 
+------------------------------------------------------------------
+Epoch: 16	Time: 1549.1015	Loss: 13.6068	LearningRate 0.000190
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 17	Batch: 200/2000	Time: 128.7567	Loss: 0.0068
+Epoch: 17	Batch: 400/2000	Time: 257.4502	Loss: 0.0067
+[Ep 17 it 499	 PSNR: 38.8005	 SIDD: 0.9549	] ----  [best_Ep 16 best_it 1996 Best_PSNR 38.9313 Best_SSIM 0.9554] 
+Epoch: 17	Batch: 600/2000	Time: 453.9502	Loss: 0.0067
+Epoch: 17	Batch: 800/2000	Time: 578.3721	Loss: 0.0068
+[Ep 17 it 998	 PSNR: 38.7292	 SIDD: 0.9548	] ----  [best_Ep 16 best_it 1996 Best_PSNR 38.9313 Best_SSIM 0.9554] 
+Epoch: 17	Batch: 1000/2000	Time: 776.5757	Loss: 0.0067
+Epoch: 17	Batch: 1200/2000	Time: 903.1625	Loss: 0.0068
+Epoch: 17	Batch: 1400/2000	Time: 1028.4121	Loss: 0.0068
+[Ep 17 it 1497	 PSNR: 38.8331	 SIDD: 0.9552	] ----  [best_Ep 16 best_it 1996 Best_PSNR 38.9313 Best_SSIM 0.9554] 
+Epoch: 17	Batch: 1600/2000	Time: 1223.6294	Loss: 0.0068
+Epoch: 17	Batch: 1800/2000	Time: 1348.2722	Loss: 0.0067
+[Ep 17 it 1996	 PSNR: 38.9373	 SIDD: 0.9555	] ----  [best_Ep 17 best_it 1996 Best_PSNR 38.9373 Best_SSIM 0.9555] 
+------------------------------------------------------------------
+Epoch: 17	Time: 1547.3827	Loss: 13.5005	LearningRate 0.000188
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 18	Batch: 200/2000	Time: 134.9203	Loss: 0.0066
+Epoch: 18	Batch: 400/2000	Time: 258.5282	Loss: 0.0067
+[Ep 18 it 499	 PSNR: 38.8454	 SIDD: 0.9549	] ----  [best_Ep 17 best_it 1996 Best_PSNR 38.9373 Best_SSIM 0.9555] 
+Epoch: 18	Batch: 600/2000	Time: 456.0309	Loss: 0.0068
+Epoch: 18	Batch: 800/2000	Time: 582.4108	Loss: 0.0067
+[Ep 18 it 998	 PSNR: 38.9195	 SIDD: 0.9552	] ----  [best_Ep 17 best_it 1996 Best_PSNR 38.9373 Best_SSIM 0.9555] 
+Epoch: 18	Batch: 1000/2000	Time: 781.9562	Loss: 0.0067
+Epoch: 18	Batch: 1200/2000	Time: 907.5830	Loss: 0.0068
+Epoch: 18	Batch: 1400/2000	Time: 1033.9978	Loss: 0.0067
+[Ep 18 it 1497	 PSNR: 38.9604	 SIDD: 0.9556	] ----  [best_Ep 18 best_it 1497 Best_PSNR 38.9604 Best_SSIM 0.9556] 
+Epoch: 18	Batch: 1600/2000	Time: 1230.9158	Loss: 0.0067
+Epoch: 18	Batch: 1800/2000	Time: 1357.5377	Loss: 0.0068
+[Ep 18 it 1996	 PSNR: 38.8809	 SIDD: 0.9555	] ----  [best_Ep 18 best_it 1497 Best_PSNR 38.9604 Best_SSIM 0.9556] 
+------------------------------------------------------------------
+Epoch: 18	Time: 1557.5346	Loss: 13.4538	LearningRate 0.000187
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 19	Batch: 200/2000	Time: 133.3234	Loss: 0.0067
+Epoch: 19	Batch: 400/2000	Time: 263.5191	Loss: 0.0067
+[Ep 19 it 499	 PSNR: 38.9903	 SIDD: 0.9551	] ----  [best_Ep 19 best_it 499 Best_PSNR 38.9903 Best_SSIM 0.9551] 
+Epoch: 19	Batch: 600/2000	Time: 457.5464	Loss: 0.0066
+Epoch: 19	Batch: 800/2000	Time: 583.1935	Loss: 0.0066
+[Ep 19 it 998	 PSNR: 38.9148	 SIDD: 0.9552	] ----  [best_Ep 19 best_it 499 Best_PSNR 38.9903 Best_SSIM 0.9551] 
+Epoch: 19	Batch: 1000/2000	Time: 772.1176	Loss: 0.0067
+Epoch: 19	Batch: 1200/2000	Time: 896.0796	Loss: 0.0066
+Epoch: 19	Batch: 1400/2000	Time: 1019.8985	Loss: 0.0067
+[Ep 19 it 1497	 PSNR: 38.8448	 SIDD: 0.9554	] ----  [best_Ep 19 best_it 499 Best_PSNR 38.9903 Best_SSIM 0.9551] 
+Epoch: 19	Batch: 1600/2000	Time: 1218.9329	Loss: 0.0067
+Epoch: 19	Batch: 1800/2000	Time: 1345.0810	Loss: 0.0067
+[Ep 19 it 1996	 PSNR: 38.8066	 SIDD: 0.9552	] ----  [best_Ep 19 best_it 499 Best_PSNR 38.9903 Best_SSIM 0.9551] 
+------------------------------------------------------------------
+Epoch: 19	Time: 1545.9099	Loss: 13.3798	LearningRate 0.000185
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 20	Batch: 200/2000	Time: 128.8938	Loss: 0.0068
+Epoch: 20	Batch: 400/2000	Time: 255.9871	Loss: 0.0067
+[Ep 20 it 499	 PSNR: 39.0286	 SIDD: 0.9554	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 20	Batch: 600/2000	Time: 452.7750	Loss: 0.0066
+Epoch: 20	Batch: 800/2000	Time: 579.9714	Loss: 0.0067
+[Ep 20 it 998	 PSNR: 38.9291	 SIDD: 0.9556	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 20	Batch: 1000/2000	Time: 776.6488	Loss: 0.0067
+Epoch: 20	Batch: 1200/2000	Time: 899.5621	Loss: 0.0067
+Epoch: 20	Batch: 1400/2000	Time: 1027.5534	Loss: 0.0066
+[Ep 20 it 1497	 PSNR: 39.0187	 SIDD: 0.9553	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 20	Batch: 1600/2000	Time: 1224.0768	Loss: 0.0067
+Epoch: 20	Batch: 1800/2000	Time: 1348.6580	Loss: 0.0067
+[Ep 20 it 1996	 PSNR: 39.0153	 SIDD: 0.9557	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+------------------------------------------------------------------
+Epoch: 20	Time: 1548.1286	Loss: 13.3950	LearningRate 0.000184
+------------------------------------------------------------------
+
+Evaluation after every 499 Iterations !!!
+
+Epoch: 21	Batch: 200/2000	Time: 133.6980	Loss: 0.0068
+Epoch: 21	Batch: 400/2000	Time: 258.1512	Loss: 0.0066
+[Ep 21 it 499	 PSNR: 38.9085	 SIDD: 0.9554	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 21	Batch: 600/2000	Time: 450.8389	Loss: 0.0067
+Epoch: 21	Batch: 800/2000	Time: 581.7318	Loss: 0.0068
+[Ep 21 it 998	 PSNR: 38.9553	 SIDD: 0.9555	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 21	Batch: 1000/2000	Time: 779.9396	Loss: 0.0067
+Epoch: 21	Batch: 1200/2000	Time: 903.3032	Loss: 0.0067
+Epoch: 21	Batch: 1400/2000	Time: 1032.4872	Loss: 0.0067
+[Ep 21 it 1497	 PSNR: 39.0166	 SIDD: 0.9556	] ----  [best_Ep 20 best_it 499 Best_PSNR 39.0286 Best_SSIM 0.9554] 
+Epoch: 21	Batch: 1600/2000	Time: 1228.9851	Loss: 0.0067
+Epoch: 21	Batch: 1800/2000	Time: 1352.9598	Loss: 0.0067
