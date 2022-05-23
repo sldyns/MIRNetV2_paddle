@@ -16,7 +16,7 @@ Learning Enriched Features for Fast Image Restoration and Enhancement  论文复
 
 验收标准：SIDD PSNR: 37, SSIM: 0.94
 
-训练20个epoch精度：SIDD PSNR: 39.0286, SSIM: 0.9554
+训练92个epoch精度：SIDD PSNR: 39.5286, SSIM: 0.9578
 
 ## 3. 数据集、预训练模型、文件结构
 
@@ -41,7 +41,7 @@ python generate_patches_SIDD.py --ps 256 --num_patches 300 --num_cores 10
 
 百度网盘：[下载链接](https://pan.baidu.com/s/1De3F22gOGCI_Y5uTaDhvnw)，提取码：el7x ，下好后放在文件夹 `pretrained_models` 下
 
-复现的模型，名为 `model_best.pdparams`.
+复现的模型，名为 `model_best.pdparams`，导出的模型参数包括 `model.pdmodel` 和 `model.pdiparams`.
 
 ### 文件结构
 
@@ -131,8 +131,8 @@ python test_denoising_sidd.py --weights ./pretrained_models/model_best.pdparams
 输出如下：
 
 ```
-PSNR: 39.0286
-SSIM: 0.9554
+PSNR: 39.5286
+SSIM: 0.9578
 ```
 
 接近了验收精度.
