@@ -8,20 +8,24 @@ Linux端基础训练推理功能测试的主程序为`test_train_inference_pytho
 
 | 算法名称 | 模型名称 | 单机单卡 | 单机多卡 | 多机多卡 |
 | -------- | -------- | -------- | -------- | -------- |
-| MIRNet_V2   | MIRNet_V2   | 正常训练 | -        | -        |
+| MIRNet   | MIRNet   | 正常训练 | -        | -        |
+| MIRNet_V2 | MIRNet_V2 | 正常训练 | - | - |
 
 - 推理相关：
 
 | 算法名称 | 模型名称 | 模型类型 | device  | batchsize |
 | -------- | -------- | -------- | ------- | --------- |
-| MIRNet_V2   | MIRNet_V2   | 正常模型 | GPU/CPU | 1         |
+| MIRNet   | MIRNet   | 正常模型 | GPU/CPU | 1         |
+| MIRNet_V2 | MIRNet_V2 | 正常模型 | GPU/CPU | 1 |
 
 ## 2 目录介绍
 
 ```
 test_tipc
     |--configs                              # 配置目录
-        |--MIRNet_V2                            # 模型名称
+        |--MIRNet_V2                        # MIRNetV1 模型
+            |--train_infer_python.txt       # 基础训练推理测试配置文件
+        |--MIRNet_V2                        # MIRNetV2 模型
             |--train_infer_python.txt       # 基础训练推理测试配置文件
     |--docs
         |--train_infer_python.md            # TIPC说明文档
@@ -59,7 +63,25 @@ bash test_tipc/prepare.sh ./test_tipc/configs/MIRNet_V2/train_infer_python.txt '
 1. 运行`prepare.sh` 准备测试所需数据和模型；
 2. 在项目根目录下，运行要测试的功能对应的测试脚本 `test_train_inference_python.sh`
 
+MIRNet V1:
+
 ```shell
+# MIRNet V1
+
+# 功能：准备数据
+# 格式：bash + 运行脚本 + 参数1: 配置文件选择 + 参数2: 模式选择
+bash test_tipc/prepare.sh ./test_tipc/configs/MIRNet_V1/train_infer_python.txt 'lite_train_lite_infer'
+
+# 功能：运行测试
+# 格式：bash + 运行脚本 + 参数1: 配置文件选择 + 参数2: 模式选择
+bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/MIRNet_V1/train_infer_python.txt 'lite_train_lite_infer'
+```
+
+MIRNet V2:
+
+```shell
+# MIRNet V2
+
 # 功能：准备数据
 # 格式：bash + 运行脚本 + 参数1: 配置文件选择 + 参数2: 模式选择
 bash test_tipc/prepare.sh ./test_tipc/configs/MIRNet_V2/train_infer_python.txt 'lite_train_lite_infer'
@@ -69,7 +91,7 @@ bash test_tipc/prepare.sh ./test_tipc/configs/MIRNet_V2/train_infer_python.txt '
 bash test_tipc/test_train_inference_python.sh ./test_tipc/configs/MIRNet_V2/train_infer_python.txt 'lite_train_lite_infer'
 ```
 
-输出结果如下，表示命令运行成功。
+以 MIRNet V2 为例，输出结果如下，表示命令运行成功。
 
 ```
 Run successfully with command - python train.py --data_dir ./test_tipc/data/SIDD_patches/train_mini/ --val_dir ./test_tipc/data/SIDD_patches/val_mini/ --log_dir=./test_tipc/output/MIRNet_V2/norm_train_gpus_0!  

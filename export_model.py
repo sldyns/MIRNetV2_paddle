@@ -1,4 +1,5 @@
 from networks.MIRNet_V2_model import MIRNet_v2
+from networks.MIRNet_model import MIRNet
 
 import os
 import argparse
@@ -9,13 +10,19 @@ import utils
 parser = argparse.ArgumentParser(description="MIRNet_test")
 parser.add_argument("--save-inference-dir", type=str, default="./output", help='path of model for export')
 parser.add_argument("--model-dir", type=str, default="model_best.pdparams", help='path of model checkpoint')
+parser.add_argument("--model", type=str, default="MIRNet", help='model for train')
 
 opt = parser.parse_args()
 
 
 def main(opt):
     # n_feat=48, n_RRG=4 or n_feat=64, n_RRG=3
-    model = MIRNet_v2(n_feat=64)
+
+    if opt.model == "MIRNet":
+        model = MIRNet()
+    else:
+        model = MIRNet_v2(n_feat=64)
+
     utils.load_checkpoint(model, opt.model_dir)
     print('Loaded trained params of model successfully.')
 

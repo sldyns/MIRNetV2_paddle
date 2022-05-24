@@ -1,5 +1,5 @@
 ===========================train_params===========================
-model_name:MIRNet_V2
+model_name:MIRNet
 python:python
 gpu_list:0
 use-gpu:True
@@ -11,18 +11,18 @@ train_model_name:model_best.pdparams
 --data-path:./test_tipc/data/SIDD_patches/train/
 ##
 trainer:norm_train
-norm_train:train.py --data_dir ./test_tipc/data/SIDD_patches/train_mini/ --val_dir ./test_tipc/data/SIDD_patches/val_mini/ --model MIRNetV2
+norm_train:train.py --data_dir ./test_tipc/data/SIDD_patches/train_mini/ --val_dir ./test_tipc/data/SIDD_patches/val_mini/ --model MIRNet
 ##
 ===========================eval_params===========================
-eval:predict.py --model_ckpt ./test_tipc/output/MIRNet_V2/norm_train_gpus_0/models/model_best.pdparams --data_path ./test_tipc/data/SIDD_patches/val_mini/ --model MIRNetV2
+eval:predict.py --model_ckpt ./test_tipc/output/MIRNet/norm_train_gpus_0/models/model_best.pdparams --data_path ./test_tipc/data/SIDD_patches/val_mini/ --model MIRNet
 ##
 ===========================infer_params===========================
 --save-inference-dir:./test_tipc/output/
 --pretrained:null
-norm_export:export_model.py --model-dir ./test_tipc/output/MIRNet_V2/norm_train_gpus_0/models/model_best.pdparams --model MIRNetV2
+norm_export:export_model.py --model-dir ./test_tipc/output/MIRNet/norm_train_gpus_0/models/model_best.pdparams --model MIRNet
 ##
-train_model:./test_tipc/output/MIRNet_V2/norm_train_gpus_0/models/model_best.pdparams
-infer_export:export_model.py --model-dir ./test_tipc/output/MIRNet_V2/norm_train_gpus_0/models/model_best.pdparams --model MIRNetV2
+train_model:./test_tipc/output/MIRNet/norm_train_gpus_0/models/model_best.pdparams
+infer_export:export_model.py --model-dir ./test_tipc/output/MIRNet/norm_train_gpus_0/models/model_best.pdparams --model MIRNet
 ##
 inference:infer.py
 --use-gpu:True|False

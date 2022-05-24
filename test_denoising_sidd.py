@@ -20,6 +20,8 @@ import paddle.nn.functional as F
 
 import scipy.io as sio
 from networks.MIRNet_V2_model import MIRNet_v2
+from networks.MIRNet_model import MIRNet
+
 from dataloaders.data_rgb import get_validation_data
 import utils
 from skimage import img_as_ubyte
@@ -34,6 +36,7 @@ parser.add_argument('--weights', default='./pretrained_models/model_denoising.pd
 parser.add_argument('--gpus', default='0', type=str, help='CUDA_VISIBLE_DEVICES')
 parser.add_argument('--bs', default=16, type=int, help='Batch size for dataloader')
 parser.add_argument('--save_images', action='store_true', help='Save denoised images in result directory')
+parser.add_argument("--model", type=str, default="MIRNet", help='model for train')
 
 args = parser.parse_args()
 
@@ -41,15 +44,18 @@ args = parser.parse_args()
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = args.gpus
 
-paddle.set_device('gpu:1')
+paddle.set_device('gpu:'+args.gpus)
 
 utils.mkdir(args.result_dir)
 
 test_dataset = get_validation_data(args.input_dir)
 test_loader = DataLoader(dataset=test_dataset, batch_size=args.bs, shuffle=False, num_workers=8, drop_last=False)
 
+if args.model == "MIRNet":
+    model_restoration = MIRNet()
+else:
+    model_restoration = MIRNet_v2(n_feat=64)
 
-model_restoration = MIRNet_v2(n_feat=64)
 
 utils.load_checkpoint(model_restoration,args.weights)
 print("===>Testing using weights: ", args.weights)

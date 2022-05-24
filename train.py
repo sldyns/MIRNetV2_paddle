@@ -18,13 +18,15 @@ from dataloaders.data_rgb import get_training_data, get_validation_data
 from utils import MixUp
 
 from networks.MIRNet_V2_model import MIRNet_v2
+from networks.MIRNet_model import MIRNet
+
 from losses import CharbonnierLoss
 import paddle.distributed as dist
 
 from visualdl import LogWriter
 
 
-parser = argparse.ArgumentParser(description="MIRNetV2_TIPC_train")
+parser = argparse.ArgumentParser(description="MIRNet_TIPC_train")
 parser.add_argument("--batchSize", type=int, default=16, help="Training batch size")
 parser.add_argument("--epochs", type=int, default=200, help="Number of training epochs")
 parser.add_argument("--lr", type=float, default=1e-3, help="Initial learning rate")
@@ -32,6 +34,7 @@ parser.add_argument("--data_dir", type=str, default="SIDD_patches/train/", help=
 parser.add_argument("--val_dir", type=str, default="SIDD_patches/val/", help="path of val dataset")
 parser.add_argument("--log_dir", type=str, default="output", help="path of save results")
 parser.add_argument("--patch_size", type=int, default=128, help="Training patch size")
+parser.add_argument("--model", type=str, default="MIRNet", help='model for train')
 
 opt = parser.parse_args()
 
@@ -59,7 +62,11 @@ def main():
         utils.mkdir(model_dir)
 
     ######### Model ###########
-    model = MIRNet_v2(n_feat=64)
+    if opt.model == "MIRNet":
+        model = MIRNet()
+    else:
+        model = MIRNet_v2(n_feat=64)
+
     model.train()
 
     ######### Scheduler ###########

@@ -1,0 +1,2192 @@
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:36: DeprecationWarning: NEAREST is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.NEAREST or Dither.NONE instead.
+  'nearest': Image.NEAREST,
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:37: DeprecationWarning: BILINEAR is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BILINEAR instead.
+  'bilinear': Image.BILINEAR,
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:38: DeprecationWarning: BICUBIC is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BICUBIC instead.
+  'bicubic': Image.BICUBIC,
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:39: DeprecationWarning: BOX is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.BOX instead.
+  'box': Image.BOX,
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:40: DeprecationWarning: LANCZOS is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.LANCZOS instead.
+  'lanczos': Image.LANCZOS,
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/vision/transforms/functional_pil.py:41: DeprecationWarning: HAMMING is deprecated and will be removed in Pillow 10 (2023-07-01). Use Resampling.HAMMING instead.
+  'hamming': Image.HAMMING
+server not ready, wait 3 sec to retry...
+not ready endpoints:['127.0.0.1:40884', '127.0.0.1:50998', '127.0.0.1:41532']
+I0518 10:15:04.008939  1937 nccl_context.cc:74] init nccl context nranks: 4 local rank: 0 gpu id: 0 ring id: 0
+W0518 10:15:04.913336  1937 device_context.cc:447] Please NOTE: device: 0, GPU Compute Capability: 7.0, Driver API Version: 10.1, Runtime API Version: 10.1
+W0518 10:15:04.924314  1937 device_context.cc:465] device: 0, cuDNN Version: 7.6.
+4
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/framework/io.py:415: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated, and in 3.8 it will stop working
+  if isinstance(obj, collections.Iterable) and not isinstance(obj, (
+/opt/_internal/cpython-3.7.0/lib/python3.7/site-packages/paddle/distributed/fleet/base/fleet_base.py:267: UserWarning: The dygraph parallel environment has been initialized.
+  "The dygraph parallel environment has been initialized.")
+I0518 10:15:18.173347  1937 nccl_context.cc:107] init nccl context nranks: 4 local rank: 0 gpu id: 0 ring id: 10
+2022-05-18 10:15:18,310-INFO: [topology.py:169:__init__] HybridParallelInfo: rank_id: 0, mp_degree: 1, sharding_degree: 1, pp_degree: 1, dp_degree: 4, mp_group: [0],  sharding_group: [0], pp_group: [0], dp_group: [0, 1, 2, 3], check/clip group: [0]
+------------------------------------------------------------------------------
+==> Start Training with learning rate: 6.666666666666667e-05
+------------------------------------------------------------------------------
+===> Start Epoch 1 End Epoch 61
+===> Loading datasets
+
+Evaluation after every 1499 Iterations !!!
+
+Epoch: 1	Batch: 200/6000	Time: 119.8368	Loss: 0.0290
+Epoch: 1	Batch: 400/6000	Time: 237.4188	Loss: 0.0148
+Epoch: 1	Batch: 600/6000	Time: 352.3371	Loss: 0.0132
+Epoch: 1	Batch: 800/6000	Time: 466.4887	Loss: 0.0118
+Epoch: 1	Batch: 1000/6000	Time: 581.9808	Loss: 0.0116
+Epoch: 1	Batch: 1200/6000	Time: 696.8505	Loss: 0.0116
+Epoch: 1	Batch: 1400/6000	Time: 811.6747	Loss: 0.0110
+[Ep 1 it 1499	 PSNR SIDD: 35.5655	] ----  [best_Ep_SIDD 1 best_it_SIDD 1499 Best_PSNR_SIDD 35.5655] 
+Epoch: 1	Batch: 1600/6000	Time: 1061.1398	Loss: 0.0106
+Epoch: 1	Batch: 1800/6000	Time: 1175.7967	Loss: 0.0103
+Epoch: 1	Batch: 2000/6000	Time: 1290.7342	Loss: 0.0103
+Epoch: 1	Batch: 2200/6000	Time: 1405.3205	Loss: 0.0099
+Epoch: 1	Batch: 2400/6000	Time: 1519.6941	Loss: 0.0095
+Epoch: 1	Batch: 2600/6000	Time: 1634.4210	Loss: 0.0094
+Epoch: 1	Batch: 2800/6000	Time: 1748.8928	Loss: 0.0092
+[Ep 1 it 2998	 PSNR SIDD: 37.3853	] ----  [best_Ep_SIDD 1 best_it_SIDD 2998 Best_PSNR_SIDD 37.3853] 
+Epoch: 1	Batch: 3000/6000	Time: 2000.9839	Loss: 0.0089
+Epoch: 1	Batch: 3200/6000	Time: 2116.3110	Loss: 0.0093
+Epoch: 1	Batch: 3400/6000	Time: 2231.1797	Loss: 0.0088
+Epoch: 1	Batch: 3600/6000	Time: 2345.1896	Loss: 0.0091
+Epoch: 1	Batch: 3800/6000	Time: 2459.8485	Loss: 0.0087
+Epoch: 1	Batch: 4000/6000	Time: 2574.1262	Loss: 0.0087
+Epoch: 1	Batch: 4200/6000	Time: 2688.8772	Loss: 0.0089
+Epoch: 1	Batch: 4400/6000	Time: 2804.5666	Loss: 0.0087
+[Ep 1 it 4497	 PSNR SIDD: 37.7743	] ----  [best_Ep_SIDD 1 best_it_SIDD 4497 Best_PSNR_SIDD 37.7743] 
+Epoch: 1	Batch: 4600/6000	Time: 3063.1034	Loss: 0.0088
+Epoch: 1	Batch: 4800/6000	Time: 3177.7643	Loss: 0.0088
+Epoch: 1	Batch: 5000/6000	Time: 3296.8594	Loss: 0.0085
+Epoch: 1	Batch: 5200/6000	Time: 3418.4135	Loss: 0.0084
+Epoch: 1	Batch: 5400/6000	Time: 3539.7784	Loss: 0.0084
+Epoch: 1	Batch: 5600/6000	Time: 3657.4503	Loss: 0.0083
+Epoch: 1	Batch: 5800/6000	Time: 3771.7528	Loss: 0.0084
+[Ep 1 it 5996	 PSNR SIDD: 38.0798	] ----  [best_Ep_SIDD 1 best_it_SIDD 5996 Best_PSNR_SIDD 38.0798] 
+------------------------------------------------------------------
+Epoch: 1	Time: 4022.9257	Loss: 62.2115	LearningRate 0.000133
+------------------------------------------------------------------
+Epoch: 2	Batch: 200/6000	Time: 121.2187	Loss: 0.0084
+Epoch: 2	Batch: 400/6000	Time: 238.2728	Loss: 0.0088
+Epoch: 2	Batch: 600/6000	Time: 354.0803	Loss: 0.0084
+Epoch: 2	Batch: 800/6000	Time: 470.4420	Loss: 0.0085
+Epoch: 2	Batch: 1000/6000	Time: 586.2217	Loss: 0.0082
+Epoch: 2	Batch: 1200/6000	Time: 700.6391	Loss: 0.0082
+Epoch: 2	Batch: 1400/6000	Time: 815.2810	Loss: 0.0082
+[Ep 2 it 1499	 PSNR SIDD: 38.2448	] ----  [best_Ep_SIDD 2 best_it_SIDD 1499 Best_PSNR_SIDD 38.2448] 
+Epoch: 2	Batch: 1600/6000	Time: 1067.1105	Loss: 0.0083
+Epoch: 2	Batch: 1800/6000	Time: 1182.0269	Loss: 0.0082
+Epoch: 2	Batch: 2000/6000	Time: 1296.6427	Loss: 0.0080
+Epoch: 2	Batch: 2200/6000	Time: 1411.0238	Loss: 0.0083
+Epoch: 2	Batch: 2400/6000	Time: 1525.3037	Loss: 0.0083
+Epoch: 2	Batch: 2600/6000	Time: 1639.8868	Loss: 0.0080
+Epoch: 2	Batch: 2800/6000	Time: 1755.3364	Loss: 0.0078
+[Ep 2 it 2998	 PSNR SIDD: 38.5568	] ----  [best_Ep_SIDD 2 best_it_SIDD 2998 Best_PSNR_SIDD 38.5568] 
+Epoch: 2	Batch: 3000/6000	Time: 2006.1481	Loss: 0.0082
+Epoch: 2	Batch: 3200/6000	Time: 2121.9240	Loss: 0.0080
+Epoch: 2	Batch: 3400/6000	Time: 2236.6806	Loss: 0.0075
+Epoch: 2	Batch: 3600/6000	Time: 2351.7538	Loss: 0.0080
+Epoch: 2	Batch: 3800/6000	Time: 2469.0251	Loss: 0.0078
+Epoch: 2	Batch: 4000/6000	Time: 2583.5984	Loss: 0.0078
+Epoch: 2	Batch: 4200/6000	Time: 2697.8562	Loss: 0.0077
+Epoch: 2	Batch: 4400/6000	Time: 2812.1023	Loss: 0.0079
+[Ep 2 it 4497	 PSNR SIDD: 38.5469	] ----  [best_Ep_SIDD 2 best_it_SIDD 2998 Best_PSNR_SIDD 38.5568] 
+Epoch: 2	Batch: 4600/6000	Time: 3058.6138	Loss: 0.0079
+Epoch: 2	Batch: 4800/6000	Time: 3172.5416	Loss: 0.0078
+Epoch: 2	Batch: 5000/6000	Time: 3287.2239	Loss: 0.0077
+Epoch: 2	Batch: 5200/6000	Time: 3401.6900	Loss: 0.0078
+Epoch: 2	Batch: 5400/6000	Time: 3516.0121	Loss: 0.0076
+Epoch: 2	Batch: 5600/6000	Time: 3630.6864	Loss: 0.0077
+Epoch: 2	Batch: 5800/6000	Time: 3745.7760	Loss: 0.0080
+[Ep 2 it 5996	 PSNR SIDD: 38.6775	] ----  [best_Ep_SIDD 2 best_it_SIDD 5996 Best_PSNR_SIDD 38.6775] 
+------------------------------------------------------------------
+Epoch: 2	Time: 3998.6410	Loss: 48.0961	LearningRate 0.000200
+------------------------------------------------------------------
+Epoch: 3	Batch: 200/6000	Time: 116.3578	Loss: 0.0080
+Epoch: 3	Batch: 400/6000	Time: 232.1119	Loss: 0.0079
+Epoch: 3	Batch: 600/6000	Time: 345.7481	Loss: 0.0077
+Epoch: 3	Batch: 800/6000	Time: 465.6354	Loss: 0.0077
+Epoch: 3	Batch: 1000/6000	Time: 584.2410	Loss: 0.0076
+Epoch: 3	Batch: 1200/6000	Time: 698.4815	Loss: 0.0077
+Epoch: 3	Batch: 1400/6000	Time: 816.4308	Loss: 0.0077
+[Ep 3 it 1499	 PSNR SIDD: 38.6129	] ----  [best_Ep_SIDD 2 best_it_SIDD 5996 Best_PSNR_SIDD 38.6775] 
+Epoch: 3	Batch: 1600/6000	Time: 1063.2306	Loss: 0.0078
+Epoch: 3	Batch: 1800/6000	Time: 1179.6789	Loss: 0.0077
+Epoch: 3	Batch: 2000/6000	Time: 1299.4493	Loss: 0.0076
+Epoch: 3	Batch: 2200/6000	Time: 1415.4621	Loss: 0.0078
+Epoch: 3	Batch: 2400/6000	Time: 1530.4016	Loss: 0.0077
+Epoch: 3	Batch: 2600/6000	Time: 1650.7991	Loss: 0.0075
+Epoch: 3	Batch: 2800/6000	Time: 1770.1437	Loss: 0.0077
+[Ep 3 it 2998	 PSNR SIDD: 38.8118	] ----  [best_Ep_SIDD 3 best_it_SIDD 2998 Best_PSNR_SIDD 38.8118] 
+Epoch: 3	Batch: 3000/6000	Time: 2025.8044	Loss: 0.0075
+Epoch: 3	Batch: 3200/6000	Time: 2140.4690	Loss: 0.0075
+Epoch: 3	Batch: 3400/6000	Time: 2255.1043	Loss: 0.0078
+Epoch: 3	Batch: 3600/6000	Time: 2369.4150	Loss: 0.0077
+Epoch: 3	Batch: 3800/6000	Time: 2483.1771	Loss: 0.0075
+Epoch: 3	Batch: 4000/6000	Time: 2598.0570	Loss: 0.0075
+Epoch: 3	Batch: 4200/6000	Time: 2712.2703	Loss: 0.0077
+Epoch: 3	Batch: 4400/6000	Time: 2826.8829	Loss: 0.0074
+[Ep 3 it 4497	 PSNR SIDD: 38.8428	] ----  [best_Ep_SIDD 3 best_it_SIDD 4497 Best_PSNR_SIDD 38.8428] 
+Epoch: 3	Batch: 4600/6000	Time: 3078.5335	Loss: 0.0075
+Epoch: 3	Batch: 4800/6000	Time: 3192.8843	Loss: 0.0076
+Epoch: 3	Batch: 5000/6000	Time: 3308.2421	Loss: 0.0075
+Epoch: 3	Batch: 5200/6000	Time: 3422.6629	Loss: 0.0077
+Epoch: 3	Batch: 5400/6000	Time: 3537.4679	Loss: 0.0074
+Epoch: 3	Batch: 5600/6000	Time: 3654.3577	Loss: 0.0074
+Epoch: 3	Batch: 5800/6000	Time: 3768.5698	Loss: 0.0075
+[Ep 3 it 5996	 PSNR SIDD: 38.9271	] ----  [best_Ep_SIDD 3 best_it_SIDD 5996 Best_PSNR_SIDD 38.9271] 
+------------------------------------------------------------------
+Epoch: 3	Time: 4018.8097	Loss: 45.7346	LearningRate 0.000200
+------------------------------------------------------------------
+Epoch: 4	Batch: 200/6000	Time: 116.0991	Loss: 0.0074
+Epoch: 4	Batch: 400/6000	Time: 229.8667	Loss: 0.0076
+Epoch: 4	Batch: 600/6000	Time: 344.0247	Loss: 0.0075
+Epoch: 4	Batch: 800/6000	Time: 459.0002	Loss: 0.0073
+Epoch: 4	Batch: 1000/6000	Time: 573.0609	Loss: 0.0078
+Epoch: 4	Batch: 1200/6000	Time: 687.2554	Loss: 0.0074
+Epoch: 4	Batch: 1400/6000	Time: 803.1137	Loss: 0.0077
+[Ep 4 it 1499	 PSNR SIDD: 38.8620	] ----  [best_Ep_SIDD 3 best_it_SIDD 5996 Best_PSNR_SIDD 38.9271] 
+Epoch: 4	Batch: 1600/6000	Time: 1050.3906	Loss: 0.0073
+Epoch: 4	Batch: 1800/6000	Time: 1164.9797	Loss: 0.0074
+Epoch: 4	Batch: 2000/6000	Time: 1279.5202	Loss: 0.0072
+Epoch: 4	Batch: 2200/6000	Time: 1394.1217	Loss: 0.0074
+Epoch: 4	Batch: 2400/6000	Time: 1509.0993	Loss: 0.0074
+Epoch: 4	Batch: 2600/6000	Time: 1623.8235	Loss: 0.0075
+Epoch: 4	Batch: 2800/6000	Time: 1738.0409	Loss: 0.0074
+[Ep 4 it 2998	 PSNR SIDD: 38.9030	] ----  [best_Ep_SIDD 3 best_it_SIDD 5996 Best_PSNR_SIDD 38.9271] 
+Epoch: 4	Batch: 3000/6000	Time: 1985.3571	Loss: 0.0073
+Epoch: 4	Batch: 3200/6000	Time: 2099.7999	Loss: 0.0073
+Epoch: 4	Batch: 3400/6000	Time: 2214.6978	Loss: 0.0073
+Epoch: 4	Batch: 3600/6000	Time: 2328.7356	Loss: 0.0074
+Epoch: 4	Batch: 3800/6000	Time: 2444.1146	Loss: 0.0073
+Epoch: 4	Batch: 4000/6000	Time: 2559.0765	Loss: 0.0075
+Epoch: 4	Batch: 4200/6000	Time: 2673.1888	Loss: 0.0076
+Epoch: 4	Batch: 4400/6000	Time: 2787.5252	Loss: 0.0072
+[Ep 4 it 4497	 PSNR SIDD: 38.9064	] ----  [best_Ep_SIDD 3 best_it_SIDD 5996 Best_PSNR_SIDD 38.9271] 
+Epoch: 4	Batch: 4600/6000	Time: 3033.8164	Loss: 0.0073
+Epoch: 4	Batch: 4800/6000	Time: 3152.6146	Loss: 0.0074
+Epoch: 4	Batch: 5000/6000	Time: 3271.4247	Loss: 0.0075
+Epoch: 4	Batch: 5200/6000	Time: 3385.9457	Loss: 0.0072
+Epoch: 4	Batch: 5400/6000	Time: 3502.2663	Loss: 0.0074
+Epoch: 4	Batch: 5600/6000	Time: 3617.3451	Loss: 0.0073
+Epoch: 4	Batch: 5800/6000	Time: 3735.3933	Loss: 0.0075
+[Ep 4 it 5996	 PSNR SIDD: 38.9537	] ----  [best_Ep_SIDD 4 best_it_SIDD 5996 Best_PSNR_SIDD 38.9537] 
+------------------------------------------------------------------
+Epoch: 4	Time: 3988.5228	Loss: 44.4020	LearningRate 0.000199
+------------------------------------------------------------------
+Epoch: 5	Batch: 200/6000	Time: 118.4063	Loss: 0.0074
+Epoch: 5	Batch: 400/6000	Time: 233.5260	Loss: 0.0072
+Epoch: 5	Batch: 600/6000	Time: 347.9690	Loss: 0.0075
+Epoch: 5	Batch: 800/6000	Time: 462.5023	Loss: 0.0075
+Epoch: 5	Batch: 1000/6000	Time: 577.0164	Loss: 0.0070
+Epoch: 5	Batch: 1200/6000	Time: 691.1719	Loss: 0.0073
+Epoch: 5	Batch: 1400/6000	Time: 806.2440	Loss: 0.0073
+[Ep 5 it 1499	 PSNR SIDD: 38.8973	] ----  [best_Ep_SIDD 4 best_it_SIDD 5996 Best_PSNR_SIDD 38.9537] 
+Epoch: 5	Batch: 1600/6000	Time: 1054.1152	Loss: 0.0075
+Epoch: 5	Batch: 1800/6000	Time: 1169.0271	Loss: 0.0071
+Epoch: 5	Batch: 2000/6000	Time: 1283.4789	Loss: 0.0072
+Epoch: 5	Batch: 2200/6000	Time: 1398.2355	Loss: 0.0072
+Epoch: 5	Batch: 2400/6000	Time: 1512.8117	Loss: 0.0073
+Epoch: 5	Batch: 2600/6000	Time: 1627.5719	Loss: 0.0070
+Epoch: 5	Batch: 2800/6000	Time: 1743.0667	Loss: 0.0074
+[Ep 5 it 2998	 PSNR SIDD: 39.0171	] ----  [best_Ep_SIDD 5 best_it_SIDD 2998 Best_PSNR_SIDD 39.0171] 
+Epoch: 5	Batch: 3000/6000	Time: 1992.4905	Loss: 0.0072
+Epoch: 5	Batch: 3200/6000	Time: 2107.7952	Loss: 0.0073
+Epoch: 5	Batch: 3400/6000	Time: 2222.9439	Loss: 0.0071
+Epoch: 5	Batch: 3600/6000	Time: 2337.4477	Loss: 0.0073
+Epoch: 5	Batch: 3800/6000	Time: 2453.1383	Loss: 0.0071
+Epoch: 5	Batch: 4000/6000	Time: 2567.1764	Loss: 0.0073
+Epoch: 5	Batch: 4200/6000	Time: 2681.3785	Loss: 0.0072
+Epoch: 5	Batch: 4400/6000	Time: 2796.1670	Loss: 0.0075
+[Ep 5 it 4497	 PSNR SIDD: 38.9760	] ----  [best_Ep_SIDD 5 best_it_SIDD 2998 Best_PSNR_SIDD 39.0171] 
+Epoch: 5	Batch: 4600/6000	Time: 3043.2845	Loss: 0.0071
+Epoch: 5	Batch: 4800/6000	Time: 3157.6638	Loss: 0.0074
+Epoch: 5	Batch: 5000/6000	Time: 3271.9981	Loss: 0.0072
+Epoch: 5	Batch: 5200/6000	Time: 3386.8414	Loss: 0.0071
+Epoch: 5	Batch: 5400/6000	Time: 3501.0705	Loss: 0.0070
+Epoch: 5	Batch: 5600/6000	Time: 3617.3763	Loss: 0.0072
+Epoch: 5	Batch: 5800/6000	Time: 3732.1937	Loss: 0.0071
+[Ep 5 it 5996	 PSNR SIDD: 39.2025	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+------------------------------------------------------------------
+Epoch: 5	Time: 3986.5833	Loss: 43.5063	LearningRate 0.000199
+------------------------------------------------------------------
+Epoch: 6	Batch: 200/6000	Time: 116.4345	Loss: 0.0068
+Epoch: 6	Batch: 400/6000	Time: 230.4678	Loss: 0.0068
+Epoch: 6	Batch: 600/6000	Time: 346.8930	Loss: 0.0070
+Epoch: 6	Batch: 800/6000	Time: 461.9508	Loss: 0.0069
+Epoch: 6	Batch: 1000/6000	Time: 576.1967	Loss: 0.0070
+Epoch: 6	Batch: 1200/6000	Time: 691.0189	Loss: 0.0069
+Epoch: 6	Batch: 1400/6000	Time: 805.6746	Loss: 0.0068
+[Ep 6 it 1499	 PSNR SIDD: 38.8376	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 6	Batch: 1600/6000	Time: 1052.5048	Loss: 0.0073
+Epoch: 6	Batch: 1800/6000	Time: 1167.2575	Loss: 0.0064
+Epoch: 6	Batch: 2000/6000	Time: 1279.0511	Loss: 0.0068
+Epoch: 6	Batch: 2200/6000	Time: 1387.4712	Loss: 0.0068
+Epoch: 6	Batch: 2400/6000	Time: 1496.5993	Loss: 0.0066
+Epoch: 6	Batch: 2600/6000	Time: 1605.2158	Loss: 0.0069
+Epoch: 6	Batch: 2800/6000	Time: 1721.8096	Loss: 0.0069
+[Ep 6 it 2998	 PSNR SIDD: 38.9784	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 6	Batch: 3000/6000	Time: 1964.6663	Loss: 0.0067
+Epoch: 6	Batch: 3200/6000	Time: 2074.4842	Loss: 0.0066
+Epoch: 6	Batch: 3400/6000	Time: 2184.4596	Loss: 0.0067
+Epoch: 6	Batch: 3600/6000	Time: 2294.3976	Loss: 0.0067
+Epoch: 6	Batch: 3800/6000	Time: 2409.6537	Loss: 0.0066
+Epoch: 6	Batch: 4000/6000	Time: 2525.2929	Loss: 0.0069
+Epoch: 6	Batch: 4200/6000	Time: 2641.4477	Loss: 0.0068
+Epoch: 6	Batch: 4400/6000	Time: 2758.1622	Loss: 0.0070
+[Ep 6 it 4497	 PSNR SIDD: 38.9972	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 6	Batch: 4600/6000	Time: 3006.4496	Loss: 0.0068
+Epoch: 6	Batch: 4800/6000	Time: 3122.9927	Loss: 0.0067
+Epoch: 6	Batch: 5000/6000	Time: 3239.7226	Loss: 0.0066
+Epoch: 6	Batch: 5200/6000	Time: 3354.7967	Loss: 0.0069
+Epoch: 6	Batch: 5400/6000	Time: 3470.7687	Loss: 0.0069
+Epoch: 6	Batch: 5600/6000	Time: 3585.8335	Loss: 0.0064
+Epoch: 6	Batch: 5800/6000	Time: 3700.8763	Loss: 0.0069
+[Ep 6 it 5996	 PSNR SIDD: 39.0209	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+------------------------------------------------------------------
+Epoch: 6	Time: 3945.3516	Loss: 40.6356	LearningRate 0.000198
+------------------------------------------------------------------
+Epoch: 7	Batch: 200/6000	Time: 111.4387	Loss: 0.0065
+Epoch: 7	Batch: 400/6000	Time: 223.9586	Loss: 0.0066
+Epoch: 7	Batch: 600/6000	Time: 334.0488	Loss: 0.0067
+Epoch: 7	Batch: 800/6000	Time: 449.1904	Loss: 0.0067
+Epoch: 7	Batch: 1000/6000	Time: 559.8838	Loss: 0.0065
+Epoch: 7	Batch: 1200/6000	Time: 670.5658	Loss: 0.0066
+Epoch: 7	Batch: 1400/6000	Time: 781.0561	Loss: 0.0067
+[Ep 7 it 1499	 PSNR SIDD: 39.0547	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 7	Batch: 1600/6000	Time: 1023.3834	Loss: 0.0067
+Epoch: 7	Batch: 1800/6000	Time: 1133.9657	Loss: 0.0067
+Epoch: 7	Batch: 2000/6000	Time: 1244.5641	Loss: 0.0065
+Epoch: 7	Batch: 2200/6000	Time: 1355.1500	Loss: 0.0065
+Epoch: 7	Batch: 2400/6000	Time: 1465.4276	Loss: 0.0069
+Epoch: 7	Batch: 2600/6000	Time: 1575.3845	Loss: 0.0066
+Epoch: 7	Batch: 2800/6000	Time: 1685.3066	Loss: 0.0067
+[Ep 7 it 2998	 PSNR SIDD: 39.1128	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 7	Batch: 3000/6000	Time: 1926.8463	Loss: 0.0066
+Epoch: 7	Batch: 3200/6000	Time: 2037.4224	Loss: 0.0063
+Epoch: 7	Batch: 3400/6000	Time: 2147.7172	Loss: 0.0065
+Epoch: 7	Batch: 3600/6000	Time: 2257.6840	Loss: 0.0067
+Epoch: 7	Batch: 3800/6000	Time: 2367.5412	Loss: 0.0067
+Epoch: 7	Batch: 4000/6000	Time: 2477.5125	Loss: 0.0064
+Epoch: 7	Batch: 4200/6000	Time: 2587.6113	Loss: 0.0068
+Epoch: 7	Batch: 4400/6000	Time: 2697.7993	Loss: 0.0067
+[Ep 7 it 4497	 PSNR SIDD: 39.1120	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 7	Batch: 4600/6000	Time: 2939.5584	Loss: 0.0066
+Epoch: 7	Batch: 4800/6000	Time: 3049.1395	Loss: 0.0065
+Epoch: 7	Batch: 5000/6000	Time: 3158.8301	Loss: 0.0066
+Epoch: 7	Batch: 5200/6000	Time: 3268.4829	Loss: 0.0067
+Epoch: 7	Batch: 5400/6000	Time: 3378.0110	Loss: 0.0065
+Epoch: 7	Batch: 5600/6000	Time: 3487.4352	Loss: 0.0067
+Epoch: 7	Batch: 5800/6000	Time: 3596.8815	Loss: 0.0065
+[Ep 7 it 5996	 PSNR SIDD: 39.1117	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+------------------------------------------------------------------
+Epoch: 7	Time: 3844.3347	Loss: 39.6244	LearningRate 0.000196
+------------------------------------------------------------------
+Epoch: 8	Batch: 200/6000	Time: 111.3783	Loss: 0.0066
+Epoch: 8	Batch: 400/6000	Time: 221.7123	Loss: 0.0066
+Epoch: 8	Batch: 600/6000	Time: 333.1054	Loss: 0.0064
+Epoch: 8	Batch: 800/6000	Time: 443.7629	Loss: 0.0069
+Epoch: 8	Batch: 1000/6000	Time: 554.0273	Loss: 0.0064
+Epoch: 8	Batch: 1200/6000	Time: 663.6945	Loss: 0.0067
+Epoch: 8	Batch: 1400/6000	Time: 773.6428	Loss: 0.0066
+[Ep 8 it 1499	 PSNR SIDD: 39.0762	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 8	Batch: 1600/6000	Time: 1017.3996	Loss: 0.0066
+Epoch: 8	Batch: 1800/6000	Time: 1132.3960	Loss: 0.0067
+Epoch: 8	Batch: 2000/6000	Time: 1242.2256	Loss: 0.0069
+Epoch: 8	Batch: 2200/6000	Time: 1352.2512	Loss: 0.0068
+Epoch: 8	Batch: 2400/6000	Time: 1461.9659	Loss: 0.0069
+Epoch: 8	Batch: 2600/6000	Time: 1572.2961	Loss: 0.0063
+Epoch: 8	Batch: 2800/6000	Time: 1682.4554	Loss: 0.0065
+[Ep 8 it 2998	 PSNR SIDD: 39.1988	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 8	Batch: 3000/6000	Time: 1924.2274	Loss: 0.0066
+Epoch: 8	Batch: 3200/6000	Time: 2035.4322	Loss: 0.0068
+Epoch: 8	Batch: 3400/6000	Time: 2145.0034	Loss: 0.0064
+Epoch: 8	Batch: 3600/6000	Time: 2255.8447	Loss: 0.0064
+Epoch: 8	Batch: 3800/6000	Time: 2365.9086	Loss: 0.0067
+Epoch: 8	Batch: 4000/6000	Time: 2475.8397	Loss: 0.0062
+Epoch: 8	Batch: 4200/6000	Time: 2586.2226	Loss: 0.0062
+Epoch: 8	Batch: 4400/6000	Time: 2696.5669	Loss: 0.0067
+[Ep 8 it 4497	 PSNR SIDD: 39.1200	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 8	Batch: 4600/6000	Time: 2938.4476	Loss: 0.0067
+Epoch: 8	Batch: 4800/6000	Time: 3048.3209	Loss: 0.0065
+Epoch: 8	Batch: 5000/6000	Time: 3158.2161	Loss: 0.0065
+Epoch: 8	Batch: 5200/6000	Time: 3268.4036	Loss: 0.0064
+Epoch: 8	Batch: 5400/6000	Time: 3378.8239	Loss: 0.0064
+Epoch: 8	Batch: 5600/6000	Time: 3489.2997	Loss: 0.0065
+Epoch: 8	Batch: 5800/6000	Time: 3599.6492	Loss: 0.0069
+[Ep 8 it 5996	 PSNR SIDD: 39.0586	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+------------------------------------------------------------------
+Epoch: 8	Time: 3841.5049	Loss: 39.3896	LearningRate 0.000195
+------------------------------------------------------------------
+Epoch: 9	Batch: 200/6000	Time: 110.8334	Loss: 0.0066
+Epoch: 9	Batch: 400/6000	Time: 220.9491	Loss: 0.0067
+Epoch: 9	Batch: 600/6000	Time: 329.8374	Loss: 0.0067
+Epoch: 9	Batch: 800/6000	Time: 445.6553	Loss: 0.0062
+Epoch: 9	Batch: 1000/6000	Time: 559.7447	Loss: 0.0066
+Epoch: 9	Batch: 1200/6000	Time: 669.3653	Loss: 0.0062
+Epoch: 9	Batch: 1400/6000	Time: 778.8684	Loss: 0.0064
+[Ep 9 it 1499	 PSNR SIDD: 39.1616	] ----  [best_Ep_SIDD 5 best_it_SIDD 5996 Best_PSNR_SIDD 39.2025] 
+Epoch: 9	Batch: 1600/6000	Time: 1020.5461	Loss: 0.0065
+Epoch: 9	Batch: 1800/6000	Time: 1130.5116	Loss: 0.0068
+Epoch: 9	Batch: 2000/6000	Time: 1240.3944	Loss: 0.0069
+Epoch: 9	Batch: 2200/6000	Time: 1350.2221	Loss: 0.0063
+Epoch: 9	Batch: 2400/6000	Time: 1460.1136	Loss: 0.0066
+Epoch: 9	Batch: 2600/6000	Time: 1569.8196	Loss: 0.0067
+Epoch: 9	Batch: 2800/6000	Time: 1679.7498	Loss: 0.0066
+[Ep 9 it 2998	 PSNR SIDD: 39.2210	] ----  [best_Ep_SIDD 9 best_it_SIDD 2998 Best_PSNR_SIDD 39.2210] 
+Epoch: 9	Batch: 3000/6000	Time: 1926.8124	Loss: 0.0063
+Epoch: 9	Batch: 3200/6000	Time: 2036.4911	Loss: 0.0067
+Epoch: 9	Batch: 3400/6000	Time: 2146.1555	Loss: 0.0067
+Epoch: 9	Batch: 3600/6000	Time: 2262.8749	Loss: 0.0063
+Epoch: 9	Batch: 3800/6000	Time: 2372.5551	Loss: 0.0066
+Epoch: 9	Batch: 4000/6000	Time: 2482.9210	Loss: 0.0064
+Epoch: 9	Batch: 4200/6000	Time: 2593.4326	Loss: 0.0067
+Epoch: 9	Batch: 4400/6000	Time: 2703.4095	Loss: 0.0064
+[Ep 9 it 4497	 PSNR SIDD: 39.0759	] ----  [best_Ep_SIDD 9 best_it_SIDD 2998 Best_PSNR_SIDD 39.2210] 
+Epoch: 9	Batch: 4600/6000	Time: 2945.3680	Loss: 0.0066
+Epoch: 9	Batch: 4800/6000	Time: 3059.0839	Loss: 0.0065
+Epoch: 9	Batch: 5000/6000	Time: 3169.4891	Loss: 0.0063
+Epoch: 9	Batch: 5200/6000	Time: 3280.0814	Loss: 0.0065
+Epoch: 9	Batch: 5400/6000	Time: 3390.4848	Loss: 0.0067
+Epoch: 9	Batch: 5600/6000	Time: 3501.0637	Loss: 0.0062
+Epoch: 9	Batch: 5800/6000	Time: 3611.8065	Loss: 0.0068
+[Ep 9 it 5996	 PSNR SIDD: 39.2814	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+------------------------------------------------------------------
+Epoch: 9	Time: 3857.3553	Loss: 39.2225	LearningRate 0.000193
+------------------------------------------------------------------
+Epoch: 10	Batch: 200/6000	Time: 110.8708	Loss: 0.0063
+Epoch: 10	Batch: 400/6000	Time: 220.8596	Loss: 0.0065
+Epoch: 10	Batch: 600/6000	Time: 331.3406	Loss: 0.0064
+Epoch: 10	Batch: 800/6000	Time: 447.6662	Loss: 0.0065
+Epoch: 10	Batch: 1000/6000	Time: 557.6108	Loss: 0.0068
+Epoch: 10	Batch: 1200/6000	Time: 667.8750	Loss: 0.0067
+Epoch: 10	Batch: 1400/6000	Time: 777.8993	Loss: 0.0065
+[Ep 10 it 1499	 PSNR SIDD: 39.2121	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 10	Batch: 1600/6000	Time: 1019.5658	Loss: 0.0067
+Epoch: 10	Batch: 1800/6000	Time: 1129.9589	Loss: 0.0065
+Epoch: 10	Batch: 2000/6000	Time: 1240.2808	Loss: 0.0063
+Epoch: 10	Batch: 2200/6000	Time: 1356.3628	Loss: 0.0065
+Epoch: 10	Batch: 2400/6000	Time: 1474.0881	Loss: 0.0064
+Epoch: 10	Batch: 2600/6000	Time: 1584.2505	Loss: 0.0068
+Epoch: 10	Batch: 2800/6000	Time: 1694.7869	Loss: 0.0066
+[Ep 10 it 2998	 PSNR SIDD: 38.9642	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 10	Batch: 3000/6000	Time: 1936.7425	Loss: 0.0065
+Epoch: 10	Batch: 3200/6000	Time: 2047.4199	Loss: 0.0065
+Epoch: 10	Batch: 3400/6000	Time: 2158.0137	Loss: 0.0066
+Epoch: 10	Batch: 3600/6000	Time: 2268.6026	Loss: 0.0064
+Epoch: 10	Batch: 3800/6000	Time: 2379.1557	Loss: 0.0065
+Epoch: 10	Batch: 4000/6000	Time: 2489.2443	Loss: 0.0062
+Epoch: 10	Batch: 4200/6000	Time: 2599.1922	Loss: 0.0070
+Epoch: 10	Batch: 4400/6000	Time: 2710.7713	Loss: 0.0067
+[Ep 10 it 4497	 PSNR SIDD: 39.2042	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 10	Batch: 4600/6000	Time: 2952.9822	Loss: 0.0065
+Epoch: 10	Batch: 4800/6000	Time: 3062.8460	Loss: 0.0065
+Epoch: 10	Batch: 5000/6000	Time: 3172.8258	Loss: 0.0066
+Epoch: 10	Batch: 5200/6000	Time: 3283.0730	Loss: 0.0064
+Epoch: 10	Batch: 5400/6000	Time: 3393.2223	Loss: 0.0065
+Epoch: 10	Batch: 5600/6000	Time: 3503.1664	Loss: 0.0063
+Epoch: 10	Batch: 5800/6000	Time: 3613.0327	Loss: 0.0063
+[Ep 10 it 5996	 PSNR SIDD: 39.1436	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+------------------------------------------------------------------
+Epoch: 10	Time: 3854.0623	Loss: 39.1008	LearningRate 0.000190
+------------------------------------------------------------------
+Epoch: 11	Batch: 200/6000	Time: 110.6090	Loss: 0.0066
+Epoch: 11	Batch: 400/6000	Time: 220.4658	Loss: 0.0065
+Epoch: 11	Batch: 600/6000	Time: 331.0288	Loss: 0.0062
+Epoch: 11	Batch: 800/6000	Time: 441.6069	Loss: 0.0062
+Epoch: 11	Batch: 1000/6000	Time: 552.2284	Loss: 0.0066
+Epoch: 11	Batch: 1200/6000	Time: 662.0392	Loss: 0.0063
+Epoch: 11	Batch: 1400/6000	Time: 777.1045	Loss: 0.0064
+[Ep 11 it 1499	 PSNR SIDD: 39.2657	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 11	Batch: 1600/6000	Time: 1024.7176	Loss: 0.0066
+Epoch: 11	Batch: 1800/6000	Time: 1134.8981	Loss: 0.0065
+Epoch: 11	Batch: 2000/6000	Time: 1244.9186	Loss: 0.0063
+Epoch: 11	Batch: 2200/6000	Time: 1354.7539	Loss: 0.0066
+Epoch: 11	Batch: 2400/6000	Time: 1464.7195	Loss: 0.0063
+Epoch: 11	Batch: 2600/6000	Time: 1574.6632	Loss: 0.0065
+Epoch: 11	Batch: 2800/6000	Time: 1684.4273	Loss: 0.0064
+[Ep 11 it 2998	 PSNR SIDD: 39.2464	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 11	Batch: 3000/6000	Time: 1926.6842	Loss: 0.0063
+Epoch: 11	Batch: 3200/6000	Time: 2036.1884	Loss: 0.0065
+Epoch: 11	Batch: 3400/6000	Time: 2146.7505	Loss: 0.0066
+Epoch: 11	Batch: 3600/6000	Time: 2256.6626	Loss: 0.0066
+Epoch: 11	Batch: 3800/6000	Time: 2369.0854	Loss: 0.0065
+Epoch: 11	Batch: 4000/6000	Time: 2486.3100	Loss: 0.0066
+Epoch: 11	Batch: 4200/6000	Time: 2603.4827	Loss: 0.0061
+Epoch: 11	Batch: 4400/6000	Time: 2720.6957	Loss: 0.0063
+[Ep 11 it 4497	 PSNR SIDD: 39.1438	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 11	Batch: 4600/6000	Time: 2969.1261	Loss: 0.0065
+Epoch: 11	Batch: 4800/6000	Time: 3084.5944	Loss: 0.0065
+Epoch: 11	Batch: 5000/6000	Time: 3198.0233	Loss: 0.0067
+Epoch: 11	Batch: 5200/6000	Time: 3308.3397	Loss: 0.0065
+Epoch: 11	Batch: 5400/6000	Time: 3418.6051	Loss: 0.0063
+Epoch: 11	Batch: 5600/6000	Time: 3529.0124	Loss: 0.0064
+Epoch: 11	Batch: 5800/6000	Time: 3639.4159	Loss: 0.0065
+[Ep 11 it 5996	 PSNR SIDD: 39.2660	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+------------------------------------------------------------------
+Epoch: 11	Time: 3881.4088	Loss: 38.6533	LearningRate 0.000188
+------------------------------------------------------------------
+Epoch: 12	Batch: 200/6000	Time: 111.7905	Loss: 0.0067
+Epoch: 12	Batch: 400/6000	Time: 221.9637	Loss: 0.0065
+Epoch: 12	Batch: 600/6000	Time: 331.8820	Loss: 0.0065
+Epoch: 12	Batch: 800/6000	Time: 443.8015	Loss: 0.0064
+Epoch: 12	Batch: 1000/6000	Time: 560.4299	Loss: 0.0065
+Epoch: 12	Batch: 1200/6000	Time: 678.1087	Loss: 0.0065
+Epoch: 12	Batch: 1400/6000	Time: 795.8079	Loss: 0.0062
+[Ep 12 it 1499	 PSNR SIDD: 39.2544	] ----  [best_Ep_SIDD 9 best_it_SIDD 5996 Best_PSNR_SIDD 39.2814] 
+Epoch: 12	Batch: 1600/6000	Time: 1039.7203	Loss: 0.0064
+Epoch: 12	Batch: 1800/6000	Time: 1151.5097	Loss: 0.0067
+Epoch: 12	Batch: 2000/6000	Time: 1262.0640	Loss: 0.0063
+Epoch: 12	Batch: 2200/6000	Time: 1372.4036	Loss: 0.0064
+Epoch: 12	Batch: 2400/6000	Time: 1483.2825	Loss: 0.0064
+Epoch: 12	Batch: 2600/6000	Time: 1593.6442	Loss: 0.0066
+Epoch: 12	Batch: 2800/6000	Time: 1703.9274	Loss: 0.0064
+[Ep 12 it 2998	 PSNR SIDD: 39.3231	] ----  [best_Ep_SIDD 12 best_it_SIDD 2998 Best_PSNR_SIDD 39.3231] 
+Epoch: 12	Batch: 3000/6000	Time: 1950.5362	Loss: 0.0064
+Epoch: 12	Batch: 3200/6000	Time: 2060.0975	Loss: 0.0065
+Epoch: 12	Batch: 3400/6000	Time: 2169.9797	Loss: 0.0066
+Epoch: 12	Batch: 3600/6000	Time: 2280.5390	Loss: 0.0065
+Epoch: 12	Batch: 3800/6000	Time: 2390.9573	Loss: 0.0066
+Epoch: 12	Batch: 4000/6000	Time: 2502.0121	Loss: 0.0066
+Epoch: 12	Batch: 4200/6000	Time: 2616.6084	Loss: 0.0064
+Epoch: 12	Batch: 4400/6000	Time: 2731.3647	Loss: 0.0065
+[Ep 12 it 4497	 PSNR SIDD: 39.2805	] ----  [best_Ep_SIDD 12 best_it_SIDD 2998 Best_PSNR_SIDD 39.3231] 
+Epoch: 12	Batch: 4600/6000	Time: 2979.6073	Loss: 0.0064
+Epoch: 12	Batch: 4800/6000	Time: 3095.1014	Loss: 0.0063
+Epoch: 12	Batch: 5000/6000	Time: 3210.8102	Loss: 0.0062
+Epoch: 12	Batch: 5200/6000	Time: 3326.4031	Loss: 0.0061
+Epoch: 12	Batch: 5400/6000	Time: 3437.7879	Loss: 0.0064
+Epoch: 12	Batch: 5600/6000	Time: 3549.8995	Loss: 0.0065
+Epoch: 12	Batch: 5800/6000	Time: 3660.0117	Loss: 0.0062
+[Ep 12 it 5996	 PSNR SIDD: 39.3129	] ----  [best_Ep_SIDD 12 best_it_SIDD 2998 Best_PSNR_SIDD 39.3231] 
+------------------------------------------------------------------
+Epoch: 12	Time: 3904.1775	Loss: 38.5495	LearningRate 0.000185
+------------------------------------------------------------------
+Epoch: 13	Batch: 200/6000	Time: 111.5100	Loss: 0.0064
+Epoch: 13	Batch: 400/6000	Time: 221.8948	Loss: 0.0063
+Epoch: 13	Batch: 600/6000	Time: 331.9690	Loss: 0.0064
+Epoch: 13	Batch: 800/6000	Time: 441.7516	Loss: 0.0064
+Epoch: 13	Batch: 1000/6000	Time: 552.1311	Loss: 0.0063
+Epoch: 13	Batch: 1200/6000	Time: 662.1452	Loss: 0.0064
+Epoch: 13	Batch: 1400/6000	Time: 772.3034	Loss: 0.0065
+[Ep 13 it 1499	 PSNR SIDD: 39.2899	] ----  [best_Ep_SIDD 12 best_it_SIDD 2998 Best_PSNR_SIDD 39.3231] 
+Epoch: 13	Batch: 1600/6000	Time: 1013.5706	Loss: 0.0064
+Epoch: 13	Batch: 1800/6000	Time: 1123.2681	Loss: 0.0065
+Epoch: 13	Batch: 2000/6000	Time: 1234.1565	Loss: 0.0066
+Epoch: 13	Batch: 2200/6000	Time: 1345.1886	Loss: 0.0063
+Epoch: 13	Batch: 2400/6000	Time: 1455.7907	Loss: 0.0062
+Epoch: 13	Batch: 2600/6000	Time: 1565.5088	Loss: 0.0065
+Epoch: 13	Batch: 2800/6000	Time: 1675.3624	Loss: 0.0065
+[Ep 13 it 2998	 PSNR SIDD: 39.2372	] ----  [best_Ep_SIDD 12 best_it_SIDD 2998 Best_PSNR_SIDD 39.3231] 
+Epoch: 13	Batch: 3000/6000	Time: 1916.8176	Loss: 0.0065
+Epoch: 13	Batch: 3200/6000	Time: 2026.7223	Loss: 0.0064
+Epoch: 13	Batch: 3400/6000	Time: 2137.1101	Loss: 0.0065
+Epoch: 13	Batch: 3600/6000	Time: 2247.3800	Loss: 0.0065
+Epoch: 13	Batch: 3800/6000	Time: 2357.0770	Loss: 0.0062
+Epoch: 13	Batch: 4000/6000	Time: 2466.9419	Loss: 0.0065
+Epoch: 13	Batch: 4200/6000	Time: 2577.0810	Loss: 0.0066
+Epoch: 13	Batch: 4400/6000	Time: 2687.2043	Loss: 0.0065
+[Ep 13 it 4497	 PSNR SIDD: 39.3510	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+Epoch: 13	Batch: 4600/6000	Time: 2935.7729	Loss: 0.0062
+Epoch: 13	Batch: 4800/6000	Time: 3045.7193	Loss: 0.0066
+Epoch: 13	Batch: 5000/6000	Time: 3155.5424	Loss: 0.0063
+Epoch: 13	Batch: 5200/6000	Time: 3265.9751	Loss: 0.0067
+Epoch: 13	Batch: 5400/6000	Time: 3376.5064	Loss: 0.0065
+Epoch: 13	Batch: 5600/6000	Time: 3487.1277	Loss: 0.0065
+Epoch: 13	Batch: 5800/6000	Time: 3597.3427	Loss: 0.0064
+[Ep 13 it 5996	 PSNR SIDD: 39.2550	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+------------------------------------------------------------------
+Epoch: 13	Time: 3839.6503	Loss: 38.6949	LearningRate 0.000182
+------------------------------------------------------------------
+Epoch: 14	Batch: 200/6000	Time: 111.8984	Loss: 0.0065
+Epoch: 14	Batch: 400/6000	Time: 222.1899	Loss: 0.0063
+Epoch: 14	Batch: 600/6000	Time: 333.4388	Loss: 0.0065
+Epoch: 14	Batch: 800/6000	Time: 444.0895	Loss: 0.0061
+Epoch: 14	Batch: 1000/6000	Time: 554.2521	Loss: 0.0065
+Epoch: 14	Batch: 1200/6000	Time: 664.5442	Loss: 0.0065
+Epoch: 14	Batch: 1400/6000	Time: 775.8603	Loss: 0.0065
+[Ep 14 it 1499	 PSNR SIDD: 39.2530	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+Epoch: 14	Batch: 1600/6000	Time: 1017.2337	Loss: 0.0067
+Epoch: 14	Batch: 1800/6000	Time: 1127.3873	Loss: 0.0064
+Epoch: 14	Batch: 2000/6000	Time: 1236.9830	Loss: 0.0064
+Epoch: 14	Batch: 2200/6000	Time: 1346.8134	Loss: 0.0065
+Epoch: 14	Batch: 2400/6000	Time: 1457.2778	Loss: 0.0066
+Epoch: 14	Batch: 2600/6000	Time: 1567.3611	Loss: 0.0062
+Epoch: 14	Batch: 2800/6000	Time: 1676.8662	Loss: 0.0065
+[Ep 14 it 2998	 PSNR SIDD: 39.1762	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+Epoch: 14	Batch: 3000/6000	Time: 1919.0178	Loss: 0.0065
+Epoch: 14	Batch: 3200/6000	Time: 2029.3712	Loss: 0.0064
+Epoch: 14	Batch: 3400/6000	Time: 2140.1052	Loss: 0.0064
+Epoch: 14	Batch: 3600/6000	Time: 2250.0033	Loss: 0.0066
+Epoch: 14	Batch: 3800/6000	Time: 2359.7362	Loss: 0.0062
+Epoch: 14	Batch: 4000/6000	Time: 2469.3605	Loss: 0.0062
+Epoch: 14	Batch: 4200/6000	Time: 2579.0416	Loss: 0.0065
+Epoch: 14	Batch: 4400/6000	Time: 2689.2169	Loss: 0.0063
+[Ep 14 it 4497	 PSNR SIDD: 39.3079	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+Epoch: 14	Batch: 4600/6000	Time: 2931.0796	Loss: 0.0061
+Epoch: 14	Batch: 4800/6000	Time: 3040.9273	Loss: 0.0063
+Epoch: 14	Batch: 5000/6000	Time: 3150.4090	Loss: 0.0066
+Epoch: 14	Batch: 5200/6000	Time: 3260.2188	Loss: 0.0064
+Epoch: 14	Batch: 5400/6000	Time: 3370.1079	Loss: 0.0062
+Epoch: 14	Batch: 5600/6000	Time: 3480.1802	Loss: 0.0064
+Epoch: 14	Batch: 5800/6000	Time: 3590.2272	Loss: 0.0063
+[Ep 14 it 5996	 PSNR SIDD: 39.3242	] ----  [best_Ep_SIDD 13 best_it_SIDD 4497 Best_PSNR_SIDD 39.3510] 
+------------------------------------------------------------------
+Epoch: 14	Time: 3832.7467	Loss: 38.3453	LearningRate 0.000179
+------------------------------------------------------------------
+Epoch: 15	Batch: 200/6000	Time: 113.7673	Loss: 0.0063
+Epoch: 15	Batch: 400/6000	Time: 224.5569	Loss: 0.0062
+Epoch: 15	Batch: 600/6000	Time: 335.3549	Loss: 0.0065
+Epoch: 15	Batch: 800/6000	Time: 446.0034	Loss: 0.0061
+Epoch: 15	Batch: 1000/6000	Time: 556.7156	Loss: 0.0065
+Epoch: 15	Batch: 1200/6000	Time: 671.7847	Loss: 0.0063
+Epoch: 15	Batch: 1400/6000	Time: 789.2563	Loss: 0.0064
+[Ep 15 it 1499	 PSNR SIDD: 39.3576	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 15	Batch: 1600/6000	Time: 1040.8378	Loss: 0.0066
+Epoch: 15	Batch: 1800/6000	Time: 1151.5469	Loss: 0.0066
+Epoch: 15	Batch: 2000/6000	Time: 1262.0920	Loss: 0.0065
+Epoch: 15	Batch: 2200/6000	Time: 1372.7029	Loss: 0.0065
+Epoch: 15	Batch: 2400/6000	Time: 1484.2754	Loss: 0.0064
+Epoch: 15	Batch: 2600/6000	Time: 1594.1703	Loss: 0.0062
+Epoch: 15	Batch: 2800/6000	Time: 1704.7736	Loss: 0.0062
+[Ep 15 it 2998	 PSNR SIDD: 39.3565	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 15	Batch: 3000/6000	Time: 1946.4893	Loss: 0.0068
+Epoch: 15	Batch: 3200/6000	Time: 2056.2983	Loss: 0.0061
+Epoch: 15	Batch: 3400/6000	Time: 2166.4332	Loss: 0.0066
+Epoch: 15	Batch: 3600/6000	Time: 2277.2866	Loss: 0.0062
+Epoch: 15	Batch: 3800/6000	Time: 2387.7024	Loss: 0.0063
+Epoch: 15	Batch: 4000/6000	Time: 2497.5631	Loss: 0.0063
+Epoch: 15	Batch: 4200/6000	Time: 2608.1787	Loss: 0.0063
+Epoch: 15	Batch: 4400/6000	Time: 2717.9678	Loss: 0.0063
+[Ep 15 it 4497	 PSNR SIDD: 39.2124	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 15	Batch: 4600/6000	Time: 2959.7983	Loss: 0.0063
+Epoch: 15	Batch: 4800/6000	Time: 3069.7370	Loss: 0.0061
+Epoch: 15	Batch: 5000/6000	Time: 3179.8035	Loss: 0.0064
+Epoch: 15	Batch: 5200/6000	Time: 3290.1176	Loss: 0.0068
+Epoch: 15	Batch: 5400/6000	Time: 3400.7787	Loss: 0.0064
+Epoch: 15	Batch: 5600/6000	Time: 3511.6449	Loss: 0.0064
+Epoch: 15	Batch: 5800/6000	Time: 3622.3823	Loss: 0.0065
+[Ep 15 it 5996	 PSNR SIDD: 39.2959	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+------------------------------------------------------------------
+Epoch: 15	Time: 3864.0557	Loss: 38.3063	LearningRate 0.000176
+------------------------------------------------------------------
+Epoch: 16	Batch: 200/6000	Time: 117.2389	Loss: 0.0064
+Epoch: 16	Batch: 400/6000	Time: 228.2235	Loss: 0.0063
+Epoch: 16	Batch: 600/6000	Time: 338.0667	Loss: 0.0065
+Epoch: 16	Batch: 800/6000	Time: 448.5074	Loss: 0.0063
+Epoch: 16	Batch: 1000/6000	Time: 558.8043	Loss: 0.0062
+Epoch: 16	Batch: 1200/6000	Time: 669.1398	Loss: 0.0065
+Epoch: 16	Batch: 1400/6000	Time: 779.1743	Loss: 0.0061
+[Ep 16 it 1499	 PSNR SIDD: 39.3565	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 16	Batch: 1600/6000	Time: 1021.3582	Loss: 0.0063
+Epoch: 16	Batch: 1800/6000	Time: 1131.2980	Loss: 0.0062
+Epoch: 16	Batch: 2000/6000	Time: 1241.4534	Loss: 0.0068
+Epoch: 16	Batch: 2200/6000	Time: 1359.2229	Loss: 0.0064
+Epoch: 16	Batch: 2400/6000	Time: 1476.7873	Loss: 0.0064
+Epoch: 16	Batch: 2600/6000	Time: 1593.7710	Loss: 0.0064
+Epoch: 16	Batch: 2800/6000	Time: 1710.8856	Loss: 0.0064
+[Ep 16 it 2998	 PSNR SIDD: 39.3470	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 16	Batch: 3000/6000	Time: 1958.4807	Loss: 0.0065
+Epoch: 16	Batch: 3200/6000	Time: 2069.0744	Loss: 0.0064
+Epoch: 16	Batch: 3400/6000	Time: 2186.0669	Loss: 0.0066
+Epoch: 16	Batch: 3600/6000	Time: 2301.1684	Loss: 0.0062
+Epoch: 16	Batch: 3800/6000	Time: 2411.5314	Loss: 0.0067
+Epoch: 16	Batch: 4000/6000	Time: 2521.6626	Loss: 0.0065
+Epoch: 16	Batch: 4200/6000	Time: 2631.8577	Loss: 0.0064
+Epoch: 16	Batch: 4400/6000	Time: 2742.0020	Loss: 0.0064
+[Ep 16 it 4497	 PSNR SIDD: 39.3525	] ----  [best_Ep_SIDD 15 best_it_SIDD 1499 Best_PSNR_SIDD 39.3576] 
+Epoch: 16	Batch: 4600/6000	Time: 2983.6412	Loss: 0.0062
+Epoch: 16	Batch: 4800/6000	Time: 3093.7835	Loss: 0.0063
+Epoch: 16	Batch: 5000/6000	Time: 3204.0332	Loss: 0.0066
+Epoch: 16	Batch: 5200/6000	Time: 3318.2411	Loss: 0.0062
+Epoch: 16	Batch: 5400/6000	Time: 3436.3621	Loss: 0.0064
+Epoch: 16	Batch: 5600/6000	Time: 3554.3118	Loss: 0.0065
+Epoch: 16	Batch: 5800/6000	Time: 3671.2973	Loss: 0.0063
+[Ep 16 it 5996	 PSNR SIDD: 39.3911	] ----  [best_Ep_SIDD 16 best_it_SIDD 5996 Best_PSNR_SIDD 39.3911] 
+------------------------------------------------------------------
+Epoch: 16	Time: 3919.6207	Loss: 38.3584	LearningRate 0.000172
+------------------------------------------------------------------
+Epoch: 17	Batch: 200/6000	Time: 111.4264	Loss: 0.0064
+Epoch: 17	Batch: 400/6000	Time: 221.1249	Loss: 0.0063
+Epoch: 17	Batch: 600/6000	Time: 331.0863	Loss: 0.0064
+Epoch: 17	Batch: 800/6000	Time: 445.2452	Loss: 0.0065
+Epoch: 17	Batch: 1000/6000	Time: 561.4851	Loss: 0.0064
+Epoch: 17	Batch: 1200/6000	Time: 675.0545	Loss: 0.0066
+Epoch: 17	Batch: 1400/6000	Time: 784.8036	Loss: 0.0066
+[Ep 17 it 1499	 PSNR SIDD: 39.3529	] ----  [best_Ep_SIDD 16 best_it_SIDD 5996 Best_PSNR_SIDD 39.3911] 
+Epoch: 17	Batch: 1600/6000	Time: 1026.5635	Loss: 0.0065
+Epoch: 17	Batch: 1800/6000	Time: 1136.8776	Loss: 0.0063
+Epoch: 17	Batch: 2000/6000	Time: 1248.1444	Loss: 0.0065
+Epoch: 17	Batch: 2200/6000	Time: 1358.0722	Loss: 0.0062
+Epoch: 17	Batch: 2400/6000	Time: 1468.0205	Loss: 0.0063
+Epoch: 17	Batch: 2600/6000	Time: 1578.1819	Loss: 0.0064
+Epoch: 17	Batch: 2800/6000	Time: 1689.0673	Loss: 0.0063
+[Ep 17 it 2998	 PSNR SIDD: 39.3029	] ----  [best_Ep_SIDD 16 best_it_SIDD 5996 Best_PSNR_SIDD 39.3911] 
+Epoch: 17	Batch: 3000/6000	Time: 1930.9664	Loss: 0.0063
+Epoch: 17	Batch: 3200/6000	Time: 2040.8666	Loss: 0.0062
+Epoch: 17	Batch: 3400/6000	Time: 2151.5506	Loss: 0.0066
+Epoch: 17	Batch: 3600/6000	Time: 2263.3996	Loss: 0.0066
+Epoch: 17	Batch: 3800/6000	Time: 2373.2285	Loss: 0.0066
+Epoch: 17	Batch: 4000/6000	Time: 2483.3883	Loss: 0.0062
+Epoch: 17	Batch: 4200/6000	Time: 2594.1898	Loss: 0.0063
+Epoch: 17	Batch: 4400/6000	Time: 2711.8373	Loss: 0.0065
+[Ep 17 it 4497	 PSNR SIDD: 39.3236	] ----  [best_Ep_SIDD 16 best_it_SIDD 5996 Best_PSNR_SIDD 39.3911] 
+Epoch: 17	Batch: 4600/6000	Time: 2961.4029	Loss: 0.0062
+Epoch: 17	Batch: 4800/6000	Time: 3079.2429	Loss: 0.0062
+Epoch: 17	Batch: 5000/6000	Time: 3196.7044	Loss: 0.0064
+Epoch: 17	Batch: 5200/6000	Time: 3314.0347	Loss: 0.0064
+Epoch: 17	Batch: 5400/6000	Time: 3425.2309	Loss: 0.0064
+Epoch: 17	Batch: 5600/6000	Time: 3535.5069	Loss: 0.0061
+Epoch: 17	Batch: 5800/6000	Time: 3645.5114	Loss: 0.0061
+[Ep 17 it 5996	 PSNR SIDD: 39.4019	] ----  [best_Ep_SIDD 17 best_it_SIDD 5996 Best_PSNR_SIDD 39.4019] 
+------------------------------------------------------------------
+Epoch: 17	Time: 3890.6991	Loss: 38.1985	LearningRate 0.000168
+------------------------------------------------------------------
+Epoch: 18	Batch: 200/6000	Time: 111.0284	Loss: 0.0065
+Epoch: 18	Batch: 400/6000	Time: 221.1262	Loss: 0.0063
+Epoch: 18	Batch: 600/6000	Time: 332.4877	Loss: 0.0061
+Epoch: 18	Batch: 800/6000	Time: 446.3438	Loss: 0.0063
+Epoch: 18	Batch: 1000/6000	Time: 556.6657	Loss: 0.0065
+Epoch: 18	Batch: 1200/6000	Time: 666.6596	Loss: 0.0063
+Epoch: 18	Batch: 1400/6000	Time: 776.4462	Loss: 0.0061
+[Ep 18 it 1499	 PSNR SIDD: 39.3213	] ----  [best_Ep_SIDD 17 best_it_SIDD 5996 Best_PSNR_SIDD 39.4019] 
+Epoch: 18	Batch: 1600/6000	Time: 1018.9254	Loss: 0.0062
+Epoch: 18	Batch: 1800/6000	Time: 1128.9119	Loss: 0.0061
+Epoch: 18	Batch: 2000/6000	Time: 1239.0231	Loss: 0.0062
+Epoch: 18	Batch: 2200/6000	Time: 1349.4519	Loss: 0.0064
+Epoch: 18	Batch: 2400/6000	Time: 1464.5150	Loss: 0.0063
+Epoch: 18	Batch: 2600/6000	Time: 1580.5869	Loss: 0.0063
+Epoch: 18	Batch: 2800/6000	Time: 1690.7057	Loss: 0.0063
+[Ep 18 it 2998	 PSNR SIDD: 39.4104	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 18	Batch: 3000/6000	Time: 1940.4458	Loss: 0.0063
+Epoch: 18	Batch: 3200/6000	Time: 2050.4971	Loss: 0.0065
+Epoch: 18	Batch: 3400/6000	Time: 2160.8588	Loss: 0.0064
+Epoch: 18	Batch: 3600/6000	Time: 2270.9728	Loss: 0.0065
+Epoch: 18	Batch: 3800/6000	Time: 2381.0262	Loss: 0.0063
+Epoch: 18	Batch: 4000/6000	Time: 2492.8571	Loss: 0.0063
+Epoch: 18	Batch: 4200/6000	Time: 2607.8002	Loss: 0.0063
+Epoch: 18	Batch: 4400/6000	Time: 2717.7343	Loss: 0.0061
+[Ep 18 it 4497	 PSNR SIDD: 39.3062	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 18	Batch: 4600/6000	Time: 2959.5732	Loss: 0.0062
+Epoch: 18	Batch: 4800/6000	Time: 3069.9278	Loss: 0.0062
+Epoch: 18	Batch: 5000/6000	Time: 3179.7608	Loss: 0.0063
+Epoch: 18	Batch: 5200/6000	Time: 3294.1997	Loss: 0.0064
+Epoch: 18	Batch: 5400/6000	Time: 3409.5091	Loss: 0.0063
+Epoch: 18	Batch: 5600/6000	Time: 3519.8685	Loss: 0.0063
+Epoch: 18	Batch: 5800/6000	Time: 3630.2058	Loss: 0.0063
+[Ep 18 it 5996	 PSNR SIDD: 39.1477	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+------------------------------------------------------------------
+Epoch: 18	Time: 3871.7202	Loss: 37.7847	LearningRate 0.000164
+------------------------------------------------------------------
+Epoch: 19	Batch: 200/6000	Time: 111.4754	Loss: 0.0064
+Epoch: 19	Batch: 400/6000	Time: 221.7028	Loss: 0.0061
+Epoch: 19	Batch: 600/6000	Time: 332.2777	Loss: 0.0063
+Epoch: 19	Batch: 800/6000	Time: 442.6707	Loss: 0.0062
+Epoch: 19	Batch: 1000/6000	Time: 554.3378	Loss: 0.0062
+Epoch: 19	Batch: 1200/6000	Time: 669.6690	Loss: 0.0063
+Epoch: 19	Batch: 1400/6000	Time: 780.5543	Loss: 0.0064
+[Ep 19 it 1499	 PSNR SIDD: 39.3341	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 19	Batch: 1600/6000	Time: 1023.2132	Loss: 0.0058
+Epoch: 19	Batch: 1800/6000	Time: 1133.8417	Loss: 0.0067
+Epoch: 19	Batch: 2000/6000	Time: 1246.0089	Loss: 0.0064
+Epoch: 19	Batch: 2200/6000	Time: 1356.8139	Loss: 0.0062
+Epoch: 19	Batch: 2400/6000	Time: 1467.5585	Loss: 0.0062
+Epoch: 19	Batch: 2600/6000	Time: 1578.2957	Loss: 0.0063
+Epoch: 19	Batch: 2800/6000	Time: 1688.6261	Loss: 0.0064
+[Ep 19 it 2998	 PSNR SIDD: 39.3913	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 19	Batch: 3000/6000	Time: 1930.7896	Loss: 0.0063
+Epoch: 19	Batch: 3200/6000	Time: 2040.7299	Loss: 0.0062
+Epoch: 19	Batch: 3400/6000	Time: 2150.4558	Loss: 0.0062
+Epoch: 19	Batch: 3600/6000	Time: 2260.6727	Loss: 0.0064
+Epoch: 19	Batch: 3800/6000	Time: 2378.0991	Loss: 0.0060
+Epoch: 19	Batch: 4000/6000	Time: 2492.3396	Loss: 0.0065
+Epoch: 19	Batch: 4200/6000	Time: 2603.1103	Loss: 0.0063
+Epoch: 19	Batch: 4400/6000	Time: 2713.7038	Loss: 0.0062
+[Ep 19 it 4497	 PSNR SIDD: 39.3959	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 19	Batch: 4600/6000	Time: 2957.6937	Loss: 0.0063
+Epoch: 19	Batch: 4800/6000	Time: 3074.7586	Loss: 0.0063
+Epoch: 19	Batch: 5000/6000	Time: 3186.8005	Loss: 0.0063
+Epoch: 19	Batch: 5200/6000	Time: 3296.4623	Loss: 0.0066
+Epoch: 19	Batch: 5400/6000	Time: 3406.1981	Loss: 0.0064
+Epoch: 19	Batch: 5600/6000	Time: 3516.0232	Loss: 0.0064
+Epoch: 19	Batch: 5800/6000	Time: 3625.5271	Loss: 0.0065
+[Ep 19 it 5996	 PSNR SIDD: 39.3766	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+------------------------------------------------------------------
+Epoch: 19	Time: 3867.5472	Loss: 37.7974	LearningRate 0.000159
+------------------------------------------------------------------
+Epoch: 20	Batch: 200/6000	Time: 110.8920	Loss: 0.0062
+Epoch: 20	Batch: 400/6000	Time: 224.8341	Loss: 0.0065
+Epoch: 20	Batch: 600/6000	Time: 335.5404	Loss: 0.0062
+Epoch: 20	Batch: 800/6000	Time: 445.3552	Loss: 0.0063
+Epoch: 20	Batch: 1000/6000	Time: 555.2904	Loss: 0.0061
+Epoch: 20	Batch: 1200/6000	Time: 665.1433	Loss: 0.0064
+Epoch: 20	Batch: 1400/6000	Time: 775.1029	Loss: 0.0062
+[Ep 20 it 1499	 PSNR SIDD: 39.3876	] ----  [best_Ep_SIDD 18 best_it_SIDD 2998 Best_PSNR_SIDD 39.4104] 
+Epoch: 20	Batch: 1600/6000	Time: 1016.9755	Loss: 0.0062
+Epoch: 20	Batch: 1800/6000	Time: 1127.3187	Loss: 0.0063
+Epoch: 20	Batch: 2000/6000	Time: 1237.3170	Loss: 0.0062
+Epoch: 20	Batch: 2200/6000	Time: 1347.6591	Loss: 0.0063
+Epoch: 20	Batch: 2400/6000	Time: 1458.4714	Loss: 0.0063
+Epoch: 20	Batch: 2600/6000	Time: 1569.1360	Loss: 0.0065
+Epoch: 20	Batch: 2800/6000	Time: 1679.8804	Loss: 0.0064
+[Ep 20 it 2998	 PSNR SIDD: 39.4222	] ----  [best_Ep_SIDD 20 best_it_SIDD 2998 Best_PSNR_SIDD 39.4222] 
+Epoch: 20	Batch: 3000/6000	Time: 1929.7622	Loss: 0.0064
+Epoch: 20	Batch: 3200/6000	Time: 2040.1372	Loss: 0.0062
+Epoch: 20	Batch: 3400/6000	Time: 2151.7876	Loss: 0.0063
+Epoch: 20	Batch: 3600/6000	Time: 2262.1731	Loss: 0.0063
+Epoch: 20	Batch: 3800/6000	Time: 2372.4214	Loss: 0.0062
+Epoch: 20	Batch: 4000/6000	Time: 2482.6293	Loss: 0.0061
+Epoch: 20	Batch: 4200/6000	Time: 2593.0255	Loss: 0.0063
+Epoch: 20	Batch: 4400/6000	Time: 2703.0629	Loss: 0.0063
+[Ep 20 it 4497	 PSNR SIDD: 39.3970	] ----  [best_Ep_SIDD 20 best_it_SIDD 2998 Best_PSNR_SIDD 39.4222] 
+Epoch: 20	Batch: 4600/6000	Time: 2944.4267	Loss: 0.0064
+Epoch: 20	Batch: 4800/6000	Time: 3053.9886	Loss: 0.0064
+Epoch: 20	Batch: 5000/6000	Time: 3164.0347	Loss: 0.0061
+Epoch: 20	Batch: 5200/6000	Time: 3273.8870	Loss: 0.0064
+Epoch: 20	Batch: 5400/6000	Time: 3383.8421	Loss: 0.0062
+Epoch: 20	Batch: 5600/6000	Time: 3493.9539	Loss: 0.0065
+Epoch: 20	Batch: 5800/6000	Time: 3604.1998	Loss: 0.0062
+[Ep 20 it 5996	 PSNR SIDD: 39.3462	] ----  [best_Ep_SIDD 20 best_it_SIDD 2998 Best_PSNR_SIDD 39.4222] 
+------------------------------------------------------------------
+Epoch: 20	Time: 3845.0422	Loss: 37.6976	LearningRate 0.000155
+------------------------------------------------------------------
+Epoch: 21	Batch: 200/6000	Time: 111.1190	Loss: 0.0061
+Epoch: 21	Batch: 400/6000	Time: 221.1870	Loss: 0.0064
+Epoch: 21	Batch: 600/6000	Time: 330.8849	Loss: 0.0064
+Epoch: 21	Batch: 800/6000	Time: 440.6949	Loss: 0.0060
+Epoch: 21	Batch: 1000/6000	Time: 550.9467	Loss: 0.0062
+Epoch: 21	Batch: 1200/6000	Time: 661.1247	Loss: 0.0064
+Epoch: 21	Batch: 1400/6000	Time: 771.2504	Loss: 0.0063
+[Ep 21 it 1499	 PSNR SIDD: 39.4462	] ----  [best_Ep_SIDD 21 best_it_SIDD 1499 Best_PSNR_SIDD 39.4462] 
+Epoch: 21	Batch: 1600/6000	Time: 1019.3985	Loss: 0.0062
+Epoch: 21	Batch: 1800/6000	Time: 1129.5042	Loss: 0.0063
+Epoch: 21	Batch: 2000/6000	Time: 1239.5180	Loss: 0.0064
+Epoch: 21	Batch: 2200/6000	Time: 1349.3677	Loss: 0.0063
+Epoch: 21	Batch: 2400/6000	Time: 1459.3372	Loss: 0.0064
+Epoch: 21	Batch: 2600/6000	Time: 1571.9084	Loss: 0.0064
+Epoch: 21	Batch: 2800/6000	Time: 1682.5755	Loss: 0.0065
+[Ep 21 it 2998	 PSNR SIDD: 39.4092	] ----  [best_Ep_SIDD 21 best_it_SIDD 1499 Best_PSNR_SIDD 39.4462] 
+Epoch: 21	Batch: 3000/6000	Time: 1925.2026	Loss: 0.0063
+Epoch: 21	Batch: 3200/6000	Time: 2035.2813	Loss: 0.0064
+Epoch: 21	Batch: 3400/6000	Time: 2145.8297	Loss: 0.0063
+Epoch: 21	Batch: 3600/6000	Time: 2256.4042	Loss: 0.0060
+Epoch: 21	Batch: 3800/6000	Time: 2367.0139	Loss: 0.0062
+Epoch: 21	Batch: 4000/6000	Time: 2477.4437	Loss: 0.0063
+Epoch: 21	Batch: 4200/6000	Time: 2588.1764	Loss: 0.0061
+Epoch: 21	Batch: 4400/6000	Time: 2698.8161	Loss: 0.0064
+[Ep 21 it 4497	 PSNR SIDD: 39.3130	] ----  [best_Ep_SIDD 21 best_it_SIDD 1499 Best_PSNR_SIDD 39.4462] 
+Epoch: 21	Batch: 4600/6000	Time: 2940.3040	Loss: 0.0062
+Epoch: 21	Batch: 4800/6000	Time: 3050.4060	Loss: 0.0064
+Epoch: 21	Batch: 5000/6000	Time: 3161.7793	Loss: 0.0063
+Epoch: 21	Batch: 5200/6000	Time: 3271.6192	Loss: 0.0064
+Epoch: 21	Batch: 5400/6000	Time: 3381.7354	Loss: 0.0062
+Epoch: 21	Batch: 5600/6000	Time: 3491.5844	Loss: 0.0064
+Epoch: 21	Batch: 5800/6000	Time: 3601.0809	Loss: 0.0063
+[Ep 21 it 5996	 PSNR SIDD: 39.3910	] ----  [best_Ep_SIDD 21 best_it_SIDD 1499 Best_PSNR_SIDD 39.4462] 
+------------------------------------------------------------------
+Epoch: 21	Time: 3842.2167	Loss: 37.6848	LearningRate 0.000150
+------------------------------------------------------------------
+Epoch: 22	Batch: 200/6000	Time: 110.5330	Loss: 0.0065
+Epoch: 22	Batch: 400/6000	Time: 220.5986	Loss: 0.0063
+Epoch: 22	Batch: 600/6000	Time: 330.6843	Loss: 0.0065
+Epoch: 22	Batch: 800/6000	Time: 440.9571	Loss: 0.0064
+Epoch: 22	Batch: 1000/6000	Time: 550.8943	Loss: 0.0060
+Epoch: 22	Batch: 1200/6000	Time: 660.5889	Loss: 0.0064
+Epoch: 22	Batch: 1400/6000	Time: 770.4923	Loss: 0.0064
+[Ep 22 it 1499	 PSNR SIDD: 39.3209	] ----  [best_Ep_SIDD 21 best_it_SIDD 1499 Best_PSNR_SIDD 39.4462] 
+Epoch: 22	Batch: 1600/6000	Time: 1011.8454	Loss: 0.0063
+Epoch: 22	Batch: 1800/6000	Time: 1121.5957	Loss: 0.0061
+Epoch: 22	Batch: 2000/6000	Time: 1231.6734	Loss: 0.0063
+Epoch: 22	Batch: 2200/6000	Time: 1343.0556	Loss: 0.0063
+Epoch: 22	Batch: 2400/6000	Time: 1453.3226	Loss: 0.0063
+Epoch: 22	Batch: 2600/6000	Time: 1568.1343	Loss: 0.0063
+Epoch: 22	Batch: 2800/6000	Time: 1683.9879	Loss: 0.0063
+[Ep 22 it 2998	 PSNR SIDD: 39.4902	] ----  [best_Ep_SIDD 22 best_it_SIDD 2998 Best_PSNR_SIDD 39.4902] 
+Epoch: 22	Batch: 3000/6000	Time: 1930.1161	Loss: 0.0060
+Epoch: 22	Batch: 3200/6000	Time: 2040.7185	Loss: 0.0063
+Epoch: 22	Batch: 3400/6000	Time: 2151.4699	Loss: 0.0061
+Epoch: 22	Batch: 3600/6000	Time: 2261.8415	Loss: 0.0062
+Epoch: 22	Batch: 3800/6000	Time: 2372.4147	Loss: 0.0063
+Epoch: 22	Batch: 4000/6000	Time: 2482.6621	Loss: 0.0062
+Epoch: 22	Batch: 4200/6000	Time: 2592.6017	Loss: 0.0064
+Epoch: 22	Batch: 4400/6000	Time: 2702.9183	Loss: 0.0062
+[Ep 22 it 4497	 PSNR SIDD: 39.4203	] ----  [best_Ep_SIDD 22 best_it_SIDD 2998 Best_PSNR_SIDD 39.4902] 
+Epoch: 22	Batch: 4600/6000	Time: 2946.6526	Loss: 0.0063
+Epoch: 22	Batch: 4800/6000	Time: 3056.6035	Loss: 0.0062
+Epoch: 22	Batch: 5000/6000	Time: 3166.6688	Loss: 0.0061
+Epoch: 22	Batch: 5200/6000	Time: 3276.5598	Loss: 0.0065
+Epoch: 22	Batch: 5400/6000	Time: 3386.5314	Loss: 0.0064
+Epoch: 22	Batch: 5600/6000	Time: 3496.8196	Loss: 0.0065
+Epoch: 22	Batch: 5800/6000	Time: 3607.0870	Loss: 0.0062
+[Ep 22 it 5996	 PSNR SIDD: 39.3879	] ----  [best_Ep_SIDD 22 best_it_SIDD 2998 Best_PSNR_SIDD 39.4902] 
+------------------------------------------------------------------
+Epoch: 22	Time: 3848.6329	Loss: 37.6998	LearningRate 0.000145
+------------------------------------------------------------------
+Epoch: 23	Batch: 200/6000	Time: 111.5453	Loss: 0.0062
+Epoch: 23	Batch: 400/6000	Time: 221.8753	Loss: 0.0064
+Epoch: 23	Batch: 600/6000	Time: 332.5199	Loss: 0.0063
+Epoch: 23	Batch: 800/6000	Time: 443.1304	Loss: 0.0062
+Epoch: 23	Batch: 1000/6000	Time: 554.1410	Loss: 0.0062
+Epoch: 23	Batch: 1200/6000	Time: 664.5011	Loss: 0.0063
+Epoch: 23	Batch: 1400/6000	Time: 779.4531	Loss: 0.0065
+[Ep 23 it 1499	 PSNR SIDD: 39.4016	] ----  [best_Ep_SIDD 22 best_it_SIDD 2998 Best_PSNR_SIDD 39.4902] 
+Epoch: 23	Batch: 1600/6000	Time: 1028.0526	Loss: 0.0061
+Epoch: 23	Batch: 1800/6000	Time: 1138.7290	Loss: 0.0060
+Epoch: 23	Batch: 2000/6000	Time: 1249.2356	Loss: 0.0062
+Epoch: 23	Batch: 2200/6000	Time: 1359.4859	Loss: 0.0060
+Epoch: 23	Batch: 2400/6000	Time: 1470.0617	Loss: 0.0060
+Epoch: 23	Batch: 2600/6000	Time: 1580.8071	Loss: 0.0062
+Epoch: 23	Batch: 2800/6000	Time: 1691.1254	Loss: 0.0062
+[Ep 23 it 2998	 PSNR SIDD: 39.4264	] ----  [best_Ep_SIDD 22 best_it_SIDD 2998 Best_PSNR_SIDD 39.4902] 
+Epoch: 23	Batch: 3000/6000	Time: 1934.2576	Loss: 0.0063
+Epoch: 23	Batch: 3200/6000	Time: 2051.0789	Loss: 0.0061
+Epoch: 23	Batch: 3400/6000	Time: 2163.4974	Loss: 0.0062
+Epoch: 23	Batch: 3600/6000	Time: 2272.6712	Loss: 0.0063
+Epoch: 23	Batch: 3800/6000	Time: 2381.5599	Loss: 0.0060
+Epoch: 23	Batch: 4000/6000	Time: 2491.6918	Loss: 0.0063
+Epoch: 23	Batch: 4200/6000	Time: 2601.3768	Loss: 0.0063
+Epoch: 23	Batch: 4400/6000	Time: 2711.2621	Loss: 0.0061
+[Ep 23 it 4497	 PSNR SIDD: 39.5017	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 23	Batch: 4600/6000	Time: 2957.9519	Loss: 0.0062
+Epoch: 23	Batch: 4800/6000	Time: 3067.0207	Loss: 0.0063
+Epoch: 23	Batch: 5000/6000	Time: 3176.3357	Loss: 0.0064
+Epoch: 23	Batch: 5200/6000	Time: 3288.7747	Loss: 0.0063
+Epoch: 23	Batch: 5400/6000	Time: 3403.8691	Loss: 0.0061
+Epoch: 23	Batch: 5600/6000	Time: 3516.1143	Loss: 0.0061
+Epoch: 23	Batch: 5800/6000	Time: 3632.7604	Loss: 0.0063
+[Ep 23 it 5996	 PSNR SIDD: 39.4264	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+------------------------------------------------------------------
+Epoch: 23	Time: 3876.4220	Loss: 37.3516	LearningRate 0.000140
+------------------------------------------------------------------
+Epoch: 24	Batch: 200/6000	Time: 110.9774	Loss: 0.0064
+Epoch: 24	Batch: 400/6000	Time: 220.9349	Loss: 0.0064
+Epoch: 24	Batch: 600/6000	Time: 330.4593	Loss: 0.0063
+Epoch: 24	Batch: 800/6000	Time: 440.1327	Loss: 0.0060
+Epoch: 24	Batch: 1000/6000	Time: 550.1047	Loss: 0.0064
+Epoch: 24	Batch: 1200/6000	Time: 660.2001	Loss: 0.0062
+Epoch: 24	Batch: 1400/6000	Time: 770.1459	Loss: 0.0063
+[Ep 24 it 1499	 PSNR SIDD: 39.3345	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 24	Batch: 1600/6000	Time: 1011.6185	Loss: 0.0062
+Epoch: 24	Batch: 1800/6000	Time: 1121.2020	Loss: 0.0065
+Epoch: 24	Batch: 2000/6000	Time: 1231.2375	Loss: 0.0059
+Epoch: 24	Batch: 2200/6000	Time: 1341.0976	Loss: 0.0063
+Epoch: 24	Batch: 2400/6000	Time: 1450.6636	Loss: 0.0062
+Epoch: 24	Batch: 2600/6000	Time: 1560.5467	Loss: 0.0065
+Epoch: 24	Batch: 2800/6000	Time: 1671.0228	Loss: 0.0062
+[Ep 24 it 2998	 PSNR SIDD: 39.4559	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 24	Batch: 3000/6000	Time: 1913.1061	Loss: 0.0062
+Epoch: 24	Batch: 3200/6000	Time: 2023.4955	Loss: 0.0062
+Epoch: 24	Batch: 3400/6000	Time: 2133.7335	Loss: 0.0061
+Epoch: 24	Batch: 3600/6000	Time: 2243.6406	Loss: 0.0061
+Epoch: 24	Batch: 3800/6000	Time: 2353.8405	Loss: 0.0063
+Epoch: 24	Batch: 4000/6000	Time: 2464.0266	Loss: 0.0061
+Epoch: 24	Batch: 4200/6000	Time: 2574.8053	Loss: 0.0061
+Epoch: 24	Batch: 4400/6000	Time: 2686.3860	Loss: 0.0063
+[Ep 24 it 4497	 PSNR SIDD: 39.4791	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 24	Batch: 4600/6000	Time: 2928.3582	Loss: 0.0062
+Epoch: 24	Batch: 4800/6000	Time: 3039.4026	Loss: 0.0064
+Epoch: 24	Batch: 5000/6000	Time: 3150.3675	Loss: 0.0062
+Epoch: 24	Batch: 5200/6000	Time: 3260.0963	Loss: 0.0064
+Epoch: 24	Batch: 5400/6000	Time: 3369.8024	Loss: 0.0062
+Epoch: 24	Batch: 5600/6000	Time: 3479.9681	Loss: 0.0062
+Epoch: 24	Batch: 5800/6000	Time: 3596.7682	Loss: 0.0063
+[Ep 24 it 5996	 PSNR SIDD: 39.4267	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+------------------------------------------------------------------
+Epoch: 24	Time: 3845.3457	Loss: 37.4496	LearningRate 0.000135
+------------------------------------------------------------------
+Epoch: 25	Batch: 200/6000	Time: 111.1386	Loss: 0.0063
+Epoch: 25	Batch: 400/6000	Time: 221.1985	Loss: 0.0061
+Epoch: 25	Batch: 600/6000	Time: 330.9142	Loss: 0.0062
+Epoch: 25	Batch: 800/6000	Time: 440.6440	Loss: 0.0061
+Epoch: 25	Batch: 1000/6000	Time: 549.6021	Loss: 0.0062
+Epoch: 25	Batch: 1200/6000	Time: 659.2300	Loss: 0.0063
+Epoch: 25	Batch: 1400/6000	Time: 768.7201	Loss: 0.0062
+[Ep 25 it 1499	 PSNR SIDD: 39.4384	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 25	Batch: 1600/6000	Time: 1009.9020	Loss: 0.0062
+Epoch: 25	Batch: 1800/6000	Time: 1119.9655	Loss: 0.0060
+Epoch: 25	Batch: 2000/6000	Time: 1230.4384	Loss: 0.0062
+Epoch: 25	Batch: 2200/6000	Time: 1340.5282	Loss: 0.0060
+Epoch: 25	Batch: 2400/6000	Time: 1450.6526	Loss: 0.0062
+Epoch: 25	Batch: 2600/6000	Time: 1561.2096	Loss: 0.0064
+Epoch: 25	Batch: 2800/6000	Time: 1671.7158	Loss: 0.0063
+[Ep 25 it 2998	 PSNR SIDD: 39.4589	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 25	Batch: 3000/6000	Time: 1913.7892	Loss: 0.0061
+Epoch: 25	Batch: 3200/6000	Time: 2023.9180	Loss: 0.0063
+Epoch: 25	Batch: 3400/6000	Time: 2134.3595	Loss: 0.0061
+Epoch: 25	Batch: 3600/6000	Time: 2245.0804	Loss: 0.0063
+Epoch: 25	Batch: 3800/6000	Time: 2355.3801	Loss: 0.0063
+Epoch: 25	Batch: 4000/6000	Time: 2465.1269	Loss: 0.0063
+Epoch: 25	Batch: 4200/6000	Time: 2574.9523	Loss: 0.0064
+Epoch: 25	Batch: 4400/6000	Time: 2691.2698	Loss: 0.0061
+[Ep 25 it 4497	 PSNR SIDD: 39.4144	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 25	Batch: 4600/6000	Time: 2933.9100	Loss: 0.0062
+Epoch: 25	Batch: 4800/6000	Time: 3044.0981	Loss: 0.0062
+Epoch: 25	Batch: 5000/6000	Time: 3154.1677	Loss: 0.0065
+Epoch: 25	Batch: 5200/6000	Time: 3264.4132	Loss: 0.0062
+Epoch: 25	Batch: 5400/6000	Time: 3374.7480	Loss: 0.0060
+Epoch: 25	Batch: 5600/6000	Time: 3484.8530	Loss: 0.0061
+Epoch: 25	Batch: 5800/6000	Time: 3599.5738	Loss: 0.0061
+[Ep 25 it 5996	 PSNR SIDD: 39.4354	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+------------------------------------------------------------------
+Epoch: 25	Time: 3847.2063	Loss: 37.2039	LearningRate 0.000130
+------------------------------------------------------------------
+Epoch: 26	Batch: 200/6000	Time: 116.6388	Loss: 0.0063
+Epoch: 26	Batch: 400/6000	Time: 226.9392	Loss: 0.0062
+Epoch: 26	Batch: 600/6000	Time: 337.0415	Loss: 0.0062
+Epoch: 26	Batch: 800/6000	Time: 447.2079	Loss: 0.0061
+Epoch: 26	Batch: 1000/6000	Time: 557.5207	Loss: 0.0061
+Epoch: 26	Batch: 1200/6000	Time: 667.4776	Loss: 0.0062
+Epoch: 26	Batch: 1400/6000	Time: 781.3619	Loss: 0.0061
+[Ep 26 it 1499	 PSNR SIDD: 39.4963	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 26	Batch: 1600/6000	Time: 1023.7631	Loss: 0.0060
+Epoch: 26	Batch: 1800/6000	Time: 1134.3370	Loss: 0.0065
+Epoch: 26	Batch: 2000/6000	Time: 1244.8013	Loss: 0.0063
+Epoch: 26	Batch: 2200/6000	Time: 1355.0793	Loss: 0.0062
+Epoch: 26	Batch: 2400/6000	Time: 1465.1967	Loss: 0.0062
+Epoch: 26	Batch: 2600/6000	Time: 1575.8422	Loss: 0.0059
+Epoch: 26	Batch: 2800/6000	Time: 1686.1734	Loss: 0.0062
+[Ep 26 it 2998	 PSNR SIDD: 39.4205	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 26	Batch: 3000/6000	Time: 1928.2038	Loss: 0.0061
+Epoch: 26	Batch: 3200/6000	Time: 2042.5774	Loss: 0.0062
+Epoch: 26	Batch: 3400/6000	Time: 2152.8379	Loss: 0.0061
+Epoch: 26	Batch: 3600/6000	Time: 2262.8963	Loss: 0.0062
+Epoch: 26	Batch: 3800/6000	Time: 2373.1743	Loss: 0.0062
+Epoch: 26	Batch: 4000/6000	Time: 2483.2216	Loss: 0.0062
+Epoch: 26	Batch: 4200/6000	Time: 2593.9070	Loss: 0.0062
+Epoch: 26	Batch: 4400/6000	Time: 2703.6931	Loss: 0.0061
+[Ep 26 it 4497	 PSNR SIDD: 39.4200	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+Epoch: 26	Batch: 4600/6000	Time: 2945.1333	Loss: 0.0062
+Epoch: 26	Batch: 4800/6000	Time: 3054.6051	Loss: 0.0062
+Epoch: 26	Batch: 5000/6000	Time: 3164.4849	Loss: 0.0061
+Epoch: 26	Batch: 5200/6000	Time: 3276.4756	Loss: 0.0061
+Epoch: 26	Batch: 5400/6000	Time: 3387.0953	Loss: 0.0061
+Epoch: 26	Batch: 5600/6000	Time: 3497.7129	Loss: 0.0059
+Epoch: 26	Batch: 5800/6000	Time: 3608.9380	Loss: 0.0061
+[Ep 26 it 5996	 PSNR SIDD: 39.3962	] ----  [best_Ep_SIDD 23 best_it_SIDD 4497 Best_PSNR_SIDD 39.5017] 
+------------------------------------------------------------------
+Epoch: 26	Time: 3850.9879	Loss: 36.9638	LearningRate 0.000125
+------------------------------------------------------------------
+Epoch: 27	Batch: 200/6000	Time: 111.2935	Loss: 0.0065
+Epoch: 27	Batch: 400/6000	Time: 221.6447	Loss: 0.0062
+Epoch: 27	Batch: 600/6000	Time: 331.6466	Loss: 0.0061
+Epoch: 27	Batch: 800/6000	Time: 441.5116	Loss: 0.0064
+Epoch: 27	Batch: 1000/6000	Time: 551.4925	Loss: 0.0063
+Epoch: 27	Batch: 1200/6000	Time: 663.5786	Loss: 0.0063
+Epoch: 27	Batch: 1400/6000	Time: 774.5324	Loss: 0.0064
+[Ep 27 it 1499	 PSNR SIDD: 39.5028	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 27	Batch: 1600/6000	Time: 1020.7140	Loss: 0.0061
+Epoch: 27	Batch: 1800/6000	Time: 1131.3284	Loss: 0.0060
+Epoch: 27	Batch: 2000/6000	Time: 1242.8551	Loss: 0.0061
+Epoch: 27	Batch: 2200/6000	Time: 1356.2706	Loss: 0.0062
+Epoch: 27	Batch: 2400/6000	Time: 1466.9669	Loss: 0.0062
+Epoch: 27	Batch: 2600/6000	Time: 1581.9247	Loss: 0.0060
+Epoch: 27	Batch: 2800/6000	Time: 1692.8438	Loss: 0.0061
+[Ep 27 it 2998	 PSNR SIDD: 39.4620	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 27	Batch: 3000/6000	Time: 1934.3257	Loss: 0.0064
+Epoch: 27	Batch: 3200/6000	Time: 2043.5219	Loss: 0.0063
+Epoch: 27	Batch: 3400/6000	Time: 2153.0913	Loss: 0.0062
+Epoch: 27	Batch: 3600/6000	Time: 2268.7154	Loss: 0.0061
+Epoch: 27	Batch: 3800/6000	Time: 2379.3612	Loss: 0.0061
+Epoch: 27	Batch: 4000/6000	Time: 2495.3277	Loss: 0.0065
+Epoch: 27	Batch: 4200/6000	Time: 2606.2511	Loss: 0.0062
+Epoch: 27	Batch: 4400/6000	Time: 2716.9999	Loss: 0.0063
+[Ep 27 it 4497	 PSNR SIDD: 39.4982	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 27	Batch: 4600/6000	Time: 2958.5769	Loss: 0.0062
+Epoch: 27	Batch: 4800/6000	Time: 3068.7953	Loss: 0.0063
+Epoch: 27	Batch: 5000/6000	Time: 3178.6265	Loss: 0.0065
+Epoch: 27	Batch: 5200/6000	Time: 3289.2444	Loss: 0.0062
+Epoch: 27	Batch: 5400/6000	Time: 3400.2864	Loss: 0.0064
+Epoch: 27	Batch: 5600/6000	Time: 3511.0943	Loss: 0.0060
+Epoch: 27	Batch: 5800/6000	Time: 3621.6733	Loss: 0.0061
+[Ep 27 it 5996	 PSNR SIDD: 39.3156	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+------------------------------------------------------------------
+Epoch: 27	Time: 3863.3556	Loss: 37.3332	LearningRate 0.000120
+------------------------------------------------------------------
+Epoch: 28	Batch: 200/6000	Time: 111.2944	Loss: 0.0062
+Epoch: 28	Batch: 400/6000	Time: 220.2465	Loss: 0.0061
+Epoch: 28	Batch: 600/6000	Time: 331.3627	Loss: 0.0062
+Epoch: 28	Batch: 800/6000	Time: 443.8416	Loss: 0.0063
+Epoch: 28	Batch: 1000/6000	Time: 555.8935	Loss: 0.0058
+Epoch: 28	Batch: 1200/6000	Time: 667.2747	Loss: 0.0063
+Epoch: 28	Batch: 1400/6000	Time: 777.5570	Loss: 0.0063
+[Ep 28 it 1499	 PSNR SIDD: 39.4058	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 28	Batch: 1600/6000	Time: 1019.6327	Loss: 0.0061
+Epoch: 28	Batch: 1800/6000	Time: 1130.3411	Loss: 0.0064
+Epoch: 28	Batch: 2000/6000	Time: 1242.0434	Loss: 0.0063
+Epoch: 28	Batch: 2200/6000	Time: 1352.9080	Loss: 0.0061
+Epoch: 28	Batch: 2400/6000	Time: 1463.4567	Loss: 0.0063
+Epoch: 28	Batch: 2600/6000	Time: 1574.1645	Loss: 0.0060
+Epoch: 28	Batch: 2800/6000	Time: 1684.9705	Loss: 0.0062
+[Ep 28 it 2998	 PSNR SIDD: 39.4225	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 28	Batch: 3000/6000	Time: 1927.4749	Loss: 0.0061
+Epoch: 28	Batch: 3200/6000	Time: 2038.3718	Loss: 0.0059
+Epoch: 28	Batch: 3400/6000	Time: 2146.1657	Loss: 0.0061
+Epoch: 28	Batch: 3600/6000	Time: 2260.5679	Loss: 0.0059
+Epoch: 28	Batch: 3800/6000	Time: 2369.8245	Loss: 0.0061
+Epoch: 28	Batch: 4000/6000	Time: 2478.7621	Loss: 0.0061
+Epoch: 28	Batch: 4200/6000	Time: 2590.5493	Loss: 0.0064
+Epoch: 28	Batch: 4400/6000	Time: 2703.4024	Loss: 0.0064
+[Ep 28 it 4497	 PSNR SIDD: 39.4764	] ----  [best_Ep_SIDD 27 best_it_SIDD 1499 Best_PSNR_SIDD 39.5028] 
+Epoch: 28	Batch: 4600/6000	Time: 2948.4377	Loss: 0.0061
+Epoch: 28	Batch: 4800/6000	Time: 3061.3514	Loss: 0.0063
+Epoch: 28	Batch: 5000/6000	Time: 3174.2486	Loss: 0.0060
+Epoch: 28	Batch: 5200/6000	Time: 3286.9472	Loss: 0.0063
+Epoch: 28	Batch: 5400/6000	Time: 3399.9422	Loss: 0.0060
+Epoch: 28	Batch: 5600/6000	Time: 3512.7936	Loss: 0.0058
+Epoch: 28	Batch: 5800/6000	Time: 3625.2828	Loss: 0.0060
+[Ep 28 it 5996	 PSNR SIDD: 39.5146	] ----  [best_Ep_SIDD 28 best_it_SIDD 5996 Best_PSNR_SIDD 39.5146] 
+------------------------------------------------------------------
+Epoch: 28	Time: 3875.6296	Loss: 36.8407	LearningRate 0.000114
+------------------------------------------------------------------
+Epoch: 29	Batch: 200/6000	Time: 114.1819	Loss: 0.0063
+Epoch: 29	Batch: 400/6000	Time: 227.2803	Loss: 0.0059
+Epoch: 29	Batch: 600/6000	Time: 339.7072	Loss: 0.0060
+Epoch: 29	Batch: 800/6000	Time: 451.4597	Loss: 0.0062
+Epoch: 29	Batch: 1000/6000	Time: 562.6223	Loss: 0.0061
+Epoch: 29	Batch: 1200/6000	Time: 675.2093	Loss: 0.0062
+Epoch: 29	Batch: 1400/6000	Time: 788.0538	Loss: 0.0063
+[Ep 29 it 1499	 PSNR SIDD: 39.4592	] ----  [best_Ep_SIDD 28 best_it_SIDD 5996 Best_PSNR_SIDD 39.5146] 
+Epoch: 29	Batch: 1600/6000	Time: 1034.8655	Loss: 0.0065
+Epoch: 29	Batch: 1800/6000	Time: 1151.8186	Loss: 0.0063
+Epoch: 29	Batch: 2000/6000	Time: 1267.7875	Loss: 0.0063
+Epoch: 29	Batch: 2200/6000	Time: 1384.3048	Loss: 0.0062
+Epoch: 29	Batch: 2400/6000	Time: 1501.0570	Loss: 0.0061
+Epoch: 29	Batch: 2600/6000	Time: 1617.5299	Loss: 0.0061
+Epoch: 29	Batch: 2800/6000	Time: 1729.8742	Loss: 0.0061
+[Ep 29 it 2998	 PSNR SIDD: 39.5673	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+Epoch: 29	Batch: 3000/6000	Time: 1978.9183	Loss: 0.0061
+Epoch: 29	Batch: 3200/6000	Time: 2090.2792	Loss: 0.0064
+Epoch: 29	Batch: 3400/6000	Time: 2203.1307	Loss: 0.0061
+Epoch: 29	Batch: 3600/6000	Time: 2320.1924	Loss: 0.0063
+Epoch: 29	Batch: 3800/6000	Time: 2435.7063	Loss: 0.0061
+Epoch: 29	Batch: 4000/6000	Time: 2547.8902	Loss: 0.0063
+Epoch: 29	Batch: 4200/6000	Time: 2660.1140	Loss: 0.0062
+Epoch: 29	Batch: 4400/6000	Time: 2772.3426	Loss: 0.0062
+[Ep 29 it 4497	 PSNR SIDD: 39.4838	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+Epoch: 29	Batch: 4600/6000	Time: 3017.5327	Loss: 0.0060
+Epoch: 29	Batch: 4800/6000	Time: 3129.7472	Loss: 0.0062
+Epoch: 29	Batch: 5000/6000	Time: 3240.7368	Loss: 0.0061
+Epoch: 29	Batch: 5200/6000	Time: 3352.0334	Loss: 0.0063
+Epoch: 29	Batch: 5400/6000	Time: 3462.8062	Loss: 0.0059
+Epoch: 29	Batch: 5600/6000	Time: 3574.1168	Loss: 0.0059
+Epoch: 29	Batch: 5800/6000	Time: 3685.0936	Loss: 0.0060
+[Ep 29 it 5996	 PSNR SIDD: 39.4804	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+------------------------------------------------------------------
+Epoch: 29	Time: 3928.6632	Loss: 36.9701	LearningRate 0.000109
+------------------------------------------------------------------
+Epoch: 30	Batch: 200/6000	Time: 112.5477	Loss: 0.0064
+Epoch: 30	Batch: 400/6000	Time: 226.6284	Loss: 0.0059
+Epoch: 30	Batch: 600/6000	Time: 338.3693	Loss: 0.0062
+Epoch: 30	Batch: 800/6000	Time: 450.2839	Loss: 0.0061
+Epoch: 30	Batch: 1000/6000	Time: 562.5221	Loss: 0.0062
+Epoch: 30	Batch: 1200/6000	Time: 675.4746	Loss: 0.0065
+Epoch: 30	Batch: 1400/6000	Time: 786.8554	Loss: 0.0063
+[Ep 30 it 1499	 PSNR SIDD: 39.4635	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+Epoch: 30	Batch: 1600/6000	Time: 1030.8334	Loss: 0.0064
+Epoch: 30	Batch: 1800/6000	Time: 1142.1591	Loss: 0.0062
+Epoch: 30	Batch: 2000/6000	Time: 1253.5107	Loss: 0.0063
+Epoch: 30	Batch: 2200/6000	Time: 1368.3538	Loss: 0.0063
+Epoch: 30	Batch: 2400/6000	Time: 1480.4978	Loss: 0.0061
+Epoch: 30	Batch: 2600/6000	Time: 1590.8383	Loss: 0.0060
+Epoch: 30	Batch: 2800/6000	Time: 1701.2246	Loss: 0.0062
+[Ep 30 it 2998	 PSNR SIDD: 39.4967	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+Epoch: 30	Batch: 3000/6000	Time: 1945.1695	Loss: 0.0061
+Epoch: 30	Batch: 3200/6000	Time: 2056.6561	Loss: 0.0063
+Epoch: 30	Batch: 3400/6000	Time: 2172.1221	Loss: 0.0061
+Epoch: 30	Batch: 3600/6000	Time: 2283.9973	Loss: 0.0065
+Epoch: 30	Batch: 3800/6000	Time: 2399.5466	Loss: 0.0062
+Epoch: 30	Batch: 4000/6000	Time: 2517.4751	Loss: 0.0062
+Epoch: 30	Batch: 4200/6000	Time: 2629.3418	Loss: 0.0061
+Epoch: 30	Batch: 4400/6000	Time: 2740.9216	Loss: 0.0060
+[Ep 30 it 4497	 PSNR SIDD: 39.4972	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+Epoch: 30	Batch: 4600/6000	Time: 2985.5350	Loss: 0.0060
+Epoch: 30	Batch: 4800/6000	Time: 3097.1670	Loss: 0.0062
+Epoch: 30	Batch: 5000/6000	Time: 3208.9490	Loss: 0.0062
+Epoch: 30	Batch: 5200/6000	Time: 3322.1518	Loss: 0.0061
+Epoch: 30	Batch: 5400/6000	Time: 3439.9770	Loss: 0.0062
+Epoch: 30	Batch: 5600/6000	Time: 3557.0487	Loss: 0.0060
+Epoch: 30	Batch: 5800/6000	Time: 3669.5857	Loss: 0.0060
+[Ep 30 it 5996	 PSNR SIDD: 39.5013	] ----  [best_Ep_SIDD 29 best_it_SIDD 2998 Best_PSNR_SIDD 39.5673] 
+------------------------------------------------------------------
+Epoch: 30	Time: 3913.9236	Loss: 37.0883	LearningRate 0.000103
+------------------------------------------------------------------
+Epoch: 31	Batch: 200/6000	Time: 112.6085	Loss: 0.0061
+Epoch: 31	Batch: 400/6000	Time: 223.9378	Loss: 0.0062
+Epoch: 31	Batch: 600/6000	Time: 335.4581	Loss: 0.0061
+Epoch: 31	Batch: 800/6000	Time: 447.3846	Loss: 0.0062
+Epoch: 31	Batch: 1000/6000	Time: 559.3402	Loss: 0.0064
+Epoch: 31	Batch: 1200/6000	Time: 673.3709	Loss: 0.0061
+Epoch: 31	Batch: 1400/6000	Time: 788.6211	Loss: 0.0060
+[Ep 31 it 1499	 PSNR SIDD: 39.5813	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 31	Batch: 1600/6000	Time: 1037.2527	Loss: 0.0061
+Epoch: 31	Batch: 1800/6000	Time: 1148.6154	Loss: 0.0062
+Epoch: 31	Batch: 2000/6000	Time: 1260.2687	Loss: 0.0061
+Epoch: 31	Batch: 2200/6000	Time: 1371.3979	Loss: 0.0061
+Epoch: 31	Batch: 2400/6000	Time: 1482.3459	Loss: 0.0061
+Epoch: 31	Batch: 2600/6000	Time: 1593.1226	Loss: 0.0061
+Epoch: 31	Batch: 2800/6000	Time: 1704.3112	Loss: 0.0061
+[Ep 31 it 2998	 PSNR SIDD: 39.4900	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 31	Batch: 3000/6000	Time: 1948.3842	Loss: 0.0060
+Epoch: 31	Batch: 3200/6000	Time: 2060.4616	Loss: 0.0060
+Epoch: 31	Batch: 3400/6000	Time: 2171.8271	Loss: 0.0060
+Epoch: 31	Batch: 3600/6000	Time: 2283.0866	Loss: 0.0060
+Epoch: 31	Batch: 3800/6000	Time: 2396.0647	Loss: 0.0058
+Epoch: 31	Batch: 4000/6000	Time: 2514.5259	Loss: 0.0061
+Epoch: 31	Batch: 4200/6000	Time: 2632.8555	Loss: 0.0061
+Epoch: 31	Batch: 4400/6000	Time: 2750.9545	Loss: 0.0062
+[Ep 31 it 4497	 PSNR SIDD: 39.5599	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 31	Batch: 4600/6000	Time: 3002.0419	Loss: 0.0062
+Epoch: 31	Batch: 4800/6000	Time: 3115.9561	Loss: 0.0062
+Epoch: 31	Batch: 5000/6000	Time: 3227.9579	Loss: 0.0062
+Epoch: 31	Batch: 5200/6000	Time: 3339.7556	Loss: 0.0062
+Epoch: 31	Batch: 5400/6000	Time: 3451.5262	Loss: 0.0061
+Epoch: 31	Batch: 5600/6000	Time: 3562.9854	Loss: 0.0061
+Epoch: 31	Batch: 5800/6000	Time: 3674.5104	Loss: 0.0062
+[Ep 31 it 5996	 PSNR SIDD: 39.5499	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+------------------------------------------------------------------
+Epoch: 31	Time: 3918.7420	Loss: 36.7412	LearningRate 0.000098
+------------------------------------------------------------------
+Epoch: 32	Batch: 200/6000	Time: 112.6929	Loss: 0.0061
+Epoch: 32	Batch: 400/6000	Time: 223.7299	Loss: 0.0064
+Epoch: 32	Batch: 600/6000	Time: 334.8552	Loss: 0.0060
+Epoch: 32	Batch: 800/6000	Time: 446.0490	Loss: 0.0061
+Epoch: 32	Batch: 1000/6000	Time: 556.9574	Loss: 0.0066
+Epoch: 32	Batch: 1200/6000	Time: 668.1279	Loss: 0.0062
+Epoch: 32	Batch: 1400/6000	Time: 779.0418	Loss: 0.0061
+[Ep 32 it 1499	 PSNR SIDD: 39.5522	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 32	Batch: 1600/6000	Time: 1022.6700	Loss: 0.0061
+Epoch: 32	Batch: 1800/6000	Time: 1133.4673	Loss: 0.0061
+Epoch: 32	Batch: 2000/6000	Time: 1244.3368	Loss: 0.0064
+Epoch: 32	Batch: 2200/6000	Time: 1355.4676	Loss: 0.0064
+Epoch: 32	Batch: 2400/6000	Time: 1466.3629	Loss: 0.0063
+Epoch: 32	Batch: 2600/6000	Time: 1577.2616	Loss: 0.0060
+Epoch: 32	Batch: 2800/6000	Time: 1688.2901	Loss: 0.0060
+[Ep 32 it 2998	 PSNR SIDD: 39.5389	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 32	Batch: 3000/6000	Time: 1932.2146	Loss: 0.0059
+Epoch: 32	Batch: 3200/6000	Time: 2042.5737	Loss: 0.0060
+Epoch: 32	Batch: 3400/6000	Time: 2153.3333	Loss: 0.0059
+Epoch: 32	Batch: 3600/6000	Time: 2268.2384	Loss: 0.0063
+Epoch: 32	Batch: 3800/6000	Time: 2383.0165	Loss: 0.0060
+Epoch: 32	Batch: 4000/6000	Time: 2493.5278	Loss: 0.0061
+Epoch: 32	Batch: 4200/6000	Time: 2607.8063	Loss: 0.0063
+Epoch: 32	Batch: 4400/6000	Time: 2718.0799	Loss: 0.0060
+[Ep 32 it 4497	 PSNR SIDD: 39.4860	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 32	Batch: 4600/6000	Time: 2961.0682	Loss: 0.0062
+Epoch: 32	Batch: 4800/6000	Time: 3077.8977	Loss: 0.0066
+Epoch: 32	Batch: 5000/6000	Time: 3195.8066	Loss: 0.0061
+Epoch: 32	Batch: 5200/6000	Time: 3307.6706	Loss: 0.0060
+Epoch: 32	Batch: 5400/6000	Time: 3418.7069	Loss: 0.0061
+Epoch: 32	Batch: 5600/6000	Time: 3529.3038	Loss: 0.0059
+Epoch: 32	Batch: 5800/6000	Time: 3639.8039	Loss: 0.0062
+[Ep 32 it 5996	 PSNR SIDD: 39.5186	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+------------------------------------------------------------------
+Epoch: 32	Time: 3883.3322	Loss: 36.9097	LearningRate 0.000092
+------------------------------------------------------------------
+Epoch: 33	Batch: 200/6000	Time: 112.4353	Loss: 0.0062
+Epoch: 33	Batch: 400/6000	Time: 223.6386	Loss: 0.0062
+Epoch: 33	Batch: 600/6000	Time: 334.6112	Loss: 0.0060
+Epoch: 33	Batch: 800/6000	Time: 445.1797	Loss: 0.0060
+Epoch: 33	Batch: 1000/6000	Time: 556.1077	Loss: 0.0061
+Epoch: 33	Batch: 1200/6000	Time: 667.1581	Loss: 0.0061
+Epoch: 33	Batch: 1400/6000	Time: 778.6900	Loss: 0.0061
+[Ep 33 it 1499	 PSNR SIDD: 39.5646	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 33	Batch: 1600/6000	Time: 1022.5944	Loss: 0.0059
+Epoch: 33	Batch: 1800/6000	Time: 1133.7146	Loss: 0.0062
+Epoch: 33	Batch: 2000/6000	Time: 1244.3303	Loss: 0.0062
+Epoch: 33	Batch: 2200/6000	Time: 1356.0253	Loss: 0.0060
+Epoch: 33	Batch: 2400/6000	Time: 1467.1195	Loss: 0.0059
+Epoch: 33	Batch: 2600/6000	Time: 1578.7324	Loss: 0.0062
+Epoch: 33	Batch: 2800/6000	Time: 1689.9686	Loss: 0.0064
+[Ep 33 it 2998	 PSNR SIDD: 39.5270	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 33	Batch: 3000/6000	Time: 1933.2380	Loss: 0.0062
+Epoch: 33	Batch: 3200/6000	Time: 2043.8031	Loss: 0.0060
+Epoch: 33	Batch: 3400/6000	Time: 2155.7694	Loss: 0.0063
+Epoch: 33	Batch: 3600/6000	Time: 2274.2127	Loss: 0.0061
+Epoch: 33	Batch: 3800/6000	Time: 2387.2776	Loss: 0.0062
+Epoch: 33	Batch: 4000/6000	Time: 2499.0060	Loss: 0.0065
+Epoch: 33	Batch: 4200/6000	Time: 2610.5171	Loss: 0.0060
+Epoch: 33	Batch: 4400/6000	Time: 2722.1526	Loss: 0.0062
+[Ep 33 it 4497	 PSNR SIDD: 39.5340	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 33	Batch: 4600/6000	Time: 2966.4555	Loss: 0.0063
+Epoch: 33	Batch: 4800/6000	Time: 3079.7907	Loss: 0.0060
+Epoch: 33	Batch: 5000/6000	Time: 3191.6817	Loss: 0.0059
+Epoch: 33	Batch: 5200/6000	Time: 3303.2436	Loss: 0.0063
+Epoch: 33	Batch: 5400/6000	Time: 3414.0979	Loss: 0.0062
+Epoch: 33	Batch: 5600/6000	Time: 3528.6623	Loss: 0.0060
+Epoch: 33	Batch: 5800/6000	Time: 3646.6169	Loss: 0.0063
+[Ep 33 it 5996	 PSNR SIDD: 39.4916	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+------------------------------------------------------------------
+Epoch: 33	Time: 3897.6113	Loss: 36.8054	LearningRate 0.000087
+------------------------------------------------------------------
+Epoch: 34	Batch: 200/6000	Time: 111.9647	Loss: 0.0062
+Epoch: 34	Batch: 400/6000	Time: 222.9335	Loss: 0.0061
+Epoch: 34	Batch: 600/6000	Time: 333.8180	Loss: 0.0063
+Epoch: 34	Batch: 800/6000	Time: 444.8653	Loss: 0.0062
+Epoch: 34	Batch: 1000/6000	Time: 555.9068	Loss: 0.0059
+Epoch: 34	Batch: 1200/6000	Time: 667.6341	Loss: 0.0060
+Epoch: 34	Batch: 1400/6000	Time: 779.5552	Loss: 0.0062
+[Ep 34 it 1499	 PSNR SIDD: 39.5144	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 34	Batch: 1600/6000	Time: 1023.6064	Loss: 0.0062
+Epoch: 34	Batch: 1800/6000	Time: 1134.2391	Loss: 0.0059
+Epoch: 34	Batch: 2000/6000	Time: 1245.1295	Loss: 0.0062
+Epoch: 34	Batch: 2200/6000	Time: 1356.3648	Loss: 0.0062
+Epoch: 34	Batch: 2400/6000	Time: 1467.6745	Loss: 0.0062
+Epoch: 34	Batch: 2600/6000	Time: 1579.4408	Loss: 0.0062
+Epoch: 34	Batch: 2800/6000	Time: 1690.1857	Loss: 0.0062
+[Ep 34 it 2998	 PSNR SIDD: 39.5303	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 34	Batch: 3000/6000	Time: 1933.6370	Loss: 0.0065
+Epoch: 34	Batch: 3200/6000	Time: 2044.7010	Loss: 0.0060
+Epoch: 34	Batch: 3400/6000	Time: 2156.5446	Loss: 0.0061
+Epoch: 34	Batch: 3600/6000	Time: 2267.3750	Loss: 0.0064
+Epoch: 34	Batch: 3800/6000	Time: 2377.9038	Loss: 0.0061
+Epoch: 34	Batch: 4000/6000	Time: 2488.7239	Loss: 0.0060
+Epoch: 34	Batch: 4200/6000	Time: 2599.7333	Loss: 0.0060
+Epoch: 34	Batch: 4400/6000	Time: 2710.4201	Loss: 0.0059
+[Ep 34 it 4497	 PSNR SIDD: 39.5254	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 34	Batch: 4600/6000	Time: 2954.3984	Loss: 0.0060
+Epoch: 34	Batch: 4800/6000	Time: 3065.6771	Loss: 0.0061
+Epoch: 34	Batch: 5000/6000	Time: 3176.9088	Loss: 0.0060
+Epoch: 34	Batch: 5200/6000	Time: 3288.0785	Loss: 0.0061
+Epoch: 34	Batch: 5400/6000	Time: 3399.3790	Loss: 0.0061
+Epoch: 34	Batch: 5600/6000	Time: 3510.9669	Loss: 0.0059
+Epoch: 34	Batch: 5800/6000	Time: 3623.8811	Loss: 0.0060
+[Ep 34 it 5996	 PSNR SIDD: 39.5293	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+------------------------------------------------------------------
+Epoch: 34	Time: 3869.8636	Loss: 36.6770	LearningRate 0.000081
+------------------------------------------------------------------
+Epoch: 35	Batch: 200/6000	Time: 112.3850	Loss: 0.0062
+Epoch: 35	Batch: 400/6000	Time: 223.8611	Loss: 0.0061
+Epoch: 35	Batch: 600/6000	Time: 335.2380	Loss: 0.0061
+Epoch: 35	Batch: 800/6000	Time: 446.7611	Loss: 0.0063
+Epoch: 35	Batch: 1000/6000	Time: 557.5055	Loss: 0.0060
+Epoch: 35	Batch: 1200/6000	Time: 667.7635	Loss: 0.0064
+Epoch: 35	Batch: 1400/6000	Time: 778.0278	Loss: 0.0062
+[Ep 35 it 1499	 PSNR SIDD: 39.5554	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 35	Batch: 1600/6000	Time: 1022.6010	Loss: 0.0061
+Epoch: 35	Batch: 1800/6000	Time: 1134.0164	Loss: 0.0060
+Epoch: 35	Batch: 2000/6000	Time: 1245.2576	Loss: 0.0061
+Epoch: 35	Batch: 2200/6000	Time: 1356.6676	Loss: 0.0059
+Epoch: 35	Batch: 2400/6000	Time: 1468.2306	Loss: 0.0061
+Epoch: 35	Batch: 2600/6000	Time: 1579.6701	Loss: 0.0061
+Epoch: 35	Batch: 2800/6000	Time: 1691.0307	Loss: 0.0061
+[Ep 35 it 2998	 PSNR SIDD: 39.5360	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 35	Batch: 3000/6000	Time: 1935.0318	Loss: 0.0061
+Epoch: 35	Batch: 3200/6000	Time: 2046.0535	Loss: 0.0060
+Epoch: 35	Batch: 3400/6000	Time: 2156.8865	Loss: 0.0060
+Epoch: 35	Batch: 3600/6000	Time: 2269.1974	Loss: 0.0061
+Epoch: 35	Batch: 3800/6000	Time: 2386.3978	Loss: 0.0060
+Epoch: 35	Batch: 4000/6000	Time: 2503.5924	Loss: 0.0061
+Epoch: 35	Batch: 4200/6000	Time: 2617.9824	Loss: 0.0063
+Epoch: 35	Batch: 4400/6000	Time: 2734.4983	Loss: 0.0060
+[Ep 35 it 4497	 PSNR SIDD: 39.5536	] ----  [best_Ep_SIDD 31 best_it_SIDD 1499 Best_PSNR_SIDD 39.5813] 
+Epoch: 35	Batch: 4600/6000	Time: 2982.0272	Loss: 0.0061
+Epoch: 35	Batch: 4800/6000	Time: 3099.3004	Loss: 0.0059
+Epoch: 35	Batch: 5000/6000	Time: 3217.0103	Loss: 0.0060
+Epoch: 35	Batch: 5200/6000	Time: 3329.2805	Loss: 0.0061
+Epoch: 35	Batch: 5400/6000	Time: 3444.3014	Loss: 0.0062
+Epoch: 35	Batch: 5600/6000	Time: 3556.8612	Loss: 0.0060
+Epoch: 35	Batch: 5800/6000	Time: 3672.6881	Loss: 0.0062
+[Ep 35 it 5996	 PSNR SIDD: 39.5840	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+------------------------------------------------------------------
+Epoch: 35	Time: 3920.6279	Loss: 36.5781	LearningRate 0.000076
+------------------------------------------------------------------
+Epoch: 36	Batch: 200/6000	Time: 117.5908	Loss: 0.0064
+Epoch: 36	Batch: 400/6000	Time: 235.0524	Loss: 0.0062
+Epoch: 36	Batch: 600/6000	Time: 352.0604	Loss: 0.0058
+Epoch: 36	Batch: 800/6000	Time: 465.7860	Loss: 0.0060
+Epoch: 36	Batch: 1000/6000	Time: 579.2527	Loss: 0.0062
+Epoch: 36	Batch: 1200/6000	Time: 695.8921	Loss: 0.0062
+Epoch: 36	Batch: 1400/6000	Time: 812.3066	Loss: 0.0061
+[Ep 36 it 1499	 PSNR SIDD: 39.5814	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+Epoch: 36	Batch: 1600/6000	Time: 1062.2461	Loss: 0.0061
+Epoch: 36	Batch: 1800/6000	Time: 1179.2079	Loss: 0.0061
+Epoch: 36	Batch: 2000/6000	Time: 1294.1252	Loss: 0.0060
+Epoch: 36	Batch: 2200/6000	Time: 1409.2900	Loss: 0.0063
+Epoch: 36	Batch: 2400/6000	Time: 1526.1417	Loss: 0.0061
+Epoch: 36	Batch: 2600/6000	Time: 1643.1502	Loss: 0.0060
+Epoch: 36	Batch: 2800/6000	Time: 1754.1484	Loss: 0.0061
+[Ep 36 it 2998	 PSNR SIDD: 39.5645	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+Epoch: 36	Batch: 3000/6000	Time: 1998.0023	Loss: 0.0060
+Epoch: 36	Batch: 3200/6000	Time: 2108.7784	Loss: 0.0062
+Epoch: 36	Batch: 3400/6000	Time: 2219.8665	Loss: 0.0064
+Epoch: 36	Batch: 3600/6000	Time: 2330.7191	Loss: 0.0062
+Epoch: 36	Batch: 3800/6000	Time: 2441.3769	Loss: 0.0061
+Epoch: 36	Batch: 4000/6000	Time: 2552.4696	Loss: 0.0060
+Epoch: 36	Batch: 4200/6000	Time: 2663.5768	Loss: 0.0060
+Epoch: 36	Batch: 4400/6000	Time: 2774.8313	Loss: 0.0061
+[Ep 36 it 4497	 PSNR SIDD: 39.5746	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+Epoch: 36	Batch: 4600/6000	Time: 3018.7400	Loss: 0.0060
+Epoch: 36	Batch: 4800/6000	Time: 3129.4261	Loss: 0.0062
+Epoch: 36	Batch: 5000/6000	Time: 3240.0967	Loss: 0.0061
+Epoch: 36	Batch: 5200/6000	Time: 3353.5534	Loss: 0.0063
+Epoch: 36	Batch: 5400/6000	Time: 3465.3395	Loss: 0.0062
+Epoch: 36	Batch: 5600/6000	Time: 3576.2571	Loss: 0.0061
+Epoch: 36	Batch: 5800/6000	Time: 3686.9631	Loss: 0.0059
+[Ep 36 it 5996	 PSNR SIDD: 39.5286	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+------------------------------------------------------------------
+Epoch: 36	Time: 3930.0535	Loss: 36.6356	LearningRate 0.000071
+------------------------------------------------------------------
+Epoch: 37	Batch: 200/6000	Time: 112.3963	Loss: 0.0061
+Epoch: 37	Batch: 400/6000	Time: 223.7513	Loss: 0.0062
+Epoch: 37	Batch: 600/6000	Time: 335.2988	Loss: 0.0059
+Epoch: 37	Batch: 800/6000	Time: 446.7880	Loss: 0.0061
+Epoch: 37	Batch: 1000/6000	Time: 558.3612	Loss: 0.0059
+Epoch: 37	Batch: 1200/6000	Time: 669.4011	Loss: 0.0060
+Epoch: 37	Batch: 1400/6000	Time: 780.1298	Loss: 0.0058
+[Ep 37 it 1499	 PSNR SIDD: 39.5798	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+Epoch: 37	Batch: 1600/6000	Time: 1023.5660	Loss: 0.0061
+Epoch: 37	Batch: 1800/6000	Time: 1138.2797	Loss: 0.0061
+Epoch: 37	Batch: 2000/6000	Time: 1250.2550	Loss: 0.0063
+Epoch: 37	Batch: 2200/6000	Time: 1366.5288	Loss: 0.0062
+Epoch: 37	Batch: 2400/6000	Time: 1483.5410	Loss: 0.0061
+Epoch: 37	Batch: 2600/6000	Time: 1595.1944	Loss: 0.0060
+Epoch: 37	Batch: 2800/6000	Time: 1705.8967	Loss: 0.0060
+[Ep 37 it 2998	 PSNR SIDD: 39.4647	] ----  [best_Ep_SIDD 35 best_it_SIDD 5996 Best_PSNR_SIDD 39.5840] 
+Epoch: 37	Batch: 3000/6000	Time: 1949.5927	Loss: 0.0060
+Epoch: 37	Batch: 3200/6000	Time: 2064.8192	Loss: 0.0060
+Epoch: 37	Batch: 3400/6000	Time: 2181.6295	Loss: 0.0060
+Epoch: 37	Batch: 3600/6000	Time: 2296.3041	Loss: 0.0062
+Epoch: 37	Batch: 3800/6000	Time: 2407.5299	Loss: 0.0060
+Epoch: 37	Batch: 4000/6000	Time: 2518.4386	Loss: 0.0063
+Epoch: 37	Batch: 4200/6000	Time: 2629.2697	Loss: 0.0061
+Epoch: 37	Batch: 4400/6000	Time: 2740.9321	Loss: 0.0060
+[Ep 37 it 4497	 PSNR SIDD: 39.6010	] ----  [best_Ep_SIDD 37 best_it_SIDD 4497 Best_PSNR_SIDD 39.6010] 
+Epoch: 37	Batch: 4600/6000	Time: 2992.6963	Loss: 0.0060
+Epoch: 37	Batch: 4800/6000	Time: 3103.6906	Loss: 0.0063
+Epoch: 37	Batch: 5000/6000	Time: 3214.7959	Loss: 0.0062
+Epoch: 37	Batch: 5200/6000	Time: 3329.4394	Loss: 0.0061
+Epoch: 37	Batch: 5400/6000	Time: 3444.5237	Loss: 0.0061
+Epoch: 37	Batch: 5600/6000	Time: 3555.7904	Loss: 0.0058
+Epoch: 37	Batch: 5800/6000	Time: 3666.9038	Loss: 0.0061
+[Ep 37 it 5996	 PSNR SIDD: 39.5531	] ----  [best_Ep_SIDD 37 best_it_SIDD 4497 Best_PSNR_SIDD 39.6010] 
+------------------------------------------------------------------
+Epoch: 37	Time: 3910.6933	Loss: 36.3998	LearningRate 0.000066
+------------------------------------------------------------------
+Epoch: 38	Batch: 200/6000	Time: 116.5518	Loss: 0.0060
+Epoch: 38	Batch: 400/6000	Time: 233.8263	Loss: 0.0062
+Epoch: 38	Batch: 600/6000	Time: 347.4472	Loss: 0.0062
+Epoch: 38	Batch: 800/6000	Time: 459.4814	Loss: 0.0059
+Epoch: 38	Batch: 1000/6000	Time: 571.2501	Loss: 0.0059
+Epoch: 38	Batch: 1200/6000	Time: 683.0700	Loss: 0.0059
+Epoch: 38	Batch: 1400/6000	Time: 794.6108	Loss: 0.0061
+[Ep 38 it 1499	 PSNR SIDD: 39.6081	] ----  [best_Ep_SIDD 38 best_it_SIDD 1499 Best_PSNR_SIDD 39.6081] 
+Epoch: 38	Batch: 1600/6000	Time: 1043.1326	Loss: 0.0061
+Epoch: 38	Batch: 1800/6000	Time: 1153.7526	Loss: 0.0060
+Epoch: 38	Batch: 2000/6000	Time: 1264.9793	Loss: 0.0063
+Epoch: 38	Batch: 2200/6000	Time: 1376.3451	Loss: 0.0062
+Epoch: 38	Batch: 2400/6000	Time: 1487.3790	Loss: 0.0060
+Epoch: 38	Batch: 2600/6000	Time: 1598.7896	Loss: 0.0059
+Epoch: 38	Batch: 2800/6000	Time: 1710.4983	Loss: 0.0060
+[Ep 38 it 2998	 PSNR SIDD: 39.5777	] ----  [best_Ep_SIDD 38 best_it_SIDD 1499 Best_PSNR_SIDD 39.6081] 
+Epoch: 38	Batch: 3000/6000	Time: 1955.2147	Loss: 0.0058
+Epoch: 38	Batch: 3200/6000	Time: 2066.9514	Loss: 0.0062
+Epoch: 38	Batch: 3400/6000	Time: 2178.7984	Loss: 0.0062
+Epoch: 38	Batch: 3600/6000	Time: 2289.9753	Loss: 0.0061
+Epoch: 38	Batch: 3800/6000	Time: 2402.5791	Loss: 0.0060
+Epoch: 38	Batch: 4000/6000	Time: 2513.7020	Loss: 0.0059
+Epoch: 38	Batch: 4200/6000	Time: 2630.8433	Loss: 0.0062
+Epoch: 38	Batch: 4400/6000	Time: 2746.8833	Loss: 0.0060
+[Ep 38 it 4497	 PSNR SIDD: 39.5106	] ----  [best_Ep_SIDD 38 best_it_SIDD 1499 Best_PSNR_SIDD 39.6081] 
+Epoch: 38	Batch: 4600/6000	Time: 2991.9465	Loss: 0.0061
+Epoch: 38	Batch: 4800/6000	Time: 3104.9245	Loss: 0.0060
+Epoch: 38	Batch: 5000/6000	Time: 3215.6662	Loss: 0.0060
+Epoch: 38	Batch: 5200/6000	Time: 3326.2394	Loss: 0.0060
+Epoch: 38	Batch: 5400/6000	Time: 3436.8533	Loss: 0.0061
+Epoch: 38	Batch: 5600/6000	Time: 3547.5604	Loss: 0.0060
+Epoch: 38	Batch: 5800/6000	Time: 3658.2053	Loss: 0.0062
+[Ep 38 it 5996	 PSNR SIDD: 39.5853	] ----  [best_Ep_SIDD 38 best_it_SIDD 1499 Best_PSNR_SIDD 39.6081] 
+------------------------------------------------------------------
+Epoch: 38	Time: 3901.1466	Loss: 36.3747	LearningRate 0.000061
+------------------------------------------------------------------
+Epoch: 39	Batch: 200/6000	Time: 112.7480	Loss: 0.0062
+Epoch: 39	Batch: 400/6000	Time: 224.6711	Loss: 0.0062
+Epoch: 39	Batch: 600/6000	Time: 338.7351	Loss: 0.0062
+Epoch: 39	Batch: 800/6000	Time: 455.5372	Loss: 0.0062
+Epoch: 39	Batch: 1000/6000	Time: 567.4443	Loss: 0.0059
+Epoch: 39	Batch: 1200/6000	Time: 680.2003	Loss: 0.0059
+Epoch: 39	Batch: 1400/6000	Time: 797.0154	Loss: 0.0062
+[Ep 39 it 1499	 PSNR SIDD: 39.6022	] ----  [best_Ep_SIDD 38 best_it_SIDD 1499 Best_PSNR_SIDD 39.6081] 
+Epoch: 39	Batch: 1600/6000	Time: 1043.8579	Loss: 0.0060
+Epoch: 39	Batch: 1800/6000	Time: 1159.0542	Loss: 0.0062
+Epoch: 39	Batch: 2000/6000	Time: 1270.5517	Loss: 0.0057
+Epoch: 39	Batch: 2200/6000	Time: 1381.4060	Loss: 0.0058
+Epoch: 39	Batch: 2400/6000	Time: 1498.3617	Loss: 0.0060
+Epoch: 39	Batch: 2600/6000	Time: 1609.4705	Loss: 0.0060
+Epoch: 39	Batch: 2800/6000	Time: 1720.2015	Loss: 0.0059
+[Ep 39 it 2998	 PSNR SIDD: 39.6109	] ----  [best_Ep_SIDD 39 best_it_SIDD 2998 Best_PSNR_SIDD 39.6109] 
+Epoch: 39	Batch: 3000/6000	Time: 1967.7091	Loss: 0.0060
+Epoch: 39	Batch: 3200/6000	Time: 2078.5541	Loss: 0.0060
+Epoch: 39	Batch: 3400/6000	Time: 2189.5295	Loss: 0.0062
+Epoch: 39	Batch: 3600/6000	Time: 2301.6833	Loss: 0.0061
+Epoch: 39	Batch: 3800/6000	Time: 2412.7142	Loss: 0.0062
+Epoch: 39	Batch: 4000/6000	Time: 2529.1418	Loss: 0.0059
+Epoch: 39	Batch: 4200/6000	Time: 2646.0593	Loss: 0.0060
+Epoch: 39	Batch: 4400/6000	Time: 2763.3187	Loss: 0.0061
+[Ep 39 it 4497	 PSNR SIDD: 39.6346	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+Epoch: 39	Batch: 4600/6000	Time: 3014.8012	Loss: 0.0059
+Epoch: 39	Batch: 4800/6000	Time: 3126.4230	Loss: 0.0061
+Epoch: 39	Batch: 5000/6000	Time: 3237.6881	Loss: 0.0062
+Epoch: 39	Batch: 5200/6000	Time: 3349.2649	Loss: 0.0063
+Epoch: 39	Batch: 5400/6000	Time: 3464.6921	Loss: 0.0059
+Epoch: 39	Batch: 5600/6000	Time: 3577.3314	Loss: 0.0059
+Epoch: 39	Batch: 5800/6000	Time: 3694.6531	Loss: 0.0060
+[Ep 39 it 5996	 PSNR SIDD: 39.5967	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+------------------------------------------------------------------
+Epoch: 39	Time: 3938.7484	Loss: 36.2305	LearningRate 0.000056
+------------------------------------------------------------------
+Epoch: 40	Batch: 200/6000	Time: 117.2340	Loss: 0.0060
+Epoch: 40	Batch: 400/6000	Time: 233.4495	Loss: 0.0058
+Epoch: 40	Batch: 600/6000	Time: 345.1214	Loss: 0.0060
+Epoch: 40	Batch: 800/6000	Time: 456.8770	Loss: 0.0062
+Epoch: 40	Batch: 1000/6000	Time: 568.8486	Loss: 0.0060
+Epoch: 40	Batch: 1200/6000	Time: 683.3694	Loss: 0.0060
+Epoch: 40	Batch: 1400/6000	Time: 800.8697	Loss: 0.0060
+[Ep 40 it 1499	 PSNR SIDD: 39.5995	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+Epoch: 40	Batch: 1600/6000	Time: 1047.5799	Loss: 0.0060
+Epoch: 40	Batch: 1800/6000	Time: 1158.5731	Loss: 0.0062
+Epoch: 40	Batch: 2000/6000	Time: 1270.0552	Loss: 0.0060
+Epoch: 40	Batch: 2200/6000	Time: 1381.1713	Loss: 0.0057
+Epoch: 40	Batch: 2400/6000	Time: 1492.2419	Loss: 0.0062
+Epoch: 40	Batch: 2600/6000	Time: 1603.3123	Loss: 0.0060
+Epoch: 40	Batch: 2800/6000	Time: 1714.6275	Loss: 0.0062
+[Ep 40 it 2998	 PSNR SIDD: 39.6084	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+Epoch: 40	Batch: 3000/6000	Time: 1958.3055	Loss: 0.0062
+Epoch: 40	Batch: 3200/6000	Time: 2068.6775	Loss: 0.0063
+Epoch: 40	Batch: 3400/6000	Time: 2179.4364	Loss: 0.0062
+Epoch: 40	Batch: 3600/6000	Time: 2290.6218	Loss: 0.0059
+Epoch: 40	Batch: 3800/6000	Time: 2401.8696	Loss: 0.0060
+Epoch: 40	Batch: 4000/6000	Time: 2513.0914	Loss: 0.0063
+Epoch: 40	Batch: 4200/6000	Time: 2623.7601	Loss: 0.0056
+Epoch: 40	Batch: 4400/6000	Time: 2734.7337	Loss: 0.0060
+[Ep 40 it 4497	 PSNR SIDD: 39.6107	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+Epoch: 40	Batch: 4600/6000	Time: 2978.4323	Loss: 0.0061
+Epoch: 40	Batch: 4800/6000	Time: 3089.7525	Loss: 0.0061
+Epoch: 40	Batch: 5000/6000	Time: 3201.3018	Loss: 0.0062
+Epoch: 40	Batch: 5200/6000	Time: 3312.7741	Loss: 0.0061
+Epoch: 40	Batch: 5400/6000	Time: 3424.5909	Loss: 0.0060
+Epoch: 40	Batch: 5600/6000	Time: 3536.2808	Loss: 0.0059
+Epoch: 40	Batch: 5800/6000	Time: 3647.8769	Loss: 0.0059
+[Ep 40 it 5996	 PSNR SIDD: 39.6208	] ----  [best_Ep_SIDD 39 best_it_SIDD 4497 Best_PSNR_SIDD 39.6346] 
+------------------------------------------------------------------
+Epoch: 40	Time: 3891.0605	Loss: 36.2446	LearningRate 0.000051
+------------------------------------------------------------------
+Epoch: 41	Batch: 200/6000	Time: 110.8720	Loss: 0.0060
+Epoch: 41	Batch: 400/6000	Time: 221.6233	Loss: 0.0060
+Epoch: 41	Batch: 600/6000	Time: 333.5625	Loss: 0.0061
+Epoch: 41	Batch: 800/6000	Time: 444.3025	Loss: 0.0059
+Epoch: 41	Batch: 1000/6000	Time: 559.8859	Loss: 0.0060
+Epoch: 41	Batch: 1200/6000	Time: 676.0692	Loss: 0.0063
+Epoch: 41	Batch: 1400/6000	Time: 786.9924	Loss: 0.0060
+[Ep 41 it 1499	 PSNR SIDD: 39.6408	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+Epoch: 41	Batch: 1600/6000	Time: 1035.0166	Loss: 0.0061
+Epoch: 41	Batch: 1800/6000	Time: 1146.5322	Loss: 0.0059
+Epoch: 41	Batch: 2000/6000	Time: 1259.0524	Loss: 0.0062
+Epoch: 41	Batch: 2200/6000	Time: 1370.5690	Loss: 0.0062
+Epoch: 41	Batch: 2400/6000	Time: 1482.4306	Loss: 0.0060
+Epoch: 41	Batch: 2600/6000	Time: 1594.1089	Loss: 0.0060
+Epoch: 41	Batch: 2800/6000	Time: 1705.3867	Loss: 0.0058
+[Ep 41 it 2998	 PSNR SIDD: 39.6253	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+Epoch: 41	Batch: 3000/6000	Time: 1948.1544	Loss: 0.0060
+Epoch: 41	Batch: 3200/6000	Time: 2058.5278	Loss: 0.0060
+Epoch: 41	Batch: 3400/6000	Time: 2169.4621	Loss: 0.0062
+Epoch: 41	Batch: 3600/6000	Time: 2279.9666	Loss: 0.0063
+Epoch: 41	Batch: 3800/6000	Time: 2390.3257	Loss: 0.0059
+Epoch: 41	Batch: 4000/6000	Time: 2500.6464	Loss: 0.0061
+Epoch: 41	Batch: 4200/6000	Time: 2611.1793	Loss: 0.0059
+Epoch: 41	Batch: 4400/6000	Time: 2721.8972	Loss: 0.0061
+[Ep 41 it 4497	 PSNR SIDD: 39.6316	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+Epoch: 41	Batch: 4600/6000	Time: 2966.1711	Loss: 0.0061
+Epoch: 41	Batch: 4800/6000	Time: 3082.4545	Loss: 0.0060
+Epoch: 41	Batch: 5000/6000	Time: 3193.2944	Loss: 0.0061
+Epoch: 41	Batch: 5200/6000	Time: 3304.3259	Loss: 0.0062
+Epoch: 41	Batch: 5400/6000	Time: 3415.8711	Loss: 0.0060
+Epoch: 41	Batch: 5600/6000	Time: 3531.8137	Loss: 0.0057
+Epoch: 41	Batch: 5800/6000	Time: 3643.3841	Loss: 0.0061
+[Ep 41 it 5996	 PSNR SIDD: 39.6300	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+------------------------------------------------------------------
+Epoch: 41	Time: 3886.8230	Loss: 36.2335	LearningRate 0.000046
+------------------------------------------------------------------
+Epoch: 42	Batch: 200/6000	Time: 115.5855	Loss: 0.0060
+Epoch: 42	Batch: 400/6000	Time: 228.6725	Loss: 0.0059
+Epoch: 42	Batch: 600/6000	Time: 345.5827	Loss: 0.0058
+Epoch: 42	Batch: 800/6000	Time: 462.3260	Loss: 0.0059
+Epoch: 42	Batch: 1000/6000	Time: 575.0226	Loss: 0.0062
+Epoch: 42	Batch: 1200/6000	Time: 686.4283	Loss: 0.0060
+Epoch: 42	Batch: 1400/6000	Time: 797.6660	Loss: 0.0063
+[Ep 42 it 1499	 PSNR SIDD: 39.5808	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+Epoch: 42	Batch: 1600/6000	Time: 1041.8679	Loss: 0.0061
+Epoch: 42	Batch: 1800/6000	Time: 1153.5208	Loss: 0.0062
+Epoch: 42	Batch: 2000/6000	Time: 1265.4140	Loss: 0.0060
+Epoch: 42	Batch: 2200/6000	Time: 1377.3945	Loss: 0.0060
+Epoch: 42	Batch: 2400/6000	Time: 1489.1717	Loss: 0.0059
+Epoch: 42	Batch: 2600/6000	Time: 1600.6675	Loss: 0.0059
+Epoch: 42	Batch: 2800/6000	Time: 1711.8502	Loss: 0.0060
+[Ep 42 it 2998	 PSNR SIDD: 39.6097	] ----  [best_Ep_SIDD 41 best_it_SIDD 1499 Best_PSNR_SIDD 39.6408] 
+Epoch: 42	Batch: 3000/6000	Time: 1957.0588	Loss: 0.0061
+Epoch: 42	Batch: 3200/6000	Time: 2068.2558	Loss: 0.0062
+Epoch: 42	Batch: 3400/6000	Time: 2184.7775	Loss: 0.0063
+Epoch: 42	Batch: 3600/6000	Time: 2300.6966	Loss: 0.0059
+Epoch: 42	Batch: 3800/6000	Time: 2413.4192	Loss: 0.0060
+Epoch: 42	Batch: 4000/6000	Time: 2528.5067	Loss: 0.0062
+Epoch: 42	Batch: 4200/6000	Time: 2639.2294	Loss: 0.0060
+Epoch: 42	Batch: 4400/6000	Time: 2750.7595	Loss: 0.0060
+[Ep 42 it 4497	 PSNR SIDD: 39.6425	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 42	Batch: 4600/6000	Time: 2999.2499	Loss: 0.0060
+Epoch: 42	Batch: 4800/6000	Time: 3112.4353	Loss: 0.0062
+Epoch: 42	Batch: 5000/6000	Time: 3224.6379	Loss: 0.0062
+Epoch: 42	Batch: 5200/6000	Time: 3336.5701	Loss: 0.0057
+Epoch: 42	Batch: 5400/6000	Time: 3448.0459	Loss: 0.0060
+Epoch: 42	Batch: 5600/6000	Time: 3559.5098	Loss: 0.0061
+Epoch: 42	Batch: 5800/6000	Time: 3671.7596	Loss: 0.0064
+[Ep 42 it 5996	 PSNR SIDD: 39.6204	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+------------------------------------------------------------------
+Epoch: 42	Time: 3916.0305	Loss: 36.2923	LearningRate 0.000042
+------------------------------------------------------------------
+Epoch: 43	Batch: 200/6000	Time: 113.6554	Loss: 0.0060
+Epoch: 43	Batch: 400/6000	Time: 225.7785	Loss: 0.0061
+Epoch: 43	Batch: 600/6000	Time: 337.8376	Loss: 0.0060
+Epoch: 43	Batch: 800/6000	Time: 449.1456	Loss: 0.0062
+Epoch: 43	Batch: 1000/6000	Time: 560.4322	Loss: 0.0061
+Epoch: 43	Batch: 1200/6000	Time: 671.7428	Loss: 0.0062
+Epoch: 43	Batch: 1400/6000	Time: 783.0609	Loss: 0.0062
+[Ep 43 it 1499	 PSNR SIDD: 39.6189	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 43	Batch: 1600/6000	Time: 1026.7678	Loss: 0.0060
+Epoch: 43	Batch: 1800/6000	Time: 1137.4878	Loss: 0.0058
+Epoch: 43	Batch: 2000/6000	Time: 1248.3773	Loss: 0.0060
+Epoch: 43	Batch: 2200/6000	Time: 1359.2838	Loss: 0.0061
+Epoch: 43	Batch: 2400/6000	Time: 1470.3856	Loss: 0.0058
+Epoch: 43	Batch: 2600/6000	Time: 1581.7091	Loss: 0.0059
+Epoch: 43	Batch: 2800/6000	Time: 1697.3334	Loss: 0.0060
+[Ep 43 it 2998	 PSNR SIDD: 39.6251	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 43	Batch: 3000/6000	Time: 1946.6565	Loss: 0.0061
+Epoch: 43	Batch: 3200/6000	Time: 2058.1689	Loss: 0.0062
+Epoch: 43	Batch: 3400/6000	Time: 2169.7268	Loss: 0.0057
+Epoch: 43	Batch: 3600/6000	Time: 2281.6489	Loss: 0.0058
+Epoch: 43	Batch: 3800/6000	Time: 2393.1519	Loss: 0.0061
+Epoch: 43	Batch: 4000/6000	Time: 2504.3280	Loss: 0.0059
+Epoch: 43	Batch: 4200/6000	Time: 2615.6577	Loss: 0.0063
+Epoch: 43	Batch: 4400/6000	Time: 2727.2723	Loss: 0.0058
+[Ep 43 it 4497	 PSNR SIDD: 39.6084	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 43	Batch: 4600/6000	Time: 2971.1079	Loss: 0.0060
+Epoch: 43	Batch: 4800/6000	Time: 3084.1393	Loss: 0.0059
+Epoch: 43	Batch: 5000/6000	Time: 3195.0425	Loss: 0.0059
+Epoch: 43	Batch: 5200/6000	Time: 3306.7429	Loss: 0.0061
+Epoch: 43	Batch: 5400/6000	Time: 3418.3299	Loss: 0.0060
+Epoch: 43	Batch: 5600/6000	Time: 3529.7608	Loss: 0.0061
+Epoch: 43	Batch: 5800/6000	Time: 3641.0766	Loss: 0.0059
+[Ep 43 it 5996	 PSNR SIDD: 39.6044	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+------------------------------------------------------------------
+Epoch: 43	Time: 3884.6507	Loss: 36.0574	LearningRate 0.000037
+------------------------------------------------------------------
+Epoch: 44	Batch: 200/6000	Time: 112.8343	Loss: 0.0061
+Epoch: 44	Batch: 400/6000	Time: 224.5303	Loss: 0.0059
+Epoch: 44	Batch: 600/6000	Time: 336.3719	Loss: 0.0060
+Epoch: 44	Batch: 800/6000	Time: 448.3546	Loss: 0.0058
+Epoch: 44	Batch: 1000/6000	Time: 565.5572	Loss: 0.0060
+Epoch: 44	Batch: 1200/6000	Time: 677.7295	Loss: 0.0060
+Epoch: 44	Batch: 1400/6000	Time: 790.8624	Loss: 0.0058
+[Ep 44 it 1499	 PSNR SIDD: 39.4965	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 44	Batch: 1600/6000	Time: 1040.6198	Loss: 0.0059
+Epoch: 44	Batch: 1800/6000	Time: 1157.7050	Loss: 0.0061
+Epoch: 44	Batch: 2000/6000	Time: 1275.4248	Loss: 0.0059
+Epoch: 44	Batch: 2200/6000	Time: 1392.2300	Loss: 0.0058
+Epoch: 44	Batch: 2400/6000	Time: 1506.2743	Loss: 0.0058
+Epoch: 44	Batch: 2600/6000	Time: 1623.1436	Loss: 0.0060
+Epoch: 44	Batch: 2800/6000	Time: 1738.0688	Loss: 0.0060
+[Ep 44 it 2998	 PSNR SIDD: 39.6316	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 44	Batch: 3000/6000	Time: 1981.7319	Loss: 0.0061
+Epoch: 44	Batch: 3200/6000	Time: 2092.9225	Loss: 0.0062
+Epoch: 44	Batch: 3400/6000	Time: 2204.2858	Loss: 0.0059
+Epoch: 44	Batch: 3600/6000	Time: 2315.8763	Loss: 0.0061
+Epoch: 44	Batch: 3800/6000	Time: 2427.1454	Loss: 0.0060
+Epoch: 44	Batch: 4000/6000	Time: 2538.2955	Loss: 0.0060
+Epoch: 44	Batch: 4200/6000	Time: 2649.3008	Loss: 0.0059
+Epoch: 44	Batch: 4400/6000	Time: 2760.9538	Loss: 0.0061
+[Ep 44 it 4497	 PSNR SIDD: 39.5783	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 44	Batch: 4600/6000	Time: 3010.2559	Loss: 0.0058
+Epoch: 44	Batch: 4800/6000	Time: 3121.3714	Loss: 0.0063
+Epoch: 44	Batch: 5000/6000	Time: 3231.8391	Loss: 0.0059
+Epoch: 44	Batch: 5200/6000	Time: 3343.3981	Loss: 0.0060
+Epoch: 44	Batch: 5400/6000	Time: 3460.2586	Loss: 0.0062
+Epoch: 44	Batch: 5600/6000	Time: 3577.4241	Loss: 0.0060
+Epoch: 44	Batch: 5800/6000	Time: 3693.3335	Loss: 0.0061
+[Ep 44 it 5996	 PSNR SIDD: 39.6345	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+------------------------------------------------------------------
+Epoch: 44	Time: 3937.7601	Loss: 35.9093	LearningRate 0.000033
+------------------------------------------------------------------
+Epoch: 45	Batch: 200/6000	Time: 112.9771	Loss: 0.0062
+Epoch: 45	Batch: 400/6000	Time: 224.7202	Loss: 0.0058
+Epoch: 45	Batch: 600/6000	Time: 336.8761	Loss: 0.0059
+Epoch: 45	Batch: 800/6000	Time: 448.7161	Loss: 0.0060
+Epoch: 45	Batch: 1000/6000	Time: 560.2159	Loss: 0.0061
+Epoch: 45	Batch: 1200/6000	Time: 671.7979	Loss: 0.0059
+Epoch: 45	Batch: 1400/6000	Time: 783.5680	Loss: 0.0060
+[Ep 45 it 1499	 PSNR SIDD: 39.6323	] ----  [best_Ep_SIDD 42 best_it_SIDD 4497 Best_PSNR_SIDD 39.6425] 
+Epoch: 45	Batch: 1600/6000	Time: 1028.0367	Loss: 0.0059
+Epoch: 45	Batch: 1800/6000	Time: 1140.9483	Loss: 0.0060
+Epoch: 45	Batch: 2000/6000	Time: 1254.1158	Loss: 0.0060
+Epoch: 45	Batch: 2200/6000	Time: 1368.6853	Loss: 0.0060
+Epoch: 45	Batch: 2400/6000	Time: 1481.0013	Loss: 0.0058
+Epoch: 45	Batch: 2600/6000	Time: 1592.1165	Loss: 0.0060
+Epoch: 45	Batch: 2800/6000	Time: 1703.1574	Loss: 0.0060
+[Ep 45 it 2998	 PSNR SIDD: 39.6515	] ----  [best_Ep_SIDD 45 best_it_SIDD 2998 Best_PSNR_SIDD 39.6515] 
+Epoch: 45	Batch: 3000/6000	Time: 1951.2897	Loss: 0.0062
+Epoch: 45	Batch: 3200/6000	Time: 2068.2510	Loss: 0.0060
+Epoch: 45	Batch: 3400/6000	Time: 2180.1836	Loss: 0.0061
+Epoch: 45	Batch: 3600/6000	Time: 2291.0948	Loss: 0.0058
+Epoch: 45	Batch: 3800/6000	Time: 2405.2737	Loss: 0.0059
+Epoch: 45	Batch: 4000/6000	Time: 2522.0210	Loss: 0.0057
+Epoch: 45	Batch: 4200/6000	Time: 2637.1088	Loss: 0.0061
+Epoch: 45	Batch: 4400/6000	Time: 2748.2385	Loss: 0.0061
+[Ep 45 it 4497	 PSNR SIDD: 39.6490	] ----  [best_Ep_SIDD 45 best_it_SIDD 2998 Best_PSNR_SIDD 39.6515] 
+Epoch: 45	Batch: 4600/6000	Time: 2996.1500	Loss: 0.0059
+Epoch: 45	Batch: 4800/6000	Time: 3107.1050	Loss: 0.0059
+Epoch: 45	Batch: 5000/6000	Time: 3223.1992	Loss: 0.0059
+Epoch: 45	Batch: 5200/6000	Time: 3334.8688	Loss: 0.0060
+Epoch: 45	Batch: 5400/6000	Time: 3448.0770	Loss: 0.0062
+Epoch: 45	Batch: 5600/6000	Time: 3564.4869	Loss: 0.0059
+Epoch: 45	Batch: 5800/6000	Time: 3678.9766	Loss: 0.0058
+[Ep 45 it 5996	 PSNR SIDD: 39.6457	] ----  [best_Ep_SIDD 45 best_it_SIDD 2998 Best_PSNR_SIDD 39.6515] 
+------------------------------------------------------------------
+Epoch: 45	Time: 3922.5579	Loss: 35.8613	LearningRate 0.000029
+------------------------------------------------------------------
+Epoch: 46	Batch: 200/6000	Time: 111.8185	Loss: 0.0057
+Epoch: 46	Batch: 400/6000	Time: 222.7925	Loss: 0.0061
+Epoch: 46	Batch: 600/6000	Time: 339.6458	Loss: 0.0059
+Epoch: 46	Batch: 800/6000	Time: 454.0712	Loss: 0.0059
+Epoch: 46	Batch: 1000/6000	Time: 571.3638	Loss: 0.0062
+Epoch: 46	Batch: 1200/6000	Time: 688.0684	Loss: 0.0056
+Epoch: 46	Batch: 1400/6000	Time: 804.6907	Loss: 0.0060
+[Ep 46 it 1499	 PSNR SIDD: 39.6681	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+Epoch: 46	Batch: 1600/6000	Time: 1056.1064	Loss: 0.0060
+Epoch: 46	Batch: 1800/6000	Time: 1166.7147	Loss: 0.0059
+Epoch: 46	Batch: 2000/6000	Time: 1281.3837	Loss: 0.0060
+Epoch: 46	Batch: 2200/6000	Time: 1396.0856	Loss: 0.0058
+Epoch: 46	Batch: 2400/6000	Time: 1507.1618	Loss: 0.0062
+Epoch: 46	Batch: 2600/6000	Time: 1618.0056	Loss: 0.0059
+Epoch: 46	Batch: 2800/6000	Time: 1728.8607	Loss: 0.0060
+[Ep 46 it 2998	 PSNR SIDD: 39.6314	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+Epoch: 46	Batch: 3000/6000	Time: 1972.4837	Loss: 0.0061
+Epoch: 46	Batch: 3200/6000	Time: 2085.0489	Loss: 0.0061
+Epoch: 46	Batch: 3400/6000	Time: 2200.4123	Loss: 0.0063
+Epoch: 46	Batch: 3600/6000	Time: 2311.2756	Loss: 0.0060
+Epoch: 46	Batch: 3800/6000	Time: 2422.6488	Loss: 0.0060
+Epoch: 46	Batch: 4000/6000	Time: 2534.1001	Loss: 0.0059
+Epoch: 46	Batch: 4200/6000	Time: 2645.2733	Loss: 0.0060
+Epoch: 46	Batch: 4400/6000	Time: 2759.2618	Loss: 0.0061
+[Ep 46 it 4497	 PSNR SIDD: 39.6468	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+Epoch: 46	Batch: 4600/6000	Time: 3003.2477	Loss: 0.0058
+Epoch: 46	Batch: 4800/6000	Time: 3114.5810	Loss: 0.0058
+Epoch: 46	Batch: 5000/6000	Time: 3226.1265	Loss: 0.0061
+Epoch: 46	Batch: 5200/6000	Time: 3337.9754	Loss: 0.0058
+Epoch: 46	Batch: 5400/6000	Time: 3452.1564	Loss: 0.0061
+Epoch: 46	Batch: 5600/6000	Time: 3564.7862	Loss: 0.0060
+Epoch: 46	Batch: 5800/6000	Time: 3676.4964	Loss: 0.0061
+[Ep 46 it 5996	 PSNR SIDD: 39.6360	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+------------------------------------------------------------------
+Epoch: 46	Time: 3921.1771	Loss: 35.8255	LearningRate 0.000025
+------------------------------------------------------------------
+Epoch: 47	Batch: 200/6000	Time: 112.4521	Loss: 0.0061
+Epoch: 47	Batch: 400/6000	Time: 224.3005	Loss: 0.0061
+Epoch: 47	Batch: 600/6000	Time: 335.2958	Loss: 0.0062
+Epoch: 47	Batch: 800/6000	Time: 446.2836	Loss: 0.0059
+Epoch: 47	Batch: 1000/6000	Time: 557.0002	Loss: 0.0060
+Epoch: 47	Batch: 1200/6000	Time: 668.2399	Loss: 0.0059
+Epoch: 47	Batch: 1400/6000	Time: 779.3718	Loss: 0.0060
+[Ep 47 it 1499	 PSNR SIDD: 39.6436	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+Epoch: 47	Batch: 1600/6000	Time: 1023.5197	Loss: 0.0060
+Epoch: 47	Batch: 1800/6000	Time: 1135.7026	Loss: 0.0062
+Epoch: 47	Batch: 2000/6000	Time: 1249.1512	Loss: 0.0058
+Epoch: 47	Batch: 2200/6000	Time: 1360.5002	Loss: 0.0059
+Epoch: 47	Batch: 2400/6000	Time: 1473.4916	Loss: 0.0060
+Epoch: 47	Batch: 2600/6000	Time: 1585.0832	Loss: 0.0062
+Epoch: 47	Batch: 2800/6000	Time: 1696.6853	Loss: 0.0060
+[Ep 47 it 2998	 PSNR SIDD: 39.6674	] ----  [best_Ep_SIDD 46 best_it_SIDD 1499 Best_PSNR_SIDD 39.6681] 
+Epoch: 47	Batch: 3000/6000	Time: 1940.4825	Loss: 0.0061
+Epoch: 47	Batch: 3200/6000	Time: 2051.5013	Loss: 0.0060
+Epoch: 47	Batch: 3400/6000	Time: 2162.2946	Loss: 0.0057
+Epoch: 47	Batch: 3600/6000	Time: 2272.8820	Loss: 0.0062
+Epoch: 47	Batch: 3800/6000	Time: 2384.1005	Loss: 0.0060
+Epoch: 47	Batch: 4000/6000	Time: 2496.0578	Loss: 0.0060
+Epoch: 47	Batch: 4200/6000	Time: 2607.1599	Loss: 0.0059
+Epoch: 47	Batch: 4400/6000	Time: 2718.8776	Loss: 0.0059
+[Ep 47 it 4497	 PSNR SIDD: 39.6735	] ----  [best_Ep_SIDD 47 best_it_SIDD 4497 Best_PSNR_SIDD 39.6735] 
+Epoch: 47	Batch: 4600/6000	Time: 2967.6653	Loss: 0.0061
+Epoch: 47	Batch: 4800/6000	Time: 3078.6703	Loss: 0.0061
+Epoch: 47	Batch: 5000/6000	Time: 3189.4564	Loss: 0.0057
+Epoch: 47	Batch: 5200/6000	Time: 3300.5148	Loss: 0.0058
+Epoch: 47	Batch: 5400/6000	Time: 3411.9207	Loss: 0.0060
+Epoch: 47	Batch: 5600/6000	Time: 3523.8163	Loss: 0.0058
+Epoch: 47	Batch: 5800/6000	Time: 3635.5237	Loss: 0.0060
+[Ep 47 it 5996	 PSNR SIDD: 39.6559	] ----  [best_Ep_SIDD 47 best_it_SIDD 4497 Best_PSNR_SIDD 39.6735] 
+------------------------------------------------------------------
+Epoch: 47	Time: 3879.6644	Loss: 35.9047	LearningRate 0.000022
+------------------------------------------------------------------
+Epoch: 48	Batch: 200/6000	Time: 112.8180	Loss: 0.0061
+Epoch: 48	Batch: 400/6000	Time: 223.9548	Loss: 0.0060
+Epoch: 48	Batch: 600/6000	Time: 334.9912	Loss: 0.0059
+Epoch: 48	Batch: 800/6000	Time: 446.2715	Loss: 0.0059
+Epoch: 48	Batch: 1000/6000	Time: 557.4638	Loss: 0.0060
+Epoch: 48	Batch: 1200/6000	Time: 668.3563	Loss: 0.0059
+Epoch: 48	Batch: 1400/6000	Time: 779.0697	Loss: 0.0060
+[Ep 48 it 1499	 PSNR SIDD: 39.6535	] ----  [best_Ep_SIDD 47 best_it_SIDD 4497 Best_PSNR_SIDD 39.6735] 
+Epoch: 48	Batch: 1600/6000	Time: 1023.6522	Loss: 0.0059
+Epoch: 48	Batch: 1800/6000	Time: 1135.4925	Loss: 0.0060
+Epoch: 48	Batch: 2000/6000	Time: 1246.0700	Loss: 0.0058
+Epoch: 48	Batch: 2200/6000	Time: 1356.6327	Loss: 0.0061
+Epoch: 48	Batch: 2400/6000	Time: 1468.0524	Loss: 0.0060
+Epoch: 48	Batch: 2600/6000	Time: 1579.7434	Loss: 0.0059
+Epoch: 48	Batch: 2800/6000	Time: 1691.2377	Loss: 0.0060
+[Ep 48 it 2998	 PSNR SIDD: 39.6406	] ----  [best_Ep_SIDD 47 best_it_SIDD 4497 Best_PSNR_SIDD 39.6735] 
+Epoch: 48	Batch: 3000/6000	Time: 1935.5404	Loss: 0.0060
+Epoch: 48	Batch: 3200/6000	Time: 2047.7663	Loss: 0.0061
+Epoch: 48	Batch: 3400/6000	Time: 2161.6377	Loss: 0.0058
+Epoch: 48	Batch: 3600/6000	Time: 2278.4930	Loss: 0.0059
+Epoch: 48	Batch: 3800/6000	Time: 2395.4619	Loss: 0.0060
+Epoch: 48	Batch: 4000/6000	Time: 2507.6834	Loss: 0.0058
+Epoch: 48	Batch: 4200/6000	Time: 2619.8506	Loss: 0.0059
+Epoch: 48	Batch: 4400/6000	Time: 2732.1330	Loss: 0.0060
+[Ep 48 it 4497	 PSNR SIDD: 39.6723	] ----  [best_Ep_SIDD 47 best_it_SIDD 4497 Best_PSNR_SIDD 39.6735] 
+Epoch: 48	Batch: 4600/6000	Time: 2976.2607	Loss: 0.0059
+Epoch: 48	Batch: 4800/6000	Time: 3088.2271	Loss: 0.0059
+Epoch: 48	Batch: 5000/6000	Time: 3200.3368	Loss: 0.0060
+Epoch: 48	Batch: 5200/6000	Time: 3315.3249	Loss: 0.0060
+Epoch: 48	Batch: 5400/6000	Time: 3426.4262	Loss: 0.0058
+Epoch: 48	Batch: 5600/6000	Time: 3537.1558	Loss: 0.0060
+Epoch: 48	Batch: 5800/6000	Time: 3647.9825	Loss: 0.0062
+[Ep 48 it 5996	 PSNR SIDD: 39.6807	] ----  [best_Ep_SIDD 48 best_it_SIDD 5996 Best_PSNR_SIDD 39.6807] 
+------------------------------------------------------------------
+Epoch: 48	Time: 3895.5178	Loss: 35.7888	LearningRate 0.000019
+------------------------------------------------------------------
+Epoch: 49	Batch: 200/6000	Time: 115.3336	Loss: 0.0063
+Epoch: 49	Batch: 400/6000	Time: 231.9111	Loss: 0.0060
+Epoch: 49	Batch: 600/6000	Time: 344.8114	Loss: 0.0061
+Epoch: 49	Batch: 800/6000	Time: 456.8601	Loss: 0.0059
+Epoch: 49	Batch: 1000/6000	Time: 568.8166	Loss: 0.0060
+Epoch: 49	Batch: 1200/6000	Time: 680.6178	Loss: 0.0060
+Epoch: 49	Batch: 1400/6000	Time: 793.0502	Loss: 0.0057
+[Ep 49 it 1499	 PSNR SIDD: 39.6633	] ----  [best_Ep_SIDD 48 best_it_SIDD 5996 Best_PSNR_SIDD 39.6807] 
+Epoch: 49	Batch: 1600/6000	Time: 1043.2765	Loss: 0.0058
+Epoch: 49	Batch: 1800/6000	Time: 1156.8577	Loss: 0.0060
+Epoch: 49	Batch: 2000/6000	Time: 1273.9709	Loss: 0.0056
+Epoch: 49	Batch: 2200/6000	Time: 1386.0772	Loss: 0.0063
+Epoch: 49	Batch: 2400/6000	Time: 1498.0409	Loss: 0.0063
+Epoch: 49	Batch: 2600/6000	Time: 1609.1626	Loss: 0.0060
+Epoch: 49	Batch: 2800/6000	Time: 1720.3892	Loss: 0.0060
+[Ep 49 it 2998	 PSNR SIDD: 39.6852	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 49	Batch: 3000/6000	Time: 1968.2092	Loss: 0.0059
+Epoch: 49	Batch: 3200/6000	Time: 2079.1458	Loss: 0.0062
+Epoch: 49	Batch: 3400/6000	Time: 2190.2031	Loss: 0.0059
+Epoch: 49	Batch: 3600/6000	Time: 2301.6123	Loss: 0.0061
+Epoch: 49	Batch: 3800/6000	Time: 2413.3254	Loss: 0.0060
+Epoch: 49	Batch: 4000/6000	Time: 2525.0745	Loss: 0.0061
+Epoch: 49	Batch: 4200/6000	Time: 2635.9496	Loss: 0.0061
+Epoch: 49	Batch: 4400/6000	Time: 2746.4758	Loss: 0.0060
+[Ep 49 it 4497	 PSNR SIDD: 39.6437	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 49	Batch: 4600/6000	Time: 2990.1820	Loss: 0.0058
+Epoch: 49	Batch: 4800/6000	Time: 3100.9160	Loss: 0.0060
+Epoch: 49	Batch: 5000/6000	Time: 3212.0526	Loss: 0.0061
+Epoch: 49	Batch: 5200/6000	Time: 3322.7402	Loss: 0.0063
+Epoch: 49	Batch: 5400/6000	Time: 3433.6098	Loss: 0.0060
+Epoch: 49	Batch: 5600/6000	Time: 3544.4237	Loss: 0.0061
+Epoch: 49	Batch: 5800/6000	Time: 3655.2476	Loss: 0.0061
+[Ep 49 it 5996	 PSNR SIDD: 39.6484	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 49	Time: 3898.5077	Loss: 36.0645	LearningRate 0.000016
+------------------------------------------------------------------
+Epoch: 50	Batch: 200/6000	Time: 118.5940	Loss: 0.0058
+Epoch: 50	Batch: 400/6000	Time: 236.6178	Loss: 0.0060
+Epoch: 50	Batch: 600/6000	Time: 351.6158	Loss: 0.0059
+Epoch: 50	Batch: 800/6000	Time: 462.5566	Loss: 0.0059
+Epoch: 50	Batch: 1000/6000	Time: 573.8644	Loss: 0.0059
+Epoch: 50	Batch: 1200/6000	Time: 684.7282	Loss: 0.0059
+Epoch: 50	Batch: 1400/6000	Time: 795.7505	Loss: 0.0062
+[Ep 50 it 1499	 PSNR SIDD: 39.6620	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 50	Batch: 1600/6000	Time: 1040.6084	Loss: 0.0059
+Epoch: 50	Batch: 1800/6000	Time: 1151.5392	Loss: 0.0057
+Epoch: 50	Batch: 2000/6000	Time: 1262.8472	Loss: 0.0060
+Epoch: 50	Batch: 2200/6000	Time: 1374.3470	Loss: 0.0058
+Epoch: 50	Batch: 2400/6000	Time: 1485.4179	Loss: 0.0059
+Epoch: 50	Batch: 2600/6000	Time: 1596.0422	Loss: 0.0057
+Epoch: 50	Batch: 2800/6000	Time: 1706.7146	Loss: 0.0061
+[Ep 50 it 2998	 PSNR SIDD: 39.6563	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 50	Batch: 3000/6000	Time: 1950.1430	Loss: 0.0060
+Epoch: 50	Batch: 3200/6000	Time: 2061.7990	Loss: 0.0063
+Epoch: 50	Batch: 3400/6000	Time: 2172.2365	Loss: 0.0061
+Epoch: 50	Batch: 3600/6000	Time: 2282.6346	Loss: 0.0060
+Epoch: 50	Batch: 3800/6000	Time: 2393.4092	Loss: 0.0061
+Epoch: 50	Batch: 4000/6000	Time: 2504.4589	Loss: 0.0059
+Epoch: 50	Batch: 4200/6000	Time: 2615.3804	Loss: 0.0061
+Epoch: 50	Batch: 4400/6000	Time: 2726.5631	Loss: 0.0058
+[Ep 50 it 4497	 PSNR SIDD: 39.6576	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 50	Batch: 4600/6000	Time: 2970.4639	Loss: 0.0061
+Epoch: 50	Batch: 4800/6000	Time: 3081.1120	Loss: 0.0058
+Epoch: 50	Batch: 5000/6000	Time: 3191.6825	Loss: 0.0060
+Epoch: 50	Batch: 5200/6000	Time: 3302.4281	Loss: 0.0060
+Epoch: 50	Batch: 5400/6000	Time: 3413.2311	Loss: 0.0060
+Epoch: 50	Batch: 5600/6000	Time: 3524.1305	Loss: 0.0057
+Epoch: 50	Batch: 5800/6000	Time: 3634.7748	Loss: 0.0059
+[Ep 50 it 5996	 PSNR SIDD: 39.6508	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 50	Time: 3878.6808	Loss: 35.7037	LearningRate 0.000013
+------------------------------------------------------------------
+Epoch: 51	Batch: 200/6000	Time: 114.0207	Loss: 0.0060
+Epoch: 51	Batch: 400/6000	Time: 230.9555	Loss: 0.0058
+Epoch: 51	Batch: 600/6000	Time: 347.3307	Loss: 0.0061
+Epoch: 51	Batch: 800/6000	Time: 458.9863	Loss: 0.0057
+Epoch: 51	Batch: 1000/6000	Time: 570.4718	Loss: 0.0058
+Epoch: 51	Batch: 1200/6000	Time: 682.0162	Loss: 0.0059
+Epoch: 51	Batch: 1400/6000	Time: 793.5884	Loss: 0.0061
+[Ep 51 it 1499	 PSNR SIDD: 39.6503	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 51	Batch: 1600/6000	Time: 1037.6418	Loss: 0.0061
+Epoch: 51	Batch: 1800/6000	Time: 1149.0813	Loss: 0.0062
+Epoch: 51	Batch: 2000/6000	Time: 1261.9643	Loss: 0.0061
+Epoch: 51	Batch: 2200/6000	Time: 1379.3642	Loss: 0.0062
+Epoch: 51	Batch: 2400/6000	Time: 1496.3134	Loss: 0.0061
+Epoch: 51	Batch: 2600/6000	Time: 1613.0805	Loss: 0.0058
+Epoch: 51	Batch: 2800/6000	Time: 1730.1263	Loss: 0.0061
+[Ep 51 it 2998	 PSNR SIDD: 39.6740	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 51	Batch: 3000/6000	Time: 1980.2246	Loss: 0.0062
+Epoch: 51	Batch: 3200/6000	Time: 2096.8586	Loss: 0.0060
+Epoch: 51	Batch: 3400/6000	Time: 2213.9031	Loss: 0.0060
+Epoch: 51	Batch: 3600/6000	Time: 2327.8130	Loss: 0.0058
+Epoch: 51	Batch: 3800/6000	Time: 2446.2737	Loss: 0.0059
+Epoch: 51	Batch: 4000/6000	Time: 2563.9398	Loss: 0.0059
+Epoch: 51	Batch: 4200/6000	Time: 2678.4825	Loss: 0.0060
+Epoch: 51	Batch: 4400/6000	Time: 2789.6250	Loss: 0.0059
+[Ep 51 it 4497	 PSNR SIDD: 39.6637	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 51	Batch: 4600/6000	Time: 3034.3471	Loss: 0.0059
+Epoch: 51	Batch: 4800/6000	Time: 3146.2091	Loss: 0.0061
+Epoch: 51	Batch: 5000/6000	Time: 3257.4791	Loss: 0.0059
+Epoch: 51	Batch: 5200/6000	Time: 3368.9083	Loss: 0.0059
+Epoch: 51	Batch: 5400/6000	Time: 3484.2272	Loss: 0.0056
+Epoch: 51	Batch: 5600/6000	Time: 3601.7264	Loss: 0.0060
+Epoch: 51	Batch: 5800/6000	Time: 3717.5277	Loss: 0.0059
+[Ep 51 it 5996	 PSNR SIDD: 39.6441	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 51	Time: 3961.2989	Loss: 35.6674	LearningRate 0.000011
+------------------------------------------------------------------
+Epoch: 52	Batch: 200/6000	Time: 112.9922	Loss: 0.0060
+Epoch: 52	Batch: 400/6000	Time: 226.7885	Loss: 0.0059
+Epoch: 52	Batch: 600/6000	Time: 344.2400	Loss: 0.0058
+Epoch: 52	Batch: 800/6000	Time: 455.4039	Loss: 0.0059
+Epoch: 52	Batch: 1000/6000	Time: 567.3550	Loss: 0.0059
+Epoch: 52	Batch: 1200/6000	Time: 679.8446	Loss: 0.0060
+Epoch: 52	Batch: 1400/6000	Time: 792.4232	Loss: 0.0060
+[Ep 52 it 1499	 PSNR SIDD: 39.6546	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 52	Batch: 1600/6000	Time: 1038.1780	Loss: 0.0059
+Epoch: 52	Batch: 1800/6000	Time: 1150.0763	Loss: 0.0058
+Epoch: 52	Batch: 2000/6000	Time: 1262.0337	Loss: 0.0059
+Epoch: 52	Batch: 2200/6000	Time: 1373.2344	Loss: 0.0060
+Epoch: 52	Batch: 2400/6000	Time: 1484.7059	Loss: 0.0059
+Epoch: 52	Batch: 2600/6000	Time: 1596.6566	Loss: 0.0059
+Epoch: 52	Batch: 2800/6000	Time: 1709.0316	Loss: 0.0060
+[Ep 52 it 2998	 PSNR SIDD: 39.6628	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 52	Batch: 3000/6000	Time: 1953.9698	Loss: 0.0062
+Epoch: 52	Batch: 3200/6000	Time: 2065.2188	Loss: 0.0062
+Epoch: 52	Batch: 3400/6000	Time: 2176.2466	Loss: 0.0058
+Epoch: 52	Batch: 3600/6000	Time: 2287.9785	Loss: 0.0059
+Epoch: 52	Batch: 3800/6000	Time: 2399.3480	Loss: 0.0062
+Epoch: 52	Batch: 4000/6000	Time: 2511.3968	Loss: 0.0060
+Epoch: 52	Batch: 4200/6000	Time: 2624.7341	Loss: 0.0059
+Epoch: 52	Batch: 4400/6000	Time: 2736.4594	Loss: 0.0059
+[Ep 52 it 4497	 PSNR SIDD: 39.6611	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 52	Batch: 4600/6000	Time: 2981.2469	Loss: 0.0060
+Epoch: 52	Batch: 4800/6000	Time: 3093.3669	Loss: 0.0056
+Epoch: 52	Batch: 5000/6000	Time: 3205.1173	Loss: 0.0061
+Epoch: 52	Batch: 5200/6000	Time: 3316.5308	Loss: 0.0062
+Epoch: 52	Batch: 5400/6000	Time: 3427.4513	Loss: 0.0060
+Epoch: 52	Batch: 5600/6000	Time: 3544.2195	Loss: 0.0060
+Epoch: 52	Batch: 5800/6000	Time: 3662.2044	Loss: 0.0059
+[Ep 52 it 5996	 PSNR SIDD: 39.6765	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 52	Time: 3905.4428	Loss: 35.7481	LearningRate 0.000008
+------------------------------------------------------------------
+Epoch: 53	Batch: 200/6000	Time: 112.6696	Loss: 0.0057
+Epoch: 53	Batch: 400/6000	Time: 223.8585	Loss: 0.0060
+Epoch: 53	Batch: 600/6000	Time: 335.1365	Loss: 0.0057
+Epoch: 53	Batch: 800/6000	Time: 446.6182	Loss: 0.0062
+Epoch: 53	Batch: 1000/6000	Time: 560.9586	Loss: 0.0062
+Epoch: 53	Batch: 1200/6000	Time: 678.6767	Loss: 0.0060
+Epoch: 53	Batch: 1400/6000	Time: 789.9889	Loss: 0.0059
+[Ep 53 it 1499	 PSNR SIDD: 39.6691	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 53	Batch: 1600/6000	Time: 1034.1200	Loss: 0.0059
+Epoch: 53	Batch: 1800/6000	Time: 1148.9283	Loss: 0.0057
+Epoch: 53	Batch: 2000/6000	Time: 1267.1592	Loss: 0.0060
+Epoch: 53	Batch: 2200/6000	Time: 1385.7505	Loss: 0.0060
+Epoch: 53	Batch: 2400/6000	Time: 1503.4372	Loss: 0.0060
+Epoch: 53	Batch: 2600/6000	Time: 1615.6971	Loss: 0.0059
+Epoch: 53	Batch: 2800/6000	Time: 1727.3200	Loss: 0.0060
+[Ep 53 it 2998	 PSNR SIDD: 39.6715	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 53	Batch: 3000/6000	Time: 1972.1734	Loss: 0.0058
+Epoch: 53	Batch: 3200/6000	Time: 2083.8406	Loss: 0.0059
+Epoch: 53	Batch: 3400/6000	Time: 2195.4857	Loss: 0.0061
+Epoch: 53	Batch: 3600/6000	Time: 2306.2480	Loss: 0.0058
+Epoch: 53	Batch: 3800/6000	Time: 2417.3238	Loss: 0.0059
+Epoch: 53	Batch: 4000/6000	Time: 2528.2995	Loss: 0.0057
+Epoch: 53	Batch: 4200/6000	Time: 2639.4189	Loss: 0.0059
+Epoch: 53	Batch: 4400/6000	Time: 2750.3070	Loss: 0.0062
+[Ep 53 it 4497	 PSNR SIDD: 39.6750	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 53	Batch: 4600/6000	Time: 2994.2654	Loss: 0.0061
+Epoch: 53	Batch: 4800/6000	Time: 3105.1684	Loss: 0.0061
+Epoch: 53	Batch: 5000/6000	Time: 3216.2804	Loss: 0.0059
+Epoch: 53	Batch: 5200/6000	Time: 3327.6333	Loss: 0.0058
+Epoch: 53	Batch: 5400/6000	Time: 3439.1873	Loss: 0.0060
+Epoch: 53	Batch: 5600/6000	Time: 3550.7471	Loss: 0.0060
+Epoch: 53	Batch: 5800/6000	Time: 3662.7112	Loss: 0.0058
+[Ep 53 it 5996	 PSNR SIDD: 39.6674	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 53	Time: 3906.6314	Loss: 35.6172	LearningRate 0.000006
+------------------------------------------------------------------
+Epoch: 54	Batch: 200/6000	Time: 117.0926	Loss: 0.0059
+Epoch: 54	Batch: 400/6000	Time: 228.0873	Loss: 0.0060
+Epoch: 54	Batch: 600/6000	Time: 338.7822	Loss: 0.0058
+Epoch: 54	Batch: 800/6000	Time: 449.6457	Loss: 0.0060
+Epoch: 54	Batch: 1000/6000	Time: 566.1036	Loss: 0.0061
+Epoch: 54	Batch: 1200/6000	Time: 683.1773	Loss: 0.0058
+Epoch: 54	Batch: 1400/6000	Time: 797.0483	Loss: 0.0059
+[Ep 54 it 1499	 PSNR SIDD: 39.6715	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 54	Batch: 1600/6000	Time: 1048.3754	Loss: 0.0061
+Epoch: 54	Batch: 1800/6000	Time: 1162.3498	Loss: 0.0057
+Epoch: 54	Batch: 2000/6000	Time: 1273.3053	Loss: 0.0058
+Epoch: 54	Batch: 2200/6000	Time: 1384.2520	Loss: 0.0058
+Epoch: 54	Batch: 2400/6000	Time: 1495.2132	Loss: 0.0061
+Epoch: 54	Batch: 2600/6000	Time: 1606.4199	Loss: 0.0056
+Epoch: 54	Batch: 2800/6000	Time: 1720.8926	Loss: 0.0060
+[Ep 54 it 2998	 PSNR SIDD: 39.6796	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 54	Batch: 3000/6000	Time: 1965.3228	Loss: 0.0062
+Epoch: 54	Batch: 3200/6000	Time: 2075.7377	Loss: 0.0058
+Epoch: 54	Batch: 3400/6000	Time: 2187.6496	Loss: 0.0060
+Epoch: 54	Batch: 3600/6000	Time: 2301.1564	Loss: 0.0060
+Epoch: 54	Batch: 3800/6000	Time: 2413.6203	Loss: 0.0057
+Epoch: 54	Batch: 4000/6000	Time: 2525.0876	Loss: 0.0060
+Epoch: 54	Batch: 4200/6000	Time: 2636.8650	Loss: 0.0059
+Epoch: 54	Batch: 4400/6000	Time: 2748.8706	Loss: 0.0058
+[Ep 54 it 4497	 PSNR SIDD: 39.6651	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 54	Batch: 4600/6000	Time: 2993.3522	Loss: 0.0060
+Epoch: 54	Batch: 4800/6000	Time: 3104.9109	Loss: 0.0061
+Epoch: 54	Batch: 5000/6000	Time: 3216.8575	Loss: 0.0061
+Epoch: 54	Batch: 5200/6000	Time: 3328.9442	Loss: 0.0061
+Epoch: 54	Batch: 5400/6000	Time: 3440.8618	Loss: 0.0059
+Epoch: 54	Batch: 5600/6000	Time: 3553.0371	Loss: 0.0061
+Epoch: 54	Batch: 5800/6000	Time: 3664.9712	Loss: 0.0057
+[Ep 54 it 5996	 PSNR SIDD: 39.6650	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 54	Time: 3908.9315	Loss: 35.5937	LearningRate 0.000005
+------------------------------------------------------------------
+Epoch: 55	Batch: 200/6000	Time: 112.2203	Loss: 0.0060
+Epoch: 55	Batch: 400/6000	Time: 223.8842	Loss: 0.0059
+Epoch: 55	Batch: 600/6000	Time: 335.6567	Loss: 0.0059
+Epoch: 55	Batch: 800/6000	Time: 447.3041	Loss: 0.0058
+Epoch: 55	Batch: 1000/6000	Time: 559.8265	Loss: 0.0059
+Epoch: 55	Batch: 1200/6000	Time: 671.1501	Loss: 0.0062
+Epoch: 55	Batch: 1400/6000	Time: 782.5731	Loss: 0.0059
+[Ep 55 it 1499	 PSNR SIDD: 39.6797	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 55	Batch: 1600/6000	Time: 1027.4881	Loss: 0.0058
+Epoch: 55	Batch: 1800/6000	Time: 1143.5281	Loss: 0.0060
+Epoch: 55	Batch: 2000/6000	Time: 1255.3845	Loss: 0.0059
+Epoch: 55	Batch: 2200/6000	Time: 1366.5810	Loss: 0.0059
+Epoch: 55	Batch: 2400/6000	Time: 1477.3635	Loss: 0.0059
+Epoch: 55	Batch: 2600/6000	Time: 1588.1285	Loss: 0.0060
+Epoch: 55	Batch: 2800/6000	Time: 1702.7221	Loss: 0.0059
+[Ep 55 it 2998	 PSNR SIDD: 39.6820	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 55	Batch: 3000/6000	Time: 1952.4549	Loss: 0.0060
+Epoch: 55	Batch: 3200/6000	Time: 2069.0211	Loss: 0.0059
+Epoch: 55	Batch: 3400/6000	Time: 2181.1044	Loss: 0.0060
+Epoch: 55	Batch: 3600/6000	Time: 2292.4751	Loss: 0.0059
+Epoch: 55	Batch: 3800/6000	Time: 2403.7394	Loss: 0.0059
+Epoch: 55	Batch: 4000/6000	Time: 2514.6749	Loss: 0.0059
+Epoch: 55	Batch: 4200/6000	Time: 2625.9146	Loss: 0.0059
+Epoch: 55	Batch: 4400/6000	Time: 2737.7048	Loss: 0.0060
+[Ep 55 it 4497	 PSNR SIDD: 39.6784	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 55	Batch: 4600/6000	Time: 2981.3325	Loss: 0.0058
+Epoch: 55	Batch: 4800/6000	Time: 3092.6533	Loss: 0.0058
+Epoch: 55	Batch: 5000/6000	Time: 3205.7578	Loss: 0.0058
+Epoch: 55	Batch: 5200/6000	Time: 3317.0412	Loss: 0.0059
+Epoch: 55	Batch: 5400/6000	Time: 3428.4041	Loss: 0.0060
+Epoch: 55	Batch: 5600/6000	Time: 3540.0826	Loss: 0.0060
+Epoch: 55	Batch: 5800/6000	Time: 3651.6183	Loss: 0.0058
+[Ep 55 it 5996	 PSNR SIDD: 39.6742	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 55	Time: 3895.8067	Loss: 35.5028	LearningRate 0.000003
+------------------------------------------------------------------
+Epoch: 56	Batch: 200/6000	Time: 112.4031	Loss: 0.0058
+Epoch: 56	Batch: 400/6000	Time: 223.9198	Loss: 0.0057
+Epoch: 56	Batch: 600/6000	Time: 335.4468	Loss: 0.0059
+Epoch: 56	Batch: 800/6000	Time: 447.3980	Loss: 0.0056
+Epoch: 56	Batch: 1000/6000	Time: 559.6656	Loss: 0.0062
+Epoch: 56	Batch: 1200/6000	Time: 676.7221	Loss: 0.0060
+Epoch: 56	Batch: 1400/6000	Time: 789.3511	Loss: 0.0058
+[Ep 56 it 1499	 PSNR SIDD: 39.6711	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 56	Batch: 1600/6000	Time: 1035.0601	Loss: 0.0057
+Epoch: 56	Batch: 1800/6000	Time: 1149.1113	Loss: 0.0060
+Epoch: 56	Batch: 2000/6000	Time: 1263.3181	Loss: 0.0059
+Epoch: 56	Batch: 2200/6000	Time: 1379.5254	Loss: 0.0058
+Epoch: 56	Batch: 2400/6000	Time: 1490.5789	Loss: 0.0061
+Epoch: 56	Batch: 2600/6000	Time: 1603.1769	Loss: 0.0057
+Epoch: 56	Batch: 2800/6000	Time: 1720.3731	Loss: 0.0057
+[Ep 56 it 2998	 PSNR SIDD: 39.6636	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 56	Batch: 3000/6000	Time: 1969.3088	Loss: 0.0058
+Epoch: 56	Batch: 3200/6000	Time: 2087.2620	Loss: 0.0059
+Epoch: 56	Batch: 3400/6000	Time: 2198.4403	Loss: 0.0057
+Epoch: 56	Batch: 3600/6000	Time: 2310.0124	Loss: 0.0060
+Epoch: 56	Batch: 3800/6000	Time: 2421.4244	Loss: 0.0059
+Epoch: 56	Batch: 4000/6000	Time: 2532.1841	Loss: 0.0059
+Epoch: 56	Batch: 4200/6000	Time: 2643.0355	Loss: 0.0060
+Epoch: 56	Batch: 4400/6000	Time: 2755.6922	Loss: 0.0060
+[Ep 56 it 4497	 PSNR SIDD: 39.6691	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+Epoch: 56	Batch: 4600/6000	Time: 3005.7537	Loss: 0.0058
+Epoch: 56	Batch: 4800/6000	Time: 3122.7460	Loss: 0.0057
+Epoch: 56	Batch: 5000/6000	Time: 3236.2607	Loss: 0.0058
+Epoch: 56	Batch: 5200/6000	Time: 3350.6097	Loss: 0.0058
+Epoch: 56	Batch: 5400/6000	Time: 3461.9707	Loss: 0.0060
+Epoch: 56	Batch: 5600/6000	Time: 3573.3746	Loss: 0.0061
+Epoch: 56	Batch: 5800/6000	Time: 3684.9372	Loss: 0.0060
+[Ep 56 it 5996	 PSNR SIDD: 39.6735	] ----  [best_Ep_SIDD 49 best_it_SIDD 2998 Best_PSNR_SIDD 39.6852] 
+------------------------------------------------------------------
+Epoch: 56	Time: 3929.2194	Loss: 35.3141	LearningRate 0.000002
+------------------------------------------------------------------
+Epoch: 57	Batch: 200/6000	Time: 115.5042	Loss: 0.0061
+Epoch: 57	Batch: 400/6000	Time: 230.2954	Loss: 0.0060
+Epoch: 57	Batch: 600/6000	Time: 341.2445	Loss: 0.0060
+Epoch: 57	Batch: 800/6000	Time: 452.4704	Loss: 0.0058
+Epoch: 57	Batch: 1000/6000	Time: 563.4181	Loss: 0.0062
+Epoch: 57	Batch: 1200/6000	Time: 674.6370	Loss: 0.0060
+Epoch: 57	Batch: 1400/6000	Time: 786.7176	Loss: 0.0059
+[Ep 57 it 1499	 PSNR SIDD: 39.6865	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+Epoch: 57	Batch: 1600/6000	Time: 1037.3906	Loss: 0.0060
+Epoch: 57	Batch: 1800/6000	Time: 1148.5381	Loss: 0.0061
+Epoch: 57	Batch: 2000/6000	Time: 1260.3086	Loss: 0.0058
+Epoch: 57	Batch: 2200/6000	Time: 1372.4658	Loss: 0.0060
+Epoch: 57	Batch: 2400/6000	Time: 1484.1243	Loss: 0.0059
+Epoch: 57	Batch: 2600/6000	Time: 1596.4195	Loss: 0.0061
+Epoch: 57	Batch: 2800/6000	Time: 1709.7994	Loss: 0.0061
+[Ep 57 it 2998	 PSNR SIDD: 39.6755	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+Epoch: 57	Batch: 3000/6000	Time: 1957.1962	Loss: 0.0060
+Epoch: 57	Batch: 3200/6000	Time: 2071.6678	Loss: 0.0058
+Epoch: 57	Batch: 3400/6000	Time: 2189.7691	Loss: 0.0058
+Epoch: 57	Batch: 3600/6000	Time: 2301.1701	Loss: 0.0056
+Epoch: 57	Batch: 3800/6000	Time: 2414.7310	Loss: 0.0055
+Epoch: 57	Batch: 4000/6000	Time: 2526.4685	Loss: 0.0057
+Epoch: 57	Batch: 4200/6000	Time: 2638.5053	Loss: 0.0060
+Epoch: 57	Batch: 4400/6000	Time: 2750.4019	Loss: 0.0060
+[Ep 57 it 4497	 PSNR SIDD: 39.6783	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+Epoch: 57	Batch: 4600/6000	Time: 2994.7280	Loss: 0.0058
+Epoch: 57	Batch: 4800/6000	Time: 3106.1172	Loss: 0.0057
+Epoch: 57	Batch: 5000/6000	Time: 3217.5872	Loss: 0.0058
+Epoch: 57	Batch: 5200/6000	Time: 3329.4428	Loss: 0.0058
+Epoch: 57	Batch: 5400/6000	Time: 3441.0840	Loss: 0.0059
+Epoch: 57	Batch: 5600/6000	Time: 3552.0689	Loss: 0.0059
+Epoch: 57	Batch: 5800/6000	Time: 3663.4740	Loss: 0.0061
+[Ep 57 it 5996	 PSNR SIDD: 39.6831	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+------------------------------------------------------------------
+Epoch: 57	Time: 3907.7122	Loss: 35.4817	LearningRate 0.000002
+------------------------------------------------------------------
+Epoch: 58	Batch: 200/6000	Time: 112.5581	Loss: 0.0062
+Epoch: 58	Batch: 400/6000	Time: 225.2749	Loss: 0.0059
+Epoch: 58	Batch: 600/6000	Time: 343.5780	Loss: 0.0059
+Epoch: 58	Batch: 800/6000	Time: 462.1279	Loss: 0.0060
+Epoch: 58	Batch: 1000/6000	Time: 578.2034	Loss: 0.0060
+Epoch: 58	Batch: 1200/6000	Time: 689.5686	Loss: 0.0057
+Epoch: 58	Batch: 1400/6000	Time: 801.1086	Loss: 0.0059
+[Ep 58 it 1499	 PSNR SIDD: 39.6821	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+Epoch: 58	Batch: 1600/6000	Time: 1045.0877	Loss: 0.0058
+Epoch: 58	Batch: 1800/6000	Time: 1156.0676	Loss: 0.0058
+Epoch: 58	Batch: 2000/6000	Time: 1270.9565	Loss: 0.0059
+Epoch: 58	Batch: 2200/6000	Time: 1386.1326	Loss: 0.0057
+Epoch: 58	Batch: 2400/6000	Time: 1502.4658	Loss: 0.0059
+Epoch: 58	Batch: 2600/6000	Time: 1619.3303	Loss: 0.0060
+Epoch: 58	Batch: 2800/6000	Time: 1730.5376	Loss: 0.0058
+[Ep 58 it 2998	 PSNR SIDD: 39.6834	] ----  [best_Ep_SIDD 57 best_it_SIDD 1499 Best_PSNR_SIDD 39.6865] 
+Epoch: 58	Batch: 3000/6000	Time: 1974.2776	Loss: 0.0057
+Epoch: 58	Batch: 3200/6000	Time: 2085.3211	Loss: 0.0060
+Epoch: 58	Batch: 3400/6000	Time: 2198.3246	Loss: 0.0059
+Epoch: 58	Batch: 3600/6000	Time: 2309.9795	Loss: 0.0059
+Epoch: 58	Batch: 3800/6000	Time: 2421.4491	Loss: 0.0060
+Epoch: 58	Batch: 4000/6000	Time: 2532.4845	Loss: 0.0060
+Epoch: 58	Batch: 4200/6000	Time: 2643.5336	Loss: 0.0059
+Epoch: 58	Batch: 4400/6000	Time: 2755.7856	Loss: 0.0060
+[Ep 58 it 4497	 PSNR SIDD: 39.6872	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 58	Batch: 4600/6000	Time: 3005.0332	Loss: 0.0058
+Epoch: 58	Batch: 4800/6000	Time: 3117.6890	Loss: 0.0059
+Epoch: 58	Batch: 5000/6000	Time: 3230.2395	Loss: 0.0059
+Epoch: 58	Batch: 5200/6000	Time: 3341.8793	Loss: 0.0058
+Epoch: 58	Batch: 5400/6000	Time: 3453.3956	Loss: 0.0063
+Epoch: 58	Batch: 5600/6000	Time: 3565.9463	Loss: 0.0057
+Epoch: 58	Batch: 5800/6000	Time: 3683.1940	Loss: 0.0060
+[Ep 58 it 5996	 PSNR SIDD: 39.6837	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+------------------------------------------------------------------
+Epoch: 58	Time: 3930.5575	Loss: 35.3668	LearningRate 0.000001
+------------------------------------------------------------------
+Epoch: 59	Batch: 200/6000	Time: 113.0045	Loss: 0.0062
+Epoch: 59	Batch: 400/6000	Time: 224.5899	Loss: 0.0058
+Epoch: 59	Batch: 600/6000	Time: 335.2314	Loss: 0.0059
+Epoch: 59	Batch: 800/6000	Time: 446.2290	Loss: 0.0058
+Epoch: 59	Batch: 1000/6000	Time: 557.9511	Loss: 0.0058
+Epoch: 59	Batch: 1200/6000	Time: 669.0192	Loss: 0.0058
+Epoch: 59	Batch: 1400/6000	Time: 779.2482	Loss: 0.0059
+[Ep 59 it 1499	 PSNR SIDD: 39.6825	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 59	Batch: 1600/6000	Time: 1022.6308	Loss: 0.0060
+Epoch: 59	Batch: 1800/6000	Time: 1133.7313	Loss: 0.0058
+Epoch: 59	Batch: 2000/6000	Time: 1245.0631	Loss: 0.0057
+Epoch: 59	Batch: 2200/6000	Time: 1356.0054	Loss: 0.0057
+Epoch: 59	Batch: 2400/6000	Time: 1466.9780	Loss: 0.0061
+Epoch: 59	Batch: 2600/6000	Time: 1578.4722	Loss: 0.0060
+Epoch: 59	Batch: 2800/6000	Time: 1689.7626	Loss: 0.0059
+[Ep 59 it 2998	 PSNR SIDD: 39.6794	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 59	Batch: 3000/6000	Time: 1934.4915	Loss: 0.0059
+Epoch: 59	Batch: 3200/6000	Time: 2046.0924	Loss: 0.0057
+Epoch: 59	Batch: 3400/6000	Time: 2157.7875	Loss: 0.0059
+Epoch: 59	Batch: 3600/6000	Time: 2269.7909	Loss: 0.0060
+Epoch: 59	Batch: 3800/6000	Time: 2381.5781	Loss: 0.0059
+Epoch: 59	Batch: 4000/6000	Time: 2494.7617	Loss: 0.0059
+Epoch: 59	Batch: 4200/6000	Time: 2611.7150	Loss: 0.0061
+Epoch: 59	Batch: 4400/6000	Time: 2728.3255	Loss: 0.0061
+[Ep 59 it 4497	 PSNR SIDD: 39.6795	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 59	Batch: 4600/6000	Time: 2976.4164	Loss: 0.0059
+Epoch: 59	Batch: 4800/6000	Time: 3092.2044	Loss: 0.0059
+Epoch: 59	Batch: 5000/6000	Time: 3210.3862	Loss: 0.0063
+Epoch: 59	Batch: 5200/6000	Time: 3328.6839	Loss: 0.0058
+Epoch: 59	Batch: 5400/6000	Time: 3447.2405	Loss: 0.0059
+Epoch: 59	Batch: 5600/6000	Time: 3564.6071	Loss: 0.0063
+Epoch: 59	Batch: 5800/6000	Time: 3676.1885	Loss: 0.0060
+[Ep 59 it 5996	 PSNR SIDD: 39.6825	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+------------------------------------------------------------------
+Epoch: 59	Time: 3920.3504	Loss: 35.6279	LearningRate 0.000001
+------------------------------------------------------------------
+Epoch: 60	Batch: 200/6000	Time: 112.2975	Loss: 0.0059
+Epoch: 60	Batch: 400/6000	Time: 223.4727	Loss: 0.0061
+Epoch: 60	Batch: 600/6000	Time: 334.8250	Loss: 0.0059
+Epoch: 60	Batch: 800/6000	Time: 447.0943	Loss: 0.0059
+Epoch: 60	Batch: 1000/6000	Time: 559.1236	Loss: 0.0059
+Epoch: 60	Batch: 1200/6000	Time: 674.9948	Loss: 0.0061
+Epoch: 60	Batch: 1400/6000	Time: 791.6931	Loss: 0.0059
+[Ep 60 it 1499	 PSNR SIDD: 39.6867	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 60	Batch: 1600/6000	Time: 1041.1724	Loss: 0.0059
+Epoch: 60	Batch: 1800/6000	Time: 1157.0999	Loss: 0.0060
+Epoch: 60	Batch: 2000/6000	Time: 1268.9698	Loss: 0.0059
+Epoch: 60	Batch: 2200/6000	Time: 1380.7147	Loss: 0.0059
+Epoch: 60	Batch: 2400/6000	Time: 1492.4187	Loss: 0.0058
+Epoch: 60	Batch: 2600/6000	Time: 1604.3112	Loss: 0.0061
+Epoch: 60	Batch: 2800/6000	Time: 1716.2448	Loss: 0.0063
+[Ep 60 it 2998	 PSNR SIDD: 39.6811	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 60	Batch: 3000/6000	Time: 1961.4197	Loss: 0.0056
+Epoch: 60	Batch: 3200/6000	Time: 2073.2940	Loss: 0.0060
+Epoch: 60	Batch: 3400/6000	Time: 2184.7596	Loss: 0.0060
+Epoch: 60	Batch: 3600/6000	Time: 2295.7641	Loss: 0.0059
+Epoch: 60	Batch: 3800/6000	Time: 2407.6721	Loss: 0.0059
+Epoch: 60	Batch: 4000/6000	Time: 2520.0475	Loss: 0.0060
+Epoch: 60	Batch: 4200/6000	Time: 2632.4957	Loss: 0.0058
+Epoch: 60	Batch: 4400/6000	Time: 2744.6798	Loss: 0.0060
+[Ep 60 it 4497	 PSNR SIDD: 39.6812	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+Epoch: 60	Batch: 4600/6000	Time: 2989.1228	Loss: 0.0059
+Epoch: 60	Batch: 4800/6000	Time: 3100.2305	Loss: 0.0059
+Epoch: 60	Batch: 5000/6000	Time: 3212.2243	Loss: 0.0059
+Epoch: 60	Batch: 5200/6000	Time: 3325.2247	Loss: 0.0058
+Epoch: 60	Batch: 5400/6000	Time: 3436.5969	Loss: 0.0059
+Epoch: 60	Batch: 5600/6000	Time: 3548.7658	Loss: 0.0060
+Epoch: 60	Batch: 5800/6000	Time: 3660.5162	Loss: 0.0060
+[Ep 60 it 5996	 PSNR SIDD: 39.6786	] ----  [best_Ep_SIDD 58 best_it_SIDD 4497 Best_PSNR_SIDD 39.6872] 
+------------------------------------------------------------------
+Epoch: 60	Time: 3904.7457	Loss: 35.5457	LearningRate 0.000001
+------------------------------------------------------------------

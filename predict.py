@@ -1,11 +1,10 @@
 import os
 
-import glob
-
-import cv2
 import argparse
 import utils
 from networks.MIRNet_V2_model import MIRNet_v2
+from networks.MIRNet_model import MIRNet
+
 import paddle
 import numpy as np
 from skimage import img_as_ubyte
@@ -17,6 +16,7 @@ parser.add_argument("--save_path", type=str, default="results/", help='path to s
 parser.add_argument("--use_GPU", type=bool, default=True, help='use GPU or not')
 parser.add_argument("--gpu_id", type=str, default="0", help='GPU id')
 parser.add_argument('--save_images', action='store_true', help='Save images in result directory')
+parser.add_argument("--model", type=str, default="MIRNet", help='model for train')
 
 opt = parser.parse_args()
 
@@ -30,7 +30,10 @@ def main():
 
     # Build model
     print('Loading model ...\n')
-    model = MIRNet_v2(n_feat=64)
+    if opt.model == "MIRNet":
+        model = MIRNet()
+    else:
+        model = MIRNet_v2(n_feat=64)
 
     utils.load_checkpoint(model, opt.model_ckpt)
 

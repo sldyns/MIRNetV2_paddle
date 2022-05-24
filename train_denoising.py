@@ -1,12 +1,6 @@
 import os
 from config import Config
 
-opt = Config('training_1card.yml')
-
-gpus = ','.join([str(i) for i in opt.GPU])
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = gpus
-
 import paddle
 
 import paddle.optimizer as optim
@@ -21,10 +15,29 @@ from dataloaders.data_rgb import get_training_loader, get_validation_data
 from utils import MixUp
 
 from networks.MIRNet_V2_model import MIRNet_v2
+from networks.MIRNet_model import MIRNet
+
 from losses import CharbonnierLoss
 import paddle.distributed as dist
 
 from visualdl import LogWriter
+
+import argparse
+
+parser = argparse.ArgumentParser(description="MIRNet_train")
+parser.add_argument("--model", type=str, default="MIRNet", help='model for train')
+parser.add_argument("--gpus", type=int, default="4", help='number of gpus for train')
+
+args = parser.parse_args()
+
+assert args.model in ["MIRNet", "MIRNetV2"]
+assert args.gpus in [1,4]
+
+opt = Config('configs/' + args.model + '_' + str(args.gpus) + 'cards.yml')
+
+gpus = ','.join([str(i) for i in opt.GPU])
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = gpus
 
 
 def main():
@@ -55,9 +68,13 @@ def main():
     val_dir = opt.TRAINING.VAL_DIR
 
     ######### Model ###########
-    model = MIRNet_v2(n_feat=64)
-    model.train()
 
+    if args.model == "MIRNet":
+        model = MIRNet()
+    else:
+        model = MIRNet_v2(n_feat=64)
+
+    model.train()
 
     ######### Scheduler ###########
     new_lr = opt.OPTIM.LR_INITIAL
@@ -181,7 +198,7 @@ def main():
                 loss.backward()
                 optimizer.step()
                 epoch_loss += loss.item()
-                
+
                 # break
 
                 if i % 200 == 0 and i > 0 and local_rank == 0:
@@ -189,8 +206,8 @@ def main():
                     writer.add_scalar(tag='loss', value=batch_loss, step=step)
 
                     print("Epoch: {}\tBatch: {}/{}\tTime: {:.4f}\tLoss: {:.4f}".format(epoch, i, len(train_loader),
-                                                                                              time.time() - epoch_start_time,
-                                                                                              batch_loss))
+                                                                                       time.time() - epoch_start_time,
+                                                                                       batch_loss))
                     batch_loss = 0.
 
                 #### Evaluation ####
@@ -241,12 +258,13 @@ def main():
             if epoch == up_epoch and epoch < sum(epoches):
                 pro_step += 1
                 up_epoch += epoches[pro_step]
-                train_loader = get_training_loader(train_dir, Train_ps[pro_step], Train_bs[pro_step], Train_wk[pro_step])
+                train_loader = get_training_loader(train_dir, Train_ps[pro_step], Train_bs[pro_step],
+                                                   Train_wk[pro_step])
 
             print("------------------------------------------------------------------")
             print("Epoch: {}\tTime: {:.4f}\tLoss: {:.4f}\tLearningRate {:.6f}".format(epoch,
                                                                                       time.time() - epoch_start_time,
-                                                                                    epoch_loss, scheduler.get_lr()))
+                                                                                      epoch_loss, scheduler.get_lr()))
             print("------------------------------------------------------------------")
 
             if local_rank == 0:
@@ -259,7 +277,6 @@ def main():
                 #              'state_dict': model.state_dict(),
                 #              'optimizer': optimizer.state_dict()
                 #              }, os.path.join(model_dir, f"model_epoch_{epoch}.pdparams"))
-
 
 if __name__ == '__main__':
     main()
