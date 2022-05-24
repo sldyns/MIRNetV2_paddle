@@ -1,4 +1,4 @@
-# **MIRNet 系列论文复现 兼 飞桨特色模型挑战赛
+# MIRNet 系列论文复现 兼 飞桨特色模型挑战赛
 
 MIRNetV1: Learning Enriched Features for Real Image Restoration and Enhancement  
 
@@ -91,7 +91,7 @@ MIRNet_Paddle
     |-- infer.py                   # 模型推理代码
     |-- LICENSE                    # LICENSE文件
     |-- losses.py                  # 损失函数
-    |-- predict.py			      # 模型预测代码
+    |-- predict.py                 # 模型预测代码
     |-- README.md                  # README.md文件
     |-- test_denoising_sidd.py     # 测试SIDD数据上的指标
     |-- train.py                   # TIPC训练测试代码
